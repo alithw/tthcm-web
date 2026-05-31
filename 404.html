@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Không Tìm Thấy Trang | Hệ Thống Ôn Tập TTHCM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Animated background */
+        .bg-animated {
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(ellipse at 20% 50%, rgba(185, 28, 28, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, rgba(217, 119, 6, 0.1) 0%, transparent 50%),
+                        radial-gradient(ellipse at 50% 80%, rgba(30, 41, 59, 0.5) 0%, transparent 60%);
+            z-index: 0;
+        }
+
+        .grid-bg {
+            position: fixed;
+            inset: 0;
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(239, 68, 68, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(239, 68, 68, 0.05) 1px, transparent 1px);
+            z-index: 0;
+        }
+
+        /* Floating particles */
+        .particle {
+            position: fixed;
+            border-radius: 50%;
+            animation: float linear infinite;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.15; }
+            90% { opacity: 0.15; }
+            100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+        }
+
+        /* 404 Number glow */
+        .number-404 {
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #dc2626, #f59e0b, #dc2626);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-shift 3s ease infinite;
+            text-shadow: none;
+            filter: drop-shadow(0 0 30px rgba(220, 38, 38, 0.4));
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Star decorations */
+        .star-icon {
+            animation: spin-slow 8s linear infinite;
+        }
+
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Pulse ring */
+        .pulse-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid rgba(220, 38, 38, 0.3);
+            animation: pulse-expand 2.5s ease-out infinite;
+        }
+
+        @keyframes pulse-expand {
+            0% { transform: scale(0.8); opacity: 0.8; }
+            100% { transform: scale(2.2); opacity: 0; }
+        }
+
+        /* Button hover */
+        .btn-home {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-home::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #f59e0b, #dc2626);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-home:hover::before {
+            opacity: 1;
+        }
+
+        .btn-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
+        }
+
+        .btn-home span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Countdown */
+        #countdown {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-animated"></div>
+    <div class="grid-bg"></div>
+
+    <!-- Floating particles -->
+    <div class="particle w-3 h-3 bg-red-500" style="left:10%;animation-duration:8s;animation-delay:0s;"></div>
+    <div class="particle w-2 h-2 bg-amber-400" style="left:25%;animation-duration:11s;animation-delay:2s;"></div>
+    <div class="particle w-4 h-4 bg-red-700" style="left:45%;animation-duration:9s;animation-delay:1s;"></div>
+    <div class="particle w-2 h-2 bg-yellow-300" style="left:65%;animation-duration:12s;animation-delay:3s;"></div>
+    <div class="particle w-3 h-3 bg-red-400" style="left:80%;animation-duration:7s;animation-delay:0.5s;"></div>
+    <div class="particle w-2 h-2 bg-amber-500" style="left:92%;animation-duration:10s;animation-delay:1.5s;"></div>
+
+    <!-- Main content -->
+    <div class="relative z-10 text-center px-6 max-w-lg mx-auto">
+
+        <!-- Star icon with pulse ring -->
+        <div class="relative inline-flex items-center justify-center mb-6">
+            <div class="pulse-ring w-20 h-20"></div>
+            <div class="pulse-ring w-20 h-20" style="animation-delay:1.25s;"></div>
+            <div class="bg-red-900/40 backdrop-blur-sm border border-red-700/50 w-20 h-20 rounded-full flex items-center justify-center">
+                <i class="fa-solid fa-star star-icon text-3xl text-amber-400"></i>
+            </div>
+        </div>
+
+        <!-- 404 number -->
+        <div class="number-404 mb-2">404</div>
+
+        <!-- Title -->
+        <h1 class="text-2xl sm:text-3xl font-bold text-white mb-3">
+            Không Tìm Thấy Trang
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-slate-400 text-base sm:text-lg mb-2 leading-relaxed">
+            Đường dẫn bạn truy cập không tồn tại hoặc đã bị xóa.
+        </p>
+        <p class="text-slate-500 text-sm mb-8">
+            Tự động quay về trang chủ sau
+            <span id="countdown" class="text-amber-400 font-bold">10</span>
+            giây...
+        </p>
+
+        <!-- Divider -->
+        <div class="flex items-center gap-3 mb-8">
+            <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-800/50 to-transparent"></div>
+            <i class="fa-solid fa-circle-dot text-red-700 text-xs"></i>
+            <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-800/50 to-transparent"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/" class="btn-home text-white font-semibold py-3 px-8 rounded-xl shadow-lg w-full sm:w-auto">
+                <span class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-house"></i>
+                    Về Trang Chủ
+                </span>
+            </a>
+            <button onclick="history.back()"
+                class="border border-slate-600 hover:border-amber-500/60 text-slate-300 hover:text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:bg-slate-800/50 w-full sm:w-auto">
+                <span class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Quay Lại
+                </span>
+            </button>
+        </div>
+
+        <!-- Footer note -->
+        <p class="mt-10 text-slate-600 text-xs">
+            Hệ Thống Ôn Tập Tư Tưởng Hồ Chí Minh &bull; PRO A+
+        </p>
+    </div>
+
+    <script>
+        // Countdown auto-redirect
+        let seconds = 10;
+        const el = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            seconds--;
+            el.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = '/';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -38,8 +38,11 @@ const server = http.createServer((req, res) => {
     fs.readFile(filePath, (error, content) => {
         if (error) {
             if (error.code === 'ENOENT') {
-                res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
-                res.end('<h1>404 Không Tìm Thấy Trang</h1><p>Vui lòng kiểm tra lại đường dẫn.</p>');
+                const notFoundPath = path.join(__dirname, '404.html');
+                fs.readFile(notFoundPath, (err404, content404) => {
+                    res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+                    res.end(err404 ? '<h1>404 - Không Tìm Thấy Trang</h1>' : content404, 'utf-8');
+                });
             } else {
                 res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
                 res.end(`Lỗi hệ thống: ${error.code}`);
