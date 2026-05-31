@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Siêu Ôn Tập Trắc Nghiệm Tư Tưởng Hồ Chí Minh - PRO A+</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Inter & System Font Fallback (Sửa lỗi hiển thị tiếng Việt) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(239, 68, 68, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(239, 68, 68, 0.05) 1px, transparent 1px);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.2);
+            border-color: rgba(245, 158, 11, 0.4);
+        }
+        
+        /* Chế độ Sáng (Light Mode Overrides) */
+        body.light {
+            background-color: #f8fafc !important;
+            color: #0f172a !important;
+        }
+        body.light .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+        }
+        body.light header {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            border-color: #e2e8f0 !important;
+        }
+        body.light header .absolute {
+            background-image: linear-gradient(to right, rgba(239, 68, 68, 0.05) 50%, rgba(245, 158, 11, 0.02) 100%) !important;
+        }
+        body.light h1 {
+            background-image: linear-gradient(to right, #991b1b, #d97706) !important;
+            color: transparent !important;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        body.light p.text-slate-400 {
+            color: #475569 !important;
+        }
+        body.light header button {
+            background-color: #f1f5f9 !important;
+            color: #0f172a !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light header button:hover {
+            background-color: #e2e8f0 !important;
+        }
+        body.light section.relative {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            border-color: #cbd5e1 !important;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05) !important;
+        }
+        body.light section h2, 
+        body.light section h3 {
+            color: #0f172a !important;
+        }
+        body.light section p {
+            color: #334155 !important;
+        }
+        body.light .bg-slate-950\/60 {
+            background-color: #ffffff !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light .bg-slate-950\/60 span.text-white {
+            color: #0f172a !important;
+        }
+        body.light .bg-slate-950\/60 span.text-amber-400 {
+            color: #d97706 !important;
+        }
+        body.light #overall-percent {
+            color: #b45309 !important;
+        }
+        body.light .bg-slate-800 {
+            background-color: #e2e8f0 !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light #chapters-grid > div {
+            background-image: none !important;
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05) !important;
+        }
+        body.light #chapters-grid > div:hover {
+            border-color: #f59e0b !important;
+            box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.15) !important;
+        }
+        body.light #chapters-grid .text-amber-400 {
+            color: #d97706 !important;
+        }
+        body.light #chapters-grid .text-white {
+            color: #0f172a !important;
+        }
+        body.light #chapters-grid .text-slate-400 {
+            color: #475569 !important;
+        }
+        body.light #chapters-grid .bg-slate-900\/80 {
+            background-color: #f1f5f9 !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light #chapters-grid .bg-slate-950\/60 {
+            background-color: #f8fafc !important;
+            border-color: #e2e8f0 !important;
+        }
+        body.light #chapters-grid a {
+            background-image: linear-gradient(to right, #dc2626, #b91c1c) !important;
+            color: #ffffff !important;
+        }
+        body.light #chapters-grid button.bg-slate-900 {
+            background-color: #f1f5f9 !important;
+            border-color: #cbd5e1 !important;
+            color: #475569 !important;
+        }
+        body.light #chapters-grid button.bg-slate-900:hover {
+            background-color: #fee2e2 !important;
+            color: #dc2626 !important;
+            border-color: #fca5a5 !important;
+        }
+        body.light #reset-all-modal > div,
+        body.light #reset-chapter-modal > div {
+            background-color: #ffffff !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light #reset-all-modal h3,
+        body.light #reset-chapter-modal h3 {
+            color: #0f172a !important;
+        }
+        body.light #reset-all-modal p,
+        body.light #reset-chapter-modal p {
+            color: #475569 !important;
+        }
+        body.light footer {
+            background-color: #ffffff !important;
+            border-color: #e2e8f0 !important;
+            color: #64748b !important;
+        }
+        body.light footer p {
+            color: #475569 !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col bg-grid-pattern overflow-x-hidden">
+
+    <!-- Header Banner -->
+    <header class="relative overflow-hidden border-b border-red-900/40 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+        <div class="absolute inset-0 bg-gradient-to-r from-red-950/50 via-slate-900/80 to-amber-950/30"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-br from-red-600 to-amber-500 p-2.5 rounded-xl shadow-lg shadow-red-900/30">
+                    <i class="fa-solid fa-star text-2xl text-yellow-300 animate-pulse"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-amber-200 to-amber-400 bg-clip-text text-transparent flex items-center gap-2">
+                        SIÊU HỆ THỐNG ÔN TẬP TRẮC NGHIỆM <span class="bg-red-600 text-white text-[10px] px-2 py-0.5 rounded font-black uppercase tracking-wider">PRO A+</span>
+                    </h1>
+                    <p class="text-xs text-slate-400 font-medium tracking-wide">Môn học: Tư tưởng Hồ Chí Minh • Thiết kế chuẩn xác, phân hóa cao độ</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <button id="theme-toggle" onclick="toggleTheme()" class="bg-slate-850 hover:bg-slate-800 border border-slate-700/60 text-slate-300 hover:text-white p-2.5 rounded-xl text-sm transition-all duration-300 shadow-md flex items-center justify-center" title="Chuyển chế độ Sáng/Tối">
+                    <i class="fa-solid fa-sun text-amber-400" id="theme-icon"></i>
+                </button>
+                <button onclick="showResetAllModal()" class="group bg-red-950/40 hover:bg-red-900 border border-red-800/60 text-red-200 hover:text-white px-4.5 py-2 rounded-xl text-xs font-bold flex items-center gap-2 transition-all duration-300 shadow-md">
+                    <i class="fa-solid fa-trash-can group-hover:rotate-6 transition-transform"></i> Làm lại toàn bộ các chương
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 flex flex-col gap-8">
+        
+        <!-- Overall Progress Dashboard Panel -->
+        <section class="relative rounded-3xl overflow-hidden border border-red-800/30 bg-slate-900/40 backdrop-blur-md p-6 sm:p-8 flex flex-col lg:flex-row justify-between items-center gap-8 shadow-2xl">
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-red-900/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-20 -top-20 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex-grow space-y-4 w-full lg:w-2/3">
+                <div class="flex items-center gap-2">
+                    <span class="bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
+                        Bảng điều khiển
+                    </span>
+                    <h2 class="text-lg font-bold text-slate-200">Tiến Độ Ôn Tập Tổng Hợp</h2>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed font-light">
+                    Hệ thống bao gồm 7 chương với tổng cộng <strong class="text-amber-400 font-semibold">552 câu hỏi chuyên sâu</strong> bao quát toàn bộ nội dung giáo trình. Kết quả làm bài của bạn được tự động ghi nhận trực tiếp theo thời gian thực.
+                </p>
+
+                <!-- Cumulative Progress Bar -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-end text-xs font-bold">
+                        <span class="text-slate-400">Tiến trình tích lũy</span>
+                        <span class="text-amber-400 text-sm" id="overall-percent">0%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-3.5 p-0.5 border border-slate-700/50">
+                        <div id="overall-bar" class="bg-gradient-to-r from-red-600 via-amber-500 to-emerald-500 h-2.5 rounded-full transition-all duration-700" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Boxes -->
+            <div class="grid grid-cols-2 gap-4 w-full lg:w-1/3 shrink-0">
+                <div class="bg-slate-950/60 p-4.5 rounded-2xl border border-slate-800/80 flex flex-col items-center text-center justify-center">
+                    <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1">Đã Hoàn Thành</span>
+                    <span class="text-2xl font-black text-white" id="overall-answered">0 <span class="text-xs text-slate-500 font-normal">/ 552 câu</span></span>
+                </div>
+                <div class="bg-slate-950/60 p-4.5 rounded-2xl border border-slate-800/80 flex flex-col items-center text-center justify-center">
+                    <span class="text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1">Số Chương Học</span>
+                    <span class="text-2xl font-black text-amber-400" id="overall-chapters">0 <span class="text-xs text-slate-500 font-normal">/ 7 chương</span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter Cards Grid Section -->
+        <section class="space-y-6">
+            <h3 class="font-extrabold text-slate-200 text-lg uppercase tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-cubes text-red-600"></i> Danh Sách Chương Học Tập
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="chapters-grid">
+                <!-- Dynamically Populated Chapter Cards -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 text-center py-8 border-t border-slate-900 text-xs mt-auto">
+        <p class="font-bold text-slate-400">Ứng dụng Siêu Ôn Tập Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Phiên Bản Cao Cấp</p>
+        <p class="mt-1 text-slate-600">Dữ liệu học thuật chuẩn xác dựa theo bài giảng ĐH HUST, NEU, PTIT[cite: 1] • Host tại Port 3005</p>
+    </footer>
+
+    <!-- Confirm Reset All Modal -->
+    <div id="reset-all-modal" class="fixed inset-0 bg-slate-950/80 flex items-center justify-center z-[100] hidden backdrop-blur-sm transition-opacity duration-300">
+        <div class="bg-slate-900 rounded-3xl max-w-sm w-full p-6 mx-4 shadow-2xl border border-red-900/60 transform transition-all duration-300">
+            <div class="text-red-500 text-5xl text-center mb-4">
+                <i class="fa-solid fa-triangle-exclamation animate-bounce"></i>
+            </div>
+            <h3 class="text-lg font-black text-slate-100 text-center mb-2 uppercase tracking-wide">Đặt lại toàn bộ?</h3>
+            <p class="text-xs md:text-sm text-slate-400 text-center mb-6 leading-relaxed">
+                Hành động này sẽ <strong class="text-red-400">XÓA SẠCH</strong> toàn bộ tiến trình trả lời câu hỏi và thống kê học tập của cả 7 chương. Bạn có chắc chắn muốn làm lại từ đầu?
+            </p>
+            <div class="flex gap-3">
+                <button onclick="closeResetAllModal()" class="flex-1 py-2.5 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition-all">
+                    Quay lại
+                </button>
+                <button onclick="executeResetAll()" class="flex-1 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs transition-all shadow-lg shadow-red-900/40">
+                    Xác nhận xóa sạch
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Reset Single Chapter Modal -->
+    <div id="reset-chapter-modal" class="fixed inset-0 bg-slate-950/80 flex items-center justify-center z-[100] hidden backdrop-blur-sm transition-opacity duration-300">
+        <input type="hidden" id="reset-target-chapter" value="">
+        <div class="bg-slate-900 rounded-3xl max-w-sm w-full p-6 mx-4 shadow-2xl border border-red-900/60 transform transition-all duration-300">
+            <div class="text-amber-500 text-5xl text-center mb-4">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <h3 class="text-lg font-black text-slate-100 text-center mb-2 uppercase tracking-wide" id="reset-chapter-title">Làm lại chương này?</h3>
+            <p class="text-xs md:text-sm text-slate-400 text-center mb-6 leading-relaxed">
+                Hành động này sẽ xóa sạch đáp án và tiến trình làm bài của <span class="text-amber-400 font-semibold" id="reset-chapter-desc">Chương này</span>. Bạn đã sẵn sàng?
+            </p>
+            <div class="flex gap-3">
+                <button onclick="closeResetChapterModal()" class="flex-1 py-2.5 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition-all">
+                    Quay lại
+                </button>
+                <button onclick="executeResetChapter()" class="flex-1 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-xs transition-all shadow-lg">
+                    Đồng ý reset
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Chapter metadata definition
+        const chaptersData = [
+            {
+                id: 1,
+                title: "Chương 1",
+                subtitle: "Cơ sở, quá trình hình thành và phát triển tư tưởng Hồ Chí Minh",
+                questions: 80,
+                icon: "fa-flag",
+                file: "chuong1.html",
+                color: "from-red-900/40 via-red-950/60 to-slate-900"
+            },
+            {
+                id: 2,
+                title: "Chương 2",
+                subtitle: "Tư tưởng Hồ Chí Minh về vấn đề dân tộc và cách mạng giải phóng dân tộc",
+                questions: 75,
+                icon: "fa-graduation-cap",
+                file: "chuong2.html",
+                color: "from-orange-900/40 via-orange-950/60 to-slate-900"
+            },
+            {
+                id: 3,
+                title: "Chương 3",
+                subtitle: "Tư tưởng Hồ Chí Minh về chủ nghĩa xã hội và con đường quá độ lên CNXH ở VN",
+                questions: 80,
+                icon: "fa-landmark",
+                file: "chuong3.html",
+                color: "from-amber-900/40 via-amber-950/60 to-slate-900"
+            },
+            {
+                id: 4,
+                title: "Chương 4",
+                subtitle: "Tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam",
+                questions: 80,
+                icon: "fa-shield-halved",
+                file: "chuong4.html",
+                color: "from-emerald-900/40 via-emerald-950/60 to-slate-900"
+            },
+            {
+                id: 5,
+                title: "Chương 5",
+                subtitle: "Tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc và đoàn kết quốc tế",
+                questions: 77,
+                icon: "fa-users-line",
+                file: "chuong5.html",
+                color: "from-blue-900/40 via-blue-950/60 to-slate-900"
+            },
+            {
+                id: 6,
+                title: "Chương 6",
+                subtitle: "Tư tưởng Hồ Chí Minh về xây dựng Nhà nước của dân, do dân, vì dân",
+                questions: 80,
+                icon: "fa-building-columns",
+                file: "chuong6.html",
+                color: "from-purple-900/40 via-purple-950/60 to-slate-900"
+            },
+            {
+                id: 7,
+                title: "Chương 7",
+                subtitle: "Tư tưởng Hồ Chí Minh về văn hóa, đạo đức và xây dựng con người mới",
+                questions: 80,
+                icon: "fa-palette",
+                file: "chuong7.html",
+                color: "from-pink-900/40 via-pink-950/60 to-slate-900"
+            }
+        ];
+
+        // Cookie Helpers
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        // Get single chapter progress
+        function getChapterProgress(chapterId, totalQuestions) {
+            const cookieVal = getCookie(`tthcm_c${chapterId}_answers`);
+            if (!cookieVal) return { answered: 0, percent: 0 };
+            try {
+                const answers = JSON.parse(cookieVal);
+                if (Array.isArray(answers)) {
+                    const answered = answers.filter(a => a !== null).length;
+                    const percent = Math.round((answered / totalQuestions) * 100);
+                    return { answered, percent };
+                }
+            } catch (e) {
+                console.error(`Lỗi giải mã cookie Chương ${chapterId}:`, e);
+            }
+            return { answered: 0, percent: 0 };
+        }
+
+        // Populate card list
+        function renderDashboard() {
+            const gridContainer = document.getElementById('chapters-grid');
+            gridContainer.innerHTML = '';
+            
+            let totalAnswered = 0;
+            let activeChapters = 0;
+            const overallQuestions = 552;
+
+            chaptersData.forEach(ch => {
+                const progress = getChapterProgress(ch.id, ch.questions);
+                totalAnswered += progress.answered;
+                if (progress.answered > 0) {
+                    activeChapters++;
+                }
+
+                const card = document.createElement('div');
+                card.className = `group relative rounded-2xl border border-slate-800/80 bg-gradient-to-b ${ch.color} p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-red-950/20 hover:border-slate-700/50 glow-effect overflow-hidden`;
+                
+                // Active link vs Start logic
+                const hasStarted = progress.answered > 0;
+                const ctaText = hasStarted ? "Tiếp tục học" : "Bắt đầu học";
+                const ctaIcon = hasStarted ? "fa-circle-play" : "fa-circle-arrow-right";
+                
+                card.innerHTML = `
+                    <div class="absolute -right-8 -top-8 w-24 h-24 bg-white/5 rounded-full blur-xl pointer-events-none group-hover:bg-white/10 transition-colors"></div>
+                    
+                    <div class="space-y-4">
+                        <!-- Top Row: Icon and Badge -->
+                        <div class="flex justify-between items-start">
+                            <div class="bg-slate-900/80 border border-slate-700/60 p-2.5 rounded-xl text-amber-400 flex items-center justify-center">
+                                <i class="fa-solid ${ch.icon} text-lg"></i>
+                            </div>
+                            <span class="bg-red-500/10 border border-red-500/20 text-red-400 text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                ${ch.questions} Câu hỏi
+                            </span>
+                        </div>
+
+                        <!-- Titles -->
+                        <div>
+                            <h4 class="font-extrabold text-sm text-slate-400 tracking-wide mb-1 uppercase">${ch.title}</h4>
+                            <h3 class="text-base font-black text-white leading-snug line-clamp-2 group-hover:text-amber-200 transition-colors">${ch.subtitle}</h3>
+                        </div>
+
+                        <!-- Progress Bar Section -->
+                        <div class="space-y-1.5 pt-2">
+                            <div class="flex justify-between text-[11px] font-bold text-slate-400">
+                                <span>Tiến độ học tập</span>
+                                <span class="${progress.percent > 0 ? 'text-amber-400' : 'text-slate-500'}">${progress.percent}%</span>
+                            </div>
+                            <div class="w-full bg-slate-950/60 border border-slate-800/80 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-red-600 to-amber-500 h-2 rounded-full transition-all duration-500" style="width: ${progress.percent}%"></div>
+                            </div>
+                            <div class="text-[10px] text-slate-500 font-semibold">
+                                Đã làm: ${progress.answered}/${ch.questions} câu
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Action Row -->
+                    <div class="flex gap-2 mt-6 pt-4 border-t border-slate-800/50">
+                        <a href="/${ch.file}" class="flex-1 bg-gradient-to-r from-red-700 to-red-800 hover:from-red-600 hover:to-red-700 active:scale-95 text-white font-extrabold text-xs py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-200 shadow-md">
+                            <i class="fa-solid ${ctaIcon}"></i> ${ctaText}
+                        </a>
+                        ${hasStarted ? `
+                            <button onclick="confirmResetChapter(${ch.id}, '${ch.subtitle}')" class="bg-slate-900 border border-slate-800 hover:bg-slate-800 hover:border-slate-700 text-slate-400 hover:text-red-400 p-3 rounded-xl transition-all duration-200" title="Đặt lại tiến trình chương này">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                        ` : ''}
+                    </div>
+                `;
+                
+                gridContainer.appendChild(card);
+            });
+
+            // Update Header Stats Dashboard
+            const overallPercent = Math.round((totalAnswered / overallQuestions) * 100);
+            document.getElementById('overall-percent').innerText = `${overallPercent}%`;
+            document.getElementById('overall-bar').style.width = `${overallPercent}%`;
+            document.getElementById('overall-answered').innerHTML = `${totalAnswered} <span class="text-xs text-slate-500 font-normal">/ ${overallQuestions} câu</span>`;
+            document.getElementById('overall-chapters').innerHTML = `${activeChapters} <span class="text-xs text-slate-500 font-normal">/ 7 chương</span>`;
+        }
+
+        // Single Chapter Reset handlers
+        function confirmResetChapter(id, title) {
+            document.getElementById('reset-target-chapter').value = id;
+            document.getElementById('reset-chapter-title').innerText = `Chương ${id}?`;
+            document.getElementById('reset-chapter-desc').innerText = `Chương ${id}: ${title}`;
+            
+            const modal = document.getElementById('reset-chapter-modal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeResetChapterModal() {
+            document.getElementById('reset-chapter-modal').classList.add('hidden');
+        }
+
+        function executeResetChapter() {
+            const id = document.getElementById('reset-target-chapter').value;
+            if (id) {
+                eraseCookie(`tthcm_c${id}_answers`);
+                eraseCookie(`tthcm_c${id}_bookmarks`);
+                eraseCookie(`tthcm_c${id}_current`);
+            }
+            closeResetChapterModal();
+            renderDashboard();
+        }
+
+        // All Chapters Reset handlers
+        function showResetAllModal() {
+            document.getElementById('reset-all-modal').classList.remove('hidden');
+        }
+
+        function closeResetAllModal() {
+            document.getElementById('reset-all-modal').classList.add('hidden');
+        }
+
+        function executeResetAll() {
+            for (let i = 1; i <= 7; i++) {
+                eraseCookie(`tthcm_c${i}_answers`);
+                eraseCookie(`tthcm_c${i}_bookmarks`);
+                eraseCookie(`tthcm_c${i}_current`);
+            }
+            closeResetAllModal();
+            renderDashboard();
+        }
+
+        // Theme toggler
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.classList.contains('light')) {
+                body.classList.remove('light');
+                document.cookie = "tthcm_theme=dark; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-sun text-amber-400";
+            } else {
+                body.classList.add('light');
+                document.cookie = "tthcm_theme=light; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-moon text-slate-400";
+            }
+        }
+
+        function initTheme() {
+            const savedTheme = getCookie('tthcm_theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Home page default is dark mode
+            if (savedTheme === 'light') {
+                document.body.classList.add('light');
+                if (themeIcon) themeIcon.className = "fa-solid fa-moon text-slate-400";
+            } else {
+                document.body.classList.remove('light');
+                if (themeIcon) themeIcon.className = "fa-solid fa-sun text-amber-400";
+            }
+        }
+
+        // Page Load
+        window.onload = function() {
+            initTheme();
+            renderDashboard();
+        };
+    </script>
+</body>
+</html>

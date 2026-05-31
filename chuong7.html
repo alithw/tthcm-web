@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Chương 7 (80 Câu Phân Hóa)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        /* Custom scrollbar for sidebar grid */
+        #question-grid::-webkit-scrollbar {
+            width: 5px;
+        }
+        #question-grid::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    
+        /* Chế độ Tối (Dark Mode Overrides cho Chương) */
+        body.dark {
+            background-color: #0b0f19 !important;
+            color: #f1f5f9 !important;
+        }
+        body.dark .text-slate-700 {
+            color: #e2e8f0 !important;
+        }
+        body.dark .text-slate-400 {
+            color: #94a3b8 !important;
+        }
+        body.dark .text-red-950 {
+            color: #fca5a5 !important;
+        }
+        body.dark .text-emerald-950 {
+            color: #a7f3d0 !important;
+        }
+        body.dark .border-slate-300 {
+            border-color: #475569 !important;
+        }
+        body.dark .group:hover .group-hover\:bg-slate-100 {
+            background-color: #334155 !important;
+            color: #ffffff !important;
+            border-color: #64748b !important;
+        }
+        body.dark .bg-white {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3) !important;
+        }
+        body.dark .text-slate-900,
+        body.dark .text-slate-800,
+        body.dark .text-slate-950 {
+            color: #f8fafc !important;
+        }
+        body.dark .text-slate-600,
+        body.dark .text-slate-500 {
+            color: #cbd5e1 !important;
+        }
+        body.dark .bg-slate-50 {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-100 {
+            background-color: #0b0f19 !important;
+        }
+        body.dark input, 
+        body.dark select {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #475569 !important;
+        }
+        body.dark .border-slate-200,
+        body.dark .border-slate-100 {
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-50.border-slate-300 {
+            background-color: #1e293b !important;
+            border-color: #475569 !important;
+        }
+        body.dark .hover\:bg-red-50\/20:hover {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+        }
+        body.dark .hover\:border-red-700:hover {
+            border-color: #b91c1c !important;
+        }
+        body.dark .bg-emerald-50 {
+            background-color: rgba(16, 185, 129, 0.1) !important;
+            color: #34d399 !important;
+            border-color: #10b981 !important;
+        }
+        body.dark .bg-red-50 {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+            color: #f87171 !important;
+            border-color: #ef4444 !important;
+        }
+        body.dark .bg-slate-50.border-slate-200.text-slate-400 {
+            background-color: #1e293b !important;
+            color: #64748b !important;
+            opacity: 0.5;
+        }
+        body.dark #report-modal > div,
+        body.dark #confirm-modal > div {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+        }
+        body.dark #report-modal h3,
+        body.dark #report-modal p,
+        body.dark #confirm-modal h3,
+        body.dark #confirm-modal p {
+            color: #f8fafc !important;
+        }
+            header.header-scrolled .header-brand {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+                pointer-events: none;
+            }
+            header {
+                transition: padding 0.25s ease;
+            }
+            header.header-scrolled {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    
+        /* Scroll-based Header: Thu gọn khi cuộn xuống trên di động */
+        @media (max-width: 1023px) {
+            header .header-brand {
+                transition: opacity 0.2s ease;
+                opacity: 1;
+            }
+            header.header-scrolled .header-brand {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-red-800 text-white shadow-md py-2.5 px-4 lg:py-4 lg:px-6 sticky top-0 z-50 border-b border-amber-500">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4">
+            <div class="header-brand flex items-center gap-3">
+                <div class="bg-amber-500 p-2.5 rounded-xl shadow-inner">
+                    <i class="fa-solid fa-palette text-2xl text-red-900 animate-pulse"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black tracking-tight flex items-center gap-2">
+                        SIÊU NGÂN HÀNG ĐỀ THI TRẮC NGHIỆM <span class="bg-amber-500 text-red-900 text-[10px] px-2 py-0.5 rounded font-extrabold uppercase align-middle">PRO A+</span>
+                    </h1>
+                    <p class="text-xs text-red-100 font-medium">Chương 7: Tư tưởng Hồ Chí Minh về văn hóa, đạo đức và xây dựng con người mới (80 Câu hỏi phân hóa sâu sắc)[cite: 1]</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+                <a href="/" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 transition-all duration-200" title="Quay lại trang chủ">
+                    <i class="fa-solid fa-house"></i> <span class="hidden md:inline">Trang chủ</span>
+                </a>
+                <button id="theme-toggle" onclick="toggleTheme()" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white p-2.5 rounded-xl text-sm transition-all duration-200 flex items-center justify-center" title="Chuyển chế độ Sáng/Tối">
+                    <i class="fa-solid fa-sun text-amber-400" id="theme-icon"></i>
+                </button>
+                <div class="bg-red-950 px-4 py-2 rounded-xl text-sm font-bold border border-red-700/50 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                    <span>Tỉ lệ: <span id="score-accuracy" class="text-amber-300">0%</span></span>
+                    <span class="text-slate-500">|</span>
+                    <span>Đúng: <span id="score-display" class="text-emerald-400">0/0</span></span>
+                </div>
+                <button onclick="showResetModal()" class="bg-amber-500 hover:bg-amber-600 active:scale-95 transition-all text-slate-950 px-4 py-2 rounded-xl text-sm font-extrabold flex items-center gap-2 shadow-md">
+                    <i class="fa-solid fa-rotate-right"></i> Làm lại toàn bộ
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        
+        <!-- Sidebar: Grid & Advanced Filters -->
+        <aside class="lg:col-span-1 bg-white p-4 rounded-2xl shadow-sm border border-slate-200 h-fit flex flex-col gap-4">
+            
+            <!-- Search & Filters Container -->
+            <div>
+                <h2 class="font-bold text-slate-900 mb-3 flex items-center gap-2 pb-2 border-b border-slate-100 text-sm uppercase tracking-wider">
+                    <i class="fa-solid fa-filter text-red-700"></i> Bộ lọc nâng cao
+                </h2>
+                
+                <!-- Search Input -->
+                <div class="relative mb-2.5">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400 text-xs"></i>
+                    </span>
+                    <input type="text" id="search-input" onkeyup="filterQuestions()" placeholder="Tìm từ khóa trong câu hỏi..." class="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:ring-1 focus:ring-red-600 focus:border-red-600 outline-none transition-all">
+                </div>
+
+                <!-- Category Selector -->
+                <div class="mb-2">
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Theo danh mục</label>
+                    <select id="category-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả danh mục (80 câu)</option>
+                        <option value="Nhận biết">Nhận biết</option>
+                        <option value="Thông hiểu">Thông hiểu</option>
+                        <option value="Trích dẫn">Trích dẫn</option>
+                        <option value="Lịch sử">Lịch sử</option>
+                        <option value="Điền từ">Điền vào chỗ trống</option>
+                        <option value="Trừu tượng">Tư duy trừu tượng</option>
+                        <option value="Nâng cao">Nâng cao / Cực khó</option>
+                    </select>
+                </div>
+
+                <!-- State Selector -->
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Trạng thái câu hỏi</label>
+                    <select id="state-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả câu hỏi</option>
+                        <option value="unanswered">Chưa làm</option>
+                        <option value="correct">Làm đúng</option>
+                        <option value="incorrect">Làm sai</option>
+                        <option value="bookmarked">Có đánh dấu (★)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Progress Tracker -->
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                <div class="flex justify-between text-xs text-slate-600 font-bold mb-1.5">
+                    <span>Tiến độ học tập</span>
+                    <span id="progress-percent" class="text-red-700">0%</span>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-2.5">
+                    <div id="progress-bar" class="bg-gradient-to-r from-red-600 to-amber-500 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-semibold">
+                    <span>Đã làm: <span id="answered-count">0</span>/80</span>
+                    <span>Cần đạt: 80% trở lên</span>
+                </div>
+            </div>
+
+            <!-- Question Selection Grid -->
+            <div>
+                <h3 class="font-bold text-slate-950 text-xs uppercase tracking-wider mb-2 flex justify-between items-center">
+                    <span>Bản đồ câu hỏi</span>
+                    <span class="text-[10px] text-slate-400 normal-case font-medium" id="visible-count">Hiện: 80/80</span>
+                </h3>
+                <div class="grid grid-cols-5 gap-1.5 max-h-[340px] overflow-y-auto pr-1" id="question-grid">
+                    <!-- Dynamically populated buttons -->
+                </div>
+            </div>
+
+            <!-- Legend Info -->
+            <div class="pt-3 border-t border-slate-200 grid grid-cols-2 gap-2 text-[10px] text-slate-500 font-bold">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-slate-50 border border-slate-300 inline-block"></span>
+                    <span>Chưa làm</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300 inline-block"></span>
+                    <span>Làm đúng</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-red-100 border border-red-300 inline-block"></span>
+                    <span>Làm sai</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-amber-100 border border-amber-400 inline-block"></span>
+                    <span>Đánh dấu (★)</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Active Question Viewport -->
+        <section class="lg:col-span-3 flex flex-col gap-5">
+            
+            <!-- Active Question Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 relative overflow-hidden flex flex-col gap-4">
+                
+                <!-- Tag & Info Header bar -->
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <span id="question-category" class="bg-red-50 text-red-800 text-[10px] font-black px-2.5 py-1 rounded-full border border-red-100 uppercase tracking-wider">
+                            DANH MỤC
+                        </span>
+                        <span id="bookmark-badge" class="hidden bg-amber-50 text-amber-700 text-[10px] font-black px-2.5 py-1 rounded-full border border-amber-200 uppercase tracking-wider items-center gap-1">
+                            <i class="fa-solid fa-star text-amber-500"></i> Đã đánh dấu
+                        </span>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <button onclick="toggleBookmarkActive()" class="text-slate-400 hover:text-amber-500 text-lg transition-all focus:outline-none" title="Đánh dấu câu hỏi này">
+                            <i class="fa-regular fa-star" id="bookmark-icon"></i>
+                        </button>
+                        <span class="text-xs text-slate-400 font-bold bg-slate-100 px-2.5 py-1 rounded-lg" id="question-index-label">
+                            Câu hỏi -- / --
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Question Text -->
+                <h3 class="text-base md:text-lg font-black text-slate-900 leading-snug" id="question-text">
+                    Nội dung câu hỏi đang được khởi tạo...
+                </h3>
+
+                <!-- Options -->
+                <div class="space-y-2.5" id="options-container">
+                    <!-- Dynamic option buttons -->
+                </div>
+
+                <!-- Explanation Box (Initially Hidden) -->
+                <div id="explanation-box" class="hidden mt-2 p-5 rounded-2xl border transition-all duration-300">
+                    <div class="flex items-start gap-3">
+                        <div id="explanation-icon-container" class="p-2.5 rounded-xl text-white shadow-sm flex items-center justify-center">
+                            <!-- Icon -->
+                        </div>
+                        <div class="flex-1">
+                            <h4 id="explanation-title" class="font-extrabold text-slate-900 text-sm mb-1 uppercase tracking-wider">Kết quả</h4>
+                            <p id="explanation-text" class="text-xs md:text-sm text-slate-600 leading-relaxed font-medium">
+                                Giải thích học thuyết chi tiết...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <button onclick="navigateQuestion(-1)" id="prev-btn" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 active:scale-95 font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed">
+                    <i class="fa-solid fa-circle-arrow-left"></i> Câu trước
+                </button>
+                
+                <div class="text-xs text-slate-400 font-bold hidden md:block">
+                    Mẹo: Dùng phím mũi tên <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">←</kbd> và <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">→</kbd> để chuyển câu nhanh
+                </div>
+
+                <button onclick="navigateQuestion(1)" id="next-btn" class="flex items-center gap-2 bg-red-700 hover:bg-red-800 active:scale-95 text-white font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all shadow-sm">
+                    Câu kế tiếp <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Complete Submission Bar -->
+            <div class="bg-gradient-to-r from-red-900 to-amber-700 text-white rounded-2xl p-5 shadow-md border border-amber-500/30 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <h4 class="font-black text-sm uppercase tracking-wider text-amber-300">Hoàn tất kiểm tra</h4>
+                    <p class="text-xs text-red-100 mt-1">Nộp bài để hệ thống phân tích chi tiết học lực và chấm điểm A+ theo chuẩn Đại học[cite: 1].</p>
+                </div>
+                <button onclick="showFinalReport()" class="bg-white hover:bg-amber-400 active:scale-95 text-red-950 font-black px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md">
+                    <i class="fa-solid fa-paper-plane mr-1"></i> Nộp bài & xem báo cáo
+                </button>
+            </div>
+
+
+            <!-- Chapter Navigation Bar -->
+            <div class="flex justify-between items-center bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+                <a href="/chuong6.html" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-700 active:scale-95 font-bold px-4 py-2.5 rounded-xl text-xs md:text-sm transition-all shadow-sm"><i class="fa-solid fa-circle-chevron-left text-amber-500"></i> Chương 6</a>
+                <div></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 border-t border-slate-800 text-xs">
+        <p class="font-bold text-slate-200">Ứng dụng Siêu Ôn Tập Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Phiên Bản Cao Cấp</p>
+        <p class="mt-1 text-slate-500">Nội dung học thuật được thiết kế chuẩn xác dựa theo Bài giảng 2016 PTIT, NEU, HUST[cite: 1]</p>
+    </footer>
+
+    <!-- Confirm Reset Modal -->
+    <div id="confirm-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-amber-500 text-5xl text-center mb-4">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 text-center mb-2 uppercase tracking-wide">Làm lại từ đầu?</h3>
+            <p class="text-xs md:text-sm text-slate-500 text-center mb-6 leading-relaxed">
+                Hành động này sẽ xóa toàn bộ tiến trình trả lời và thống kê điểm hiện tại của bạn. Bạn đã sẵn sàng reset?
+            </p>
+            <div class="flex gap-3">
+                <button onclick="closeResetModal()" class="flex-1 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 font-bold text-xs transition-all">
+                    Quay lại
+                </button>
+                <button onclick="executeReset()" class="flex-1 py-2.5 rounded-xl bg-red-700 text-white hover:bg-red-800 font-bold text-xs transition-all shadow-md">
+                    Xác nhận xóa
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Score Report Modal -->
+    <div id="report-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-red-700 text-5xl text-center mb-4">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900 text-center mb-1 uppercase tracking-wide">Báo Cáo Học Lực</h3>
+            <p class="text-xs text-slate-400 text-center mb-5">Học phần Tư tưởng Hồ Chí Minh - Chương 7[cite: 1]</p>
+            
+            <div class="bg-slate-50 rounded-2xl p-4 mb-6 space-y-3.5 border border-slate-100">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu hỏi đã làm:</span>
+                    <span id="modal-answered" class="font-extrabold text-slate-800 text-sm">0/80 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm đúng:</span>
+                    <span id="modal-correct" class="font-extrabold text-emerald-600 text-sm">0/80 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm sai:</span>
+                    <span id="modal-incorrect" class="font-extrabold text-red-600 text-sm">0 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Tỷ lệ chính xác:</span>
+                    <span id="modal-accuracy" class="font-black text-amber-500 text-base">0%</span>
+                </div>
+                <div class="flex justify-between items-center text-xs pt-2.5 border-t border-slate-200">
+                    <span class="text-slate-500 font-bold">Xếp loại học phần:</span>
+                    <span id="modal-grade" class="font-black text-red-700 text-base">F</span>
+                </div>
+            </div>
+
+            <button onclick="closeReportModal()" class="w-full py-3 rounded-xl bg-red-800 hover:bg-red-900 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md">
+                Tiếp tục xem chi tiết đáp án câu hỏi
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Siêu cơ sở dữ liệu: 80 câu hỏi phân hóa tinh vi của Chương 7 (Văn hóa, Đạo đức, Con người mới)
+        const quizData = [
+            {
+                category: "Trích dẫn",
+                question: "Hồ Chí Minh đưa ra định nghĩa mang tầm bao quát rộng lớn nhất về văn hóa vào mốc thời gian nào?",
+                options: [
+                    "Tháng 6 năm 1925",
+                    "Tháng 8 năm 1943",
+                    "Tháng 9 năm 1945",
+                    "Tháng 10 năm 1947"
+                ],
+                correctIndex: 1,
+                explanation: "Tháng 8-1943, trong cuốn sổ tay ghi chép khi còn trong nhà tù Quảng Tây, Hồ Chí Minh đã viết định nghĩa kinh điển về văn hóa[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong định nghĩa văn hóa năm 1943, Hồ Chí Minh chỉ ra yếu tố quyết định nào dẫn dắt con người sáng tạo ra ngôn ngữ, chữ viết, đạo đức, pháp luật...?",
+                options: [
+                    "Ý muốn chủ quan của các lãnh tụ phong kiến",
+                    "Vì lẽ sinh tồn cũng như mục đích của cuộc sống",
+                    "Sự cưỡng bức của chế độ áp bức giai cấp",
+                    "Để phục tùng các giáo lý tôn giáo lỗi thời"
+                ],
+                correctIndex: 1,
+                explanation: "Mở đầu định nghĩa, Người viết: 'Vì lẽ sinh tồn cũng như mục đích của cuộc sống, loài người mới phát minh ra ngôn ngữ, chữ viết...'[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Điểm độc đáo, khoa học trong định nghĩa văn hóa năm 1943 của Hồ Chí Minh là gì?",
+                options: [
+                    "Coi văn hóa chỉ giới hạn trong các tác phẩm văn học nghệ thuật",
+                    "Coi văn hóa là sự tổng hợp mọi phương thức sinh hoạt cùng với những biểu hiện của nó mà loài người đã sản sinh ra để thích ứng nhu cầu sinh tồn",
+                    "Đồng nhất hoàn toàn văn hóa với trình độ học vấn thi cử",
+                    "Phủ nhận các công cụ sinh hoạt vật chất đời thường"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh tiếp cận văn hóa theo nghĩa rộng nhất, khắc phục quan niệm phiến diện chỉ coi văn hóa là lĩnh vực tinh thần đơn thuần[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Khi bắt tay vào xây dựng đất nước sau độc lập, Hồ Chí Minh đề ra bao nhiêu mục tiêu lớn định hướng xây dựng nền văn hóa mới?",
+                options: [
+                    "3 mục tiêu",
+                    "4 mục tiêu",
+                    "5 mục tiêu",
+                    "6 mục tiêu"
+                ],
+                correctIndex: 2,
+                explanation: "Người chỉ rõ 5 mục tiêu xây dựng nền văn hóa mới gồm: Xây dựng tâm lý, luân lý, xã hội, chính trị, và kinh tế[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Mục tiêu thứ hai trong 5 mục tiêu xây dựng nền văn hóa mới của Hồ Chí Minh là gì?",
+                options: [
+                    "Xây dựng tâm lý: tinh thần độc lập tự cường",
+                    "Xây dựng luân lý: biết hy sinh mình làm lợi cho quần chúng",
+                    "Xây dựng xã hội: mọi sự nghiệp có liên quan đến phúc lợi nhân dân",
+                    "Xây dựng chính trị: dân quyền"
+                ],
+                correctIndex: 1,
+                explanation: "Mục tiêu thứ hai được Người nêu rõ là xây dựng luân lý: biết hy sinh mình làm lợi cho quần chúng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Về vị trí của văn hóa, luận điểm nào sau đây của Hồ Chí Minh xác định mối quan hệ giữa văn hóa với cơ sở hạ tầng kinh tế?",
+                options: [
+                    "Kinh tế phát triển tự phát không ảnh hưởng đến văn hóa",
+                    "Kinh tế thuộc về cơ sở hạ tầng, là nền tảng của việc xây dựng văn hóa",
+                    "Văn hóa đi trước quyết định hoàn toàn sự ra đời của cơ cấu kinh tế",
+                    "Thủ tiêu kinh tế để giải phóng văn hóa triệt để"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh chỉ rõ kinh tế thuộc cơ sở hạ tầng, là nền tảng quyết định việc xây dựng và phát triển văn hóa[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Mối quan hệ giữa văn hóa và chính trị được Hồ Chí Minh giải quyết ra sao trong tiến trình giải phóng dân tộc?",
+                options: [
+                    "Văn hóa phát triển độc lập không cần quan tâm đến cách mạng chính trị",
+                    "Chính trị, xã hội được giải phóng thì văn hóa mới được giải phóng, mở đường cho văn hóa phát triển",
+                    "Tiến hành cách mạng văn hóa trước để lật đổ chính quyền thực dân",
+                    "Sử dụng các hủ tục cổ xưa để phục vụ đấu tranh chính trị"
+                ],
+                correctIndex: 1,
+                explanation: "Giải phóng chính trị là điều kiện tiên quyết để giải phóng sức sáng tạo văn hóa dân tộc khỏi xiềng xích thực dân[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Phương châm hành động cách mạng nổi tiếng của Hồ Chí Minh yêu cầu nghệ sĩ tham gia kháng chiến là gì?",
+                options: [
+                    "Văn nghệ sĩ phải đứng ngoài để giữ sự khách quan tuyệt đối",
+                    "Văn hóa không thể đứng ngoài mà phải ở trong kinh tế và chính trị, văn nghệ là mặt trận, nghệ sĩ là chiến sĩ",
+                    "Văn nghệ chỉ dùng để giải trí xa hoa phòng trà",
+                    "Nghệ sĩ phải phục tùng vô điều kiện các hủ tục cũ"
+                ],
+                correctIndex: 1,
+                explanation: "Người vạch rõ văn nghệ sĩ phải dấn thân vào đời sống cách mạng, dùng ngòi bút làm vũ khí sắc bén chống ngoại xâm[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Yếu tố nào sau đây thể hiện văn hóa đóng vai trò là 'động lực' của cách mạng trong tư tưởng Hồ Chí Minh?",
+                options: [
+                    "Văn hóa là mục đích tự thân, không liên quan đến hành động sản xuất",
+                    "Văn hóa soi đường cho quốc dân đi, thức tỉnh lòng yêu nước, nâng cao trí tuệ và phẩm chất đạo đức để thúc đẩy cách mạng tiến lên",
+                    "Văn hóa là công cụ cưỡng bức tư tưởng nhân dân",
+                    "Sự áp dụng máy móc các giáo điều văn hóa nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Văn hóa là động lực vì nó soi đường cho quốc dân, khơi dậy tinh thần yêu nước, nâng cao dân trí và rèn luyện đạo đức cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh chỉ rõ nền văn hóa mới nước ta xây dựng luôn bao gồm bao nhiêu tính chất cốt lõi?",
+                options: [
+                    "2 tính chất",
+                    "3 tính chất (Dân tộc, Khoa học, Đại chúng)",
+                    "4 tính chất",
+                    "5 tính chất"
+                ],
+                correctIndex: 1,
+                explanation: "Nền văn hóa mới gồm ba tính chất hữu cơ: tính dân tộc, tính khoa học và tính đại chúng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tính chất 'Dân tộc' của nền văn hóa theo tư tưởng Hồ Chí Minh được thể hiện rõ nhất ở khía cạnh nào?",
+                options: [
+                    "Sự bài ngoại tuyệt đối mọi thành tựu văn hóa nước ngoài",
+                    "Giữ gìn cốt cách dân tộc, tinh hoa, đặc tính dân tộc, làm nổi bật bản sắc riêng không bị đồng hóa",
+                    "Khôi phục nguyên vẹn các lễ nghi triều đình phong kiến",
+                    "Sự ưu tiên phát triển các bài hát cổ điển cung đình"
+                ],
+                correctIndex: 1,
+                explanation: "Tính dân tộc yêu cầu giữ vững bản sắc, cốt cách và các giá trị truyền thống tốt đẹp của dân tộc Việt Nam qua hàng ngàn năm lịch sử[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tính chất 'Khoa học' của nền văn hóa yêu cầu chúng ta phải kiên quyết đấu tranh chống lại yếu tố nào?",
+                options: [
+                    "Sự tiếp thu khoa học kỹ thuật phương Tây",
+                    "Sự mê tín dị đoan, hủ tục lạc hậu, phản khoa học, phản tiến bộ và giáo điều",
+                    "Sự tự do học tập ngôn ngữ nước ngoài",
+                    "Sự tích cực lao động sản xuất công nghiệp"
+                ],
+                correctIndex: 1,
+                explanation: "Tính khoa học đòi hỏi văn hóa phải tiên tiến, hiện đại, thuận theo trào lưu tiến hóa và quét sạch các tàn dư mê tín lạc hậu[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tính chất 'Đại chúng' của nền văn hóa theo Bác Hồ quy định đối tượng phục vụ cao nhất là ai?",
+                options: [
+                    "Tầng lớp quan lại trí thức tinh hoa",
+                    "Quần chúng nhân dân lao động rộng rãi, do nhân dân tự xây dựng nên",
+                    "Các thương gia giàu có ở đô thị lớn",
+                    "Các chuyên gia cố vấn ngoại giao nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Văn hóa đại chúng là văn hóa của nhân dân, phục vụ lợi ích, đời sống nhân dân và do chính nhân dân làm chủ thể sáng tạo[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh vạch rõ văn hóa có bao nhiêu chức năng chủ yếu đối với sự phát triển con người?",
+                options: [
+                    "2 chức năng",
+                    "3 chức năng",
+                    "4 chức năng",
+                    "5 chức năng"
+                ],
+                correctIndex: 1,
+                explanation: "Văn hóa có ba chức năng: bồi dưỡng tư tưởng đúng đắn/tình cảm cao đẹp; nâng cao dân trí; bồi dưỡng phẩm chất, phong cách hướng tới Chân - Thiện - Mỹ[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Trong chức năng thứ nhất của văn hóa, Hồ Chí Minh yêu cầu bồi dưỡng tư tưởng cốt lõi nào cho con người Việt Nam?",
+                options: [
+                    "Ý chí cam chịu sống chung với nghèo nàn lạc hậu",
+                    "Lý tưởng độc lập dân tộc gắn liền với chủ nghĩa xã hội, tinh thần vì nước quên mình",
+                    "Lối sống thực dụng cá nhân ích kỷ thích ứng nhanh",
+                    "Sự phục tùng giáo điều các lý thuyết kinh tế ngoại bang"
+                ],
+                correctIndex: 1,
+                explanation: "Bồi dưỡng lý tưởng độc lập dân tộc gắn liền với CNXH là nhiệm vụ chính trị - tư tưởng hàng đầu của chức năng văn hóa[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Bác Hồ ví von trở lực dốt nát đáng sợ ra sao khi Người nói về nhiệm vụ nâng cao dân trí ngay sau ngày độc lập?",
+                options: [
+                    "Dốt nát là một hiện tượng tự nhiên không đáng lo ngại",
+                    "Một dân tộc dốt là một dân tộc yếu, dốt thì dại, dại thì hèn",
+                    "Chỉ cần diệt giặc đói, không cần diệt giặc dốt vội vàng",
+                    "Dân trí cao sẽ làm phức tạp bộ máy hành chính nhà nước"
+                ],
+                correctIndex: 1,
+                explanation: "Bác coi giặc dốt nguy hại như giặc đói và giặc ngoại xâm; dân tộc muốn mạnh thì dân trí phải cao, phải biết chữ, biết khoa học[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Chức năng thứ ba của văn hóa hướng con người vươn tới hệ giá trị cao đẹp nào của nhân loại?",
+                options: [
+                    "Sự giàu sang, xa hoa và quyền lực độc tôn",
+                    "Hệ giá trị Chân - Thiện - Mỹ",
+                    "Triết lý cam chịu số phận và an phận thủ thường",
+                    "Các lợi ích thực dụng cá nhân trước mắt"
+                ],
+                correctIndex: 1,
+                explanation: "Văn hóa rèn giũa đạo đức, bồi dưỡng phẩm chất để định hướng con người vươn tới cái đúng (Chân), cái tốt (Thiện) và cái đẹp (Mỹ)[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Khi phân tích nền giáo dục phong kiến cũ, Hồ Chí Minh phê phán sâu sắc nhược điểm cốt tử nào của nó?",
+                options: [
+                    "Đề cao quá mức lao động chân tay",
+                    "Sự từ chương, kinh viện, xa rời thực tế, khinh lao động chân tay và bất bình đẳng",
+                    "Quá chú trọng phát triển khoa học công nghệ thực nghiệm",
+                    "Sự chủ động sáng tạo của học trò được phát huy quá mức"
+                ],
+                correctIndex: 1,
+                explanation: "Giáo dục phong kiến nặng về tầm chương trích cú, coi thường thực hành lao động chân tay, duy trì bất bình đẳng giai cấp, giới tính[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh vạch trần bản chất nham hiểm nhất của nền giáo dục thực dân Pháp ở Đông Dương là gì?",
+                options: [
+                    "Nâng cao trình độ dân trí ngang bằng mẫu quốc Pháp",
+                    "Nền giáo dục ngu dân, đồi bại, nhồi sọ, dạy sùng bái kẻ mạnh và yêu quốc gia Pháp không phải quốc gia mình",
+                    "Phát triển miễn phí trường học kỹ thuật chất lượng cao",
+                    "Khuyến khích học sinh tự do nghiên cứu lý luận vô sản"
+                ],
+                correctIndex: 1,
+                explanation: "Giáo dục thực dân thực chất là công cụ nô dịch tinh thần, triệt tiêu lòng yêu nước, đào tạo ra những công bộc trung thành phục vụ chính quyền cai trị[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh xác định mục đích học tập đích thực của người công dân cách mạng là gì?",
+                options: [
+                    "Học để có bằng cấp sang trọng để thăng quan tiến chức nhanh",
+                    "Học để làm việc, làm người, làm cán bộ, phụng sự Tổ quốc và nhân dân",
+                    "Học để tích lũy của cải tài chính cá nhân dồi dào",
+                    "Học để miễn trừ hoàn toàn các nghĩa vụ lao động chân tay"
+                ],
+                correctIndex: 1,
+                explanation: "Người căn dặn mục đích học chân chính: Học để làm việc, làm người, làm cán bộ, phục vụ đồng bào chứ không phải vì hư vinh bằng cấp[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Phương châm giáo dục hàng đầu được Hồ Chí Minh yêu cầu áp dụng nghiêm chỉnh trong nhà trường cách mạng là gì?",
+                options: [
+                    "Học lý thuyết suông không cần kiểm chứng thực tế",
+                    "Học đi đôi với hành, lý luận gắn liền với thực tiễn, học tập kết hợp lao động sản xuất",
+                    "Ủ quyền hoàn toàn công tác đào tạo cho chuyên gia nước ngoài",
+                    "Tập trung học các nghi lễ phong kiến cổ điển"
+                ],
+                correctIndex: 1,
+                explanation: "Học phải đi đôi với hành, lý luận không liên hệ thực tiễn là lý luận suông, thực hành không có lý luận là thực hành mù quáng[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trong công tác giáo dục, Hồ Chí Minh ví vai trò của lực lượng nào là giữ vị trí quyết định đến sự thành bại của sự nghiệp dạy học?",
+                options: [
+                    "Hệ thống cơ sở vật chất phòng học khang trang",
+                    "Đội ngũ thầy giáo, cô giáo (giáo viên)",
+                    "Các sách giáo khoa biên soạn từ nước ngoài",
+                    "Hệ thống phần thưởng tiền của phong phú"
+                ],
+                correctIndex: 1,
+                explanation: "Người nhấn mạnh: 'Không có thầy giáo thì không có giáo dục'; thầy cô giáo giữ vai trò quyết định chất lượng và định hướng nhân cách học sinh[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong bài thơ 'Nghe tiếng giã gạo' (Nhật ký trong tù), Bác Hồ đã gửi gắm triết lý sâu sắc nào về sự rèn luyện bản thân?",
+                options: [
+                    "Sự vất vả của công việc giã gạo thủ công nông thôn",
+                    "Gạo đem vào giã bao đau đớn / Gạo giã xong rồi trắng tựa bông / Sống ở trên đời người cũng vậy / Gian nan rèn luyện mới thành công",
+                    "Sự phong phú của các loại lúa gạo Đông Dương",
+                    "Sự cam chịu số phận đau đớn vất vả"
+                ],
+                correctIndex: 1,
+                explanation: "Bài thơ là bài học triết lý đạo đức cách mạng sâu sắc về ý chí rèn luyện vượt qua gian khổ thử thách để thành công[cite: 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Bản chất 'chiến sĩ' của người nghệ sĩ trên mặt trận văn nghệ theo Hồ Chí Minh yêu cầu họ phải làm gì?",
+                options: [
+                    "Tránh né các đề tài chiến đấu gian khổ ngoài mặt trận",
+                    "Dũng cảm dấn thân vào đời sống kháng chiến, dùng ngòi bút làm vũ khí sắc bén đập tan luận điệu kẻ thù",
+                    "Chỉ tập trung vẽ tranh phong cảnh lãng mạn xa rời thực tế",
+                    "Phục tùng các quyết định nghệ thuật thương mại"
+                ],
+                correctIndex: 1,
+                explanation: "Văn nghệ sĩ là chiến sĩ trên mặt trận văn hóa, phải gánh vác trách nhiệm tuyên truyền cổ vũ nhân dân chiến đấu giành độc lập[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Để có chất liệu sáng tác nghệ thuật sống động, có giá trị trường tồn, Hồ Chí Minh yêu cầu nghệ sĩ phải bám sát nguồn mạch nào?",
+                options: [
+                    "Các tác phẩm văn học cổ điển dịch thuật từ phương Tây",
+                    "Thực tiễn đời sống lao động sản xuất, chiến đấu và sinh hoạt anh hùng của nhân dân",
+                    "Các lý thuyết nghệ thuật trừu tượng phòng lạnh",
+                    "Sự tưởng tượng chủ quan lãng mạn cá nhân"
+                ],
+                correctIndex: 1,
+                explanation: "Nhân dân và thực tiễn cách mạng là mảnh đất màu mỡ, cung cấp nguồn chất liệu vô tận, chân thực nhất cho văn nghệ[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Tác phẩm lý luận vạch rõ phương hướng xây dựng tác phong, đạo đức, nếp sống mới mang tên 'Đời sống mới' được Bác Hồ viết vào thời điểm nào?",
+                options: [
+                    "Tháng 12 năm 1945",
+                    "Tháng 3 năm 1947",
+                    "Tháng 5 năm 1954",
+                    "Tháng 9 năm 1969"
+                ],
+                correctIndex: 1,
+                explanation: "Tháng 3-1947, giữa khói lửa chiến khu kháng chiến chống Pháp, Người viết 'Đời sống mới' nhằm cải cách thói cũ, xây dựng nếp sống văn minh lành mạnh[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Nội hàm cơ bản của cuộc vận động 'Đời sống mới' theo Hồ Chí Minh bao gồm ba yếu tố khăng khít nào?",
+                options: [
+                    "Tài chính dồi dào, vũ khí hiện đại, ngoại giao khôn khéo",
+                    "Đạo đức mới, lối sống mới và nếp sống mới (trong đó đạo đức làm gốc)",
+                    "Thủ tiêu ruộng đất, cấm đoán tôn giáo, bao cấp thương nghiệp",
+                    "Học tập ngoại ngữ, thời trang đô thị, nghi lễ phương Tây"
+                ],
+                correctIndex: 1,
+                explanation: "Đời sống mới xây dựng trên nền tảng đạo đức mới, biểu hiện qua lối sống và nếp sống văn minh của mỗi người, mỗi gia đình[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Yếu tố cốt lõi nhất được Hồ Chí Minh xác định là cái 'gốc' của 'Đời sống mới' là gì?",
+                options: [
+                    "Việc tích lũy của cải vật chất giàu có",
+                    "Thực hành đạo đức mới: Cần, Kiệm, Liêm, Chính",
+                    "Sự thông thuộc các ngoại ngữ phương Tây",
+                    "Việc áp dụng các kỹ thuật sản xuất hiện đại"
+                ],
+                correctIndex: 1,
+                explanation: "Cần Kiệm Liêm Chính là bốn đức tính nền tảng của đạo đức mới, không giữ vững bốn đức này thì không thể xây dựng đời sống mới[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo Hồ Chí Minh, phong cách 'Lối sống mới' yêu cầu mỗi người và mỗi tập thể phải sửa đổi tốt 5 cách sinh hoạt đời thường nào?",
+                options: [
+                    "Cách nói, cách viết, cách nghĩ, cách làm, cách đi học",
+                    "Cách ăn, cách ở, cách mặc, cách đi lại, cách làm việc",
+                    "Cách tiêu tiền, cách ăn chơi, cách kết bạn, cách ngủ nghỉ, cách du lịch",
+                    "Cách tổ chức họp hành, cách phê bình, cách báo cáo, cách thi cử, cách nhận thưởng"
+                ],
+                correctIndex: 1,
+                explanation: "Năm cách: ăn, ở, mặc, đi lại, làm việc phản ánh trực tiếp văn hóa, lối sống lành mạnh, khoa học của mỗi công dân cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh khuyên chúng ta ứng xử ra sao đối với các hủ tục, phong tục cũ lạc hậu khi xây dựng 'Nếp sống mới'?",
+                options: [
+                    "Bỏ qua không cần can thiệp cải cách",
+                    "Cái gì cũ mà xấu thì phải bỏ dứt khoát; cái gì cũ mà không xấu nhưng phiền phức thì phải sửa lại cho hợp lý; cái gì cũ mà tốt thì phải phát triển thêm",
+                    "Thủ tiêu toàn bộ mọi giá trị truyền thống không phân biệt tốt xấu",
+                    "Giữ nguyên vẹn tất cả để bảo tồn nguyên bản lịch sử"
+                ],
+                correctIndex: 1,
+                explanation: "Ứng xử khoa học, biện chứng: gạt bỏ hủ tục lạc hậu hại nước hại dân, giữ gìn và phát huy những thuần phong mỹ tục tốt đẹp[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Yếu tố nào được Hồ Chí Minh khẳng định giữ vai trò là cái 'gốc', là 'nguồn' của người cách mạng?",
+                options: [
+                    "Sức mạnh thể chất dồi dào",
+                    "Đạo đức cách mạng",
+                    "Trình độ học vấn uyên bác",
+                    "Nguồn tài chính dồi dào"
+                ],
+                correctIndex: 1,
+                explanation: "Người viết: 'Người cách mạng phải có đạo đức cách mạng làm nền tảng, mới hoàn thành được nhiệm vụ cách mạng vẻ vang. Sông có nguồn mới có nước... Chồi có gốc mới có cây... '[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tại sao Hồ Chí Minh cho rằng đạo đức cách mạng lại là nhân tố tạo nên sức hấp dẫn to lớn của chủ nghĩa xã hội?",
+                options: [
+                    "Vì đạo đức giúp chủ nghĩa xã hội có nhiều tiền của hơn tư bản",
+                    "Vì những giá trị đạo đức nhân văn cao đẹp, sự gương mẫu trong sạch, vị tha của người cộng sản tạo dựng lòng tin yêu, kính phục tự nguyện ở nhân dân thế giới",
+                    "Vì đạo đức được quy định bằng các sắc lệnh bắt buộc nể phục",
+                    "Để nhân dân tự do lách luật khi cần thiết"
+                ],
+                correctIndex: 1,
+                explanation: "Sức mạnh thu phục nhân tâm của chủ nghĩa xã hội trước hết nằm ở tính nhân đạo, công bằng, sự gương mẫu liêm chính của cán bộ đảng viên[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Chuẩn mực đạo đức cách mạng hàng đầu, bao trùm và chi phối toàn bộ hệ thống chuẩn mực đạo đức Hồ Chí Minh là gì?",
+                options: [
+                    "Cần, Kiệm, Liêm, Chính, Chí công vô tư",
+                    "Trung với nước, hiếu với dân",
+                    "Thương yêu con người, sống có tình nghĩa",
+                    "Có tinh thần quốc tế trong sáng"
+                ],
+                correctIndex: 1,
+                explanation: "Trung với nước, hiếu với dân là bổn phận chính trị - đạo đức tối cao của người cách mạng đối với vận mệnh Tổ quốc và nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Nội dung chữ 'Trung' trong đạo đức cách mạng của Hồ Chí Minh có sự phát triển vượt bậc gì về chất so với Nho giáo cũ?",
+                options: [
+                    "Trung thành tuyệt đối với cá nhân nhà vua và triều đình phong kiến",
+                    "Trung thành với sự nghiệp xây dựng, bảo vệ đất nước, đặt lợi ích Tổ quốc, của Đảng lên trên hết, trước hết",
+                    "Sự thỏa hiệp lợi ích với thực dân Pháp để nhận quy chế tự trị",
+                    "Sự đóng cửa tuyệt đối tự cung tự cấp quốc gia"
+                ],
+                correctIndex: 1,
+                explanation: "Nho giáo cũ yêu cầu 'trung quân' (trung với vua); Hồ Chí Minh chuyển thành 'trung với nước' - trung thành với lý tưởng cách mạng, Tổ quốc và nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Nội dung chữ 'Hiếu' trong đạo đức cách mạng được Hồ Chí Minh nâng tầm ra sao đối với xã hội mới?",
+                options: [
+                    "Chỉ giới hạn trong bổn phận con cái hiếu kính với cha mẹ trong gia đình",
+                    "Hiếu với dân: tin dân, học dân, lắng nghe dân, gắn bó máu thịt với nhân dân và chăm lo cuộc sống ấm no cho dân",
+                    "Sự phục tùng giáo điều các chỉ thị của người đứng đầu",
+                    "Ý chí tự tư tự lợi cá nhân ích kỷ"
+                ],
+                correctIndex: 1,
+                explanation: "Người nâng chữ hiếu gia đình thành hiếu với dân - lấy dân làm gốc, hết lòng hết sức phụng sự nhân dân, chăm lo đời sống nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Đức tính 'Cần' theo tư tưởng Hồ Chí Minh yêu cầu người cán bộ công vụ phải làm việc với tác phong nào?",
+                options: [
+                    "Lao động chăm chỉ nhưng giáo điều máy móc",
+                    "Lao động cần cù, siêng năng, có kế hoạch, sáng tạo, hiệu quả cao, tự lực cánh sinh",
+                    "Chờ đợi các mệnh lệnh hành chính rập khuôn từ cấp trên",
+                    "Lao động hời hợt, tranh thủ thời gian công quỹ làm việc tư"
+                ],
+                correctIndex: 1,
+                explanation: "Cần không phải là làm việc tự phát mà phải siêng năng, có kế hoạch, sáng tạo, năng suất cao và tự lực tự cường[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Đức tính 'Kiệm' theo Bác Hồ yêu cầu chúng ta phải quản lý và sử dụng của cải công quỹ ra sao?",
+                options: [
+                    "Cắt giảm tuyệt đối các khoản chi phí cho giáo dục dân trí",
+                    "Tiết kiệm thời gian, sức lao động và tiền của công, không xa xỉ, hoang phí bừa bãi",
+                    "Hạn chế tối đa các hoạt động cứu tế xã hội",
+                    "Tích lũy tiền của riêng để mua sắm bất động sản tư nhân"
+                ],
+                correctIndex: 1,
+                explanation: "Tiết kiệm là của cải của dân đóng góp, lãng phí cũng là ăn cắp của dân, do đó cán bộ phải mẫu mực thực hành tiết kiệm công quỹ[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Đức tính 'Liêm' trong đạo đức công vụ đòi hỏi người cán bộ cách mạng phải giữ thái độ tối cao nào?",
+                options: [
+                    "Thái độ thực dụng tranh thủ thời cơ chính trị kiếm lời",
+                    "Trong sạch, không tham lam tiền tài, địa vị, danh vọng, không tư lợi công quỹ dù một xu",
+                    "Sự thỏa hiệp lợi ích với các tập đoàn thương mại lớn",
+                    "Sự giữ bí mật tuyệt đối các hoạt động kinh tế công"
+                ],
+                correctIndex: 1,
+                explanation: "Liêm khiết là cái gốc của liêm chính; cán bộ giữ liêm thì lòng dạ mới trong sáng, công minh, không bị cám dỗ vật chất danh vọng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Người có đức tính 'Chính' theo tư tưởng Hồ Chí Minh là người như thế nào trong thực thi nhiệm vụ?",
+                options: [
+                    "Biết lách luật khôn khéo để đạt lợi ích cá nhân nhanh",
+                    "Thẳng thắn, đứng đắn, việc thiện nhỏ mấy cũng làm, việc ác nhỏ mấy cũng tránh, nói đi đôi với làm",
+                    "Chỉ biết phục tùng mù quáng ý chí cấp trên bất chấp công lý",
+                    "Giữ thái độ dĩ hòa vi quý, bao che khuyết điểm cho cấp dưới"
+                ],
+                correctIndex: 1,
+                explanation: "Chính nghĩa là thẳng thắn, công tâm, quang minh chính đại, thượng tôn pháp luật và công lý, nói đi đôi với hành động thiện[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Nội dung đức tính 'Chí công vô tư' đòi hỏi người đảng viên cầm quyền phải giải quyết quan hệ lợi ích cá nhân thế nào?",
+                options: [
+                    "Thủ tiêu hoàn toàn mọi quyền lợi, nhu cầu cá nhân chính đáng",
+                    "Đem lòng chí công, đặt lợi ích Tổ quốc, nhân dân lên trên hết, trước hết, lo trước nỗi lo của dân, vui sau niềm vui của dân",
+                    "Ưu tiên giải quyết quyền lợi cho dòng họ thân tộc trước",
+                    "Tự do mưu cầu danh vọng cá nhân bất chấp lợi ích tập thể"
+                ],
+                correctIndex: 1,
+                explanation: "Chí công vô tư không phải là phủ nhận cá nhân, mà là đặt việc công lên trên việc tư, hiến dâng tận tụy phục vụ lợi ích chung của nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Nguyên tắc xây dựng đạo đức mới hàng đầu, quyết định uy tín của Đảng cầm quyền trước nhân dân là nguyên tắc nào?",
+                options: [
+                    "Xây đi đôi với chống",
+                    "Nói đi đôi với làm, phải nêu gương về đạo đức",
+                    "Phải tu dưỡng đạo đức suốt đời",
+                    "Chí công vô tư hoàn toàn"
+                ],
+                correctIndex: 1,
+                explanation: "Nói đi đôi với làm là thước đo chân thực nhất lột tả đạo đức cán bộ; nói hay làm dở là đạo đức giả, phá hỏng lòng tin ở dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh phê phán gay gắt thói xấu đạo đức giả nào thường thấy ở giai cấp bóc lột thống trị cũ?",
+                options: [
+                    "Thói quen làm việc siêng năng cần cù",
+                    "Thuyết lý 'Hãy làm theo tôi nói, đừng làm theo tôi làm'",
+                    "Tác phong sâu sát kiểm tra đời sống nhân dân",
+                    "Ý thức tuân thủ pháp luật nhà nước nghiêm chỉnh"
+                ],
+                correctIndex: 1,
+                explanation: "Nói một đường làm một nẻo, răn đe người khác tiết kiệm nhưng bản thân xa hoa hủ hóa là thói đạo đức giả tồi tệ[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Trong nguyên tắc 'Xây đi đôi với chống', Hồ Chí Minh chỉ rõ 'Chống' tệ nạn, trở lực nguy hại hàng đầu nào?",
+                options: [
+                    "Chống lại các tiến bộ khoa học kỹ thuật hiện đại",
+                    "Chống chủ nghĩa cá nhân, chống tham ô, lãng phí, bệnh quan liêu và thói hủ bại",
+                    "Chống lại các quan hệ kinh tế đối ngoại rộng mở",
+                    "Chống lại việc tự học tập nâng cao trình độ chuyên môn"
+                ],
+                correctIndex: 1,
+                explanation: "Chủ nghĩa cá nhân là vi trùng cực độc sinh ra trăm bệnh hư hỏng cán bộ; phải quét sạch nó để xây đạo đức mới trong sáng[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Quan điểm của Hồ Chí Minh ví việc rèn luyện đạo đức cách mạng của mỗi người giống như quy luật tự nhiên nào?",
+                options: [
+                    "Sự tuần hoàn của dòng chảy sông suối nông thôn",
+                    "Đạo đức cách mạng không phải trên trời sa xuống. Nó do đấu tranh rèn luyện bền bỉ hàng ngày mà phát triển, cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong",
+                    "Sự thay đổi của thời tiết khí hậu bốn mùa",
+                    "Sự tích lũy tài nguyên khoáng sản tự nhiên lòng đất"
+                ],
+                correctIndex: 1,
+                explanation: "Đạo đức cách mạng đòi hỏi tu dưỡng thường xuyên, bền bỉ suốt đời, không thể chủ quan tự mãn ngưng rèn luyện[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Khi nói chuyện với sinh viên Việt Nam tại Đại hội lần thứ hai (tháng 5-1958), Bác Hồ đã chỉ ra bao nhiêu phẩm chất 'Cái yêu' đích thực cần rèn luyện?",
+                options: [
+                    "4 cái yêu",
+                    "5 cái yêu",
+                    "6 cái yêu (Tổ quốc, Nhân dân, CNXH, Lao động, Khoa học và kỷ luật)",
+                    "7 cái yêu"
+                ],
+                correctIndex: 2,
+                explanation: "Sáu cái yêu gồm: Yêu Tổ quốc, Yêu Nhân dân, Yêu Chủ nghĩa xã hội, Yêu Lao động, Yêu Khoa học và kỷ luật[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Trong 'Sáu cái yêu' dành cho sinh viên, Hồ Chí Minh định nghĩa 'Yêu Tổ quốc' bằng hành động thực tế nào?",
+                options: [
+                    "Chỉ cần viết các bài thơ ca ngợi chung chung",
+                    "Phải ra sức lao động, tăng gia sản xuất, thực hành tiết kiệm để làm cho Tổ quốc giàu mạnh",
+                    "Mơ mộng tìm kiếm cơ hội định cư tự do nước ngoài",
+                    "Phục tùng mù quáng các phong tục lạc hậu cũ"
+                ],
+                correctIndex: 1,
+                explanation: "Yêu nước yêu Tổ quốc phải biến thành hành động sản xuất cần cù, tiết kiệm của cải công sức để kiến thiết nước nhà mạnh giàu[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh khuyên sinh viên khi học tập lý luận chính trị và chuyên môn nghiệp vụ trong nhà trường cần chống căn bệnh kiêu ngạo nào?",
+                options: [
+                    "Bệnh lười biếng đọc sách dịch thuật",
+                    "Bệnh kiêu ngạo giả dối, khoe khoang, khinh rẻ lao động chân tay, xem nhẹ nông dân",
+                    "Ý thức tự lực tự cường sản xuất cơ sở",
+                    "Tinh thần dấn thân chiến đấu biên giới miền núi"
+                ],
+                correctIndex: 1,
+                explanation: "Học thức cao mà kiêu ngạo khinh dân, xem thường lao động chân tay là thói học phiến diện, hỏng đạo đức cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Bức thư tháng 10-1945 gửi Ủy ban nhân dân các cấp răn đe cán bộ chính quyền bằng việc khẳng định quan hệ công bộc thế nào?",
+                options: [
+                    "Chúng ta là quan cách mạng, đứng trên đầu nhân dân trị vì",
+                    "Chính phủ là công bộc của dân. Việc gì có lợi cho dân, ta phải hết sức làm. Việc gì có hại cho dân, ta phải hết sức tránh",
+                    "Cán bộ được phép miễn trừ hoàn toàn các nghĩa vụ pháp luật",
+                    "Nhân dân có nghĩa vụ đóng thuế tuyệt đối không được phê bình chính quyền"
+                ],
+                correctIndex: 1,
+                explanation: "Bức thư lịch sử vạch rõ chức trách cán bộ là đầy tớ phục vụ nhân dân, phê phán các thói hống hách cửa quyền xa dân[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Tư tưởng nhân văn của Hồ Chí Minh coi con người là chỉnh thể thống nhất biện chứng giữa những yếu tố nào?",
+                options: [
+                    "Sự thống nhất giữa linh hồn bất tử và thể xác vật chất",
+                    "Sự thống nhất giữa mặt sinh học và mặt xã hội, tâm lực, thể lực và các hoạt động thực tiễn của con người",
+                    "Mâu thuẫn không thể điều hòa giữa giai cấp giàu và nghèo",
+                    "Sự phụ thuộc tuyệt đối vào số mệnh thiên định"
+                ],
+                correctIndex: 1,
+                explanation: "Con người sinh động, thực tế có nhu cầu vật chất sinh học và các quan hệ xã hội, tinh thần phong phú trong thực tiễn cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Bản chất con người theo Hồ Chí Minh (kế thừa khoa học từ triết học Mác) được xác định bởi nhân tố chủ đạo nào?",
+                options: [
+                    "Nguồn gốc gia thế phong kiến quý tộc",
+                    "Tổng hòa các quan hệ xã hội đa dạng, phong phú (gia đình, bạn bè, đồng bào, nhân loại)",
+                    "Mức độ tích lũy của cải bất động sản tư nhân",
+                    "Sự định đoạt sẵn của các giáo lý tôn giáo"
+                ],
+                correctIndex: 1,
+                explanation: "Bản chất con người là tổng hòa quan hệ xã hội; qua thực tiễn quan hệ đó mà hình thành tư cách đạo đức nhân cách[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Hồ Chí Minh chỉ rõ, con người trong xã hội mới vừa giữ vai trò là 'Mục tiêu', vừa giữ vai trò là 'Động lực' có ý nghĩa học thuật gì?",
+                options: [
+                    "Con người là công cụ phục vụ vô điều kiện cho ý chí của một nhóm tinh hoa",
+                    "Con người là đích đến cuối cùng giải phóng ấm no tự do (Mục tiêu); đồng thời sức sáng tạo, lòng yêu nước của con người là nguồn lực quyết định thắng lợi cách mạng (Động lực)",
+                    "Hai vai trò này loại trừ nhau hoàn toàn",
+                    "Sự phụ thuộc hoàn toàn vào nguồn viện trợ tài chính nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Mục đích cách mạng là vì hạnh phúc con người, và muốn cách mạng thành công phải phát huy tối đa sức mạnh, trí tuệ con người[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Luận điểm bất hủ của Bác Hồ về chiến lược đào tạo thế hệ trẻ: 'Vì lợi ích mười năm thì phải trồng cây...' thế nào?",
+                options: [
+                    "... vì lợi ích mười lăm năm phải khai thác tài nguyên thiên nhiên",
+                    "... vì lợi ích trăm năm thì phải trồng người",
+                    "... vì lợi ích một đời người phải tích lũy tiền tài dồi dào",
+                    "... vì lợi ích ngàn năm phải giữ gìn các lễ nghi triều đình phong kiến"
+                ],
+                correctIndex: 1,
+                explanation: "Người khẳng định chiến lược 'trồng người' (giáo dục) là sự nghiệp lâu dài, vĩ đại quyết định tương lai sinh mệnh của cả dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Để thực hiện chiến lược 'Trồng người' thành công, Hồ Chí Minh yêu cầu nội dung giáo dục đào tạo trong trường học phải đáp ứng tiêu chí nào?",
+                options: [
+                    "Chỉ cần đào tạo chuyên môn kỹ thuật rập khuôn nước ngoài",
+                    "Nội dung toàn diện: Đức, Trí, Thể, Mỹ; trong đó đạo đức, lý tưởng cách mạng giữ vai trò làm nền tảng",
+                    "Ưu tiên giáo dục lý thuyết suông xa rời thực tiễn lao động",
+                    "Thủ tiêu hoàn toàn vai trò của các tổ chức đoàn thể thanh niên"
+                ],
+                correctIndex: 1,
+                explanation: "Đào tạo con người mới phải phát triển toàn diện đức trí thể mỹ, vừa có chuyên môn giỏi (Tài) vừa có đạo đức cách mạng (Đức)[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sự kết hợp hài hòa giữa 'Đức' và 'Tài' trong chiến lược con người của Hồ Chí Minh vạch rõ mối quan hệ biện chứng nào?",
+                options: [
+                    "Tài quyết định hoàn toàn, Đức chỉ là hình thức phụ trợ",
+                    "Đức là cái gốc, cái nền tảng vững chắc để định hướng cho Tài năng phát triển đúng đắn, phụng sự nhân dân tốt nhất",
+                    "Đức và Tài cản trở động lực phát triển lẫn nhau",
+                    "Đức và Tài hoàn toàn độc lập không liên hệ biện chứng"
+                ],
+                correctIndex: 1,
+                explanation: "Có tài mà không có đức là vô dụng, có đức mà không có tài thì làm việc gì cũng khó; Đức và Tài bổ sung hoàn hảo tạo nên hiền tài[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh yêu cầu người nghệ sĩ khi mô tả hiện thực cuộc sống cách mạng phải tránh xu hướng độc hại nào?",
+                options: [
+                    "Xu hướng mô tả chân thực đời sống người lao động",
+                    "Xu hướng tô hồng quá mức hoặc bôi đen hiện thực, bệnh công thức gò ép giáo điều",
+                    "Tinh thần học hỏi sáng tạo văn nghệ dân gian cổ",
+                    "Ý thức sâu sát thực tế kháng chiến quân sự"
+                ],
+                correctIndex: 1,
+                explanation: "Nghệ thuật phải chân thật, phản ánh đúng hiện thực sinh động anh hùng của nhân dân, tránh thói công thức minh họa giáo điều[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Khái niệm 'Văn hóa đời sống' thực chất được cấu thành từ những yếu tố cốt lõi nào theo giáo trình?",
+                options: [
+                    "Sức khỏe tốt, tiền của nhiều, học vấn cao",
+                    "Đạo đức mới, lối sống mới, nếp sống mới",
+                    "Kinh tế quốc doanh mạnh, hợp tác xã lớn, nông nghiệp giỏi",
+                    "Hệ thống mật vụ tốt, pháp luật khắt khe, quân đội đông"
+                ],
+                correctIndex: 1,
+                explanation: "Đạo đức mới định hướng tâm hồn, lối sống mới cải cách hành vi ăn mặc ở đi lại, nếp sống mới giữ gìn văn hóa lành mạnh[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh phê phán nghiêm khắc căn bệnh 'mê tín dị đoan' trong đời sống văn hóa xã hội cũ vì tác hại nghiêm trọng nào?",
+                options: [
+                    "Làm giảm doanh thu thuế đất đai nông thôn",
+                    "Làm mụ mị đầu óc, xói mòn sức sáng tạo, gây tốn kém tiền của công sức và kìm hãm sự phát triển lành mạnh của nhân dân",
+                    "Khiến cho thanh niên hăng hái tham gia sản xuất hơn",
+                    "Phá vỡ khối liên minh quân sự đối ngoại"
+                ],
+                correctIndex: 1,
+                explanation: "Mê tín dị đoan là trở lực văn hóa tinh thần nguy hiểm trói buộc trí tuệ con người vào những thế lực thần bí hư ảo lạc hậu[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Để bồi dưỡng lý tưởng cách mạng cho thế hệ trẻ học đường, môn học nào giữ vai trò chủ đạo định hướng tư tưởng chính trị?",
+                options: [
+                    "Môn Kỹ thuật cơ khí chế tạo",
+                    "Các môn khoa học Lý luận chính trị (Chủ nghĩa Mác-Lênin, Tư tưởng Hồ Chí Minh)",
+                    "Môn Ngoại ngữ thương mại quốc tế",
+                    "Môn Quản trị kinh doanh tư bản tự do"
+                ],
+                correctIndex: 1,
+                explanation: "Lý luận chính trị trang bị thế giới quan và phương pháp luận khoa học giúp sinh viên kiên định lý tưởng, bản lĩnh chính trị vững vàng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Học thuyết 'Trồng người' của Hồ Chí Minh là sự kế thừa xuất sắc, khoa học các giá trị nhân văn nào thế giới?",
+                options: [
+                    "Chủ nghĩa thực dụng chính trị phương Tây",
+                    "Học thuyết con người của chủ nghĩa Mác-Lênin kết hợp với bản sắc văn hóa Việt Nam và tinh hoa giáo dục nhân loại",
+                    "Triết lý tam cương ngũ thường lỗi thời",
+                    "Lý thuyết tam quyền phân lập tư sản hành chính"
+                ],
+                correctIndex: 1,
+                explanation: "Bác nâng tầm lý luận vô sản về giải phóng và phát triển con người hòa quyện với truyền thống nhân nghĩa, hiếu học ngàn năm dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Giá trị lý luận trường tồn nhất của tư tưởng Hồ Chí Minh về văn hóa, đạo đức đối với công cuộc đổi mới xây dựng đất nước ta ngày nay là gì?",
+                options: [
+                    "Là công cụ để rập khuôn các mô hình lối sống phương Tây",
+                    "Là nền tảng tư tưởng, cơ sở khoa học định hướng xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc, phát triển con người toàn diện và ngăn chặn suy thoái đạo đức",
+                    "Là tư liệu lịch sử tham khảo không còn giá trị thực tế đời sống",
+                    "Là cơ sở lý luận để khôi phục các quyền lực hoàng gia phong kiến cũ"
+                ],
+                correctIndex: 1,
+                explanation: "Di sản văn hóa đạo đức của Người là kim chỉ nam, nguồn động lực tinh thần vĩ đại soi đường cho dân tộc ta vững bước hội nhập, phát triển phồn vinh[cite: 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh ký Sắc lệnh thành lập Ủy ban Trung ương vận động đời sống mới vào mốc thời gian nào?",
+                options: [
+                    "Tháng 9 năm 1945",
+                    "Tháng 1 năm 1946",
+                    "Tháng 4 năm 1946",
+                    "Tháng 3 năm 1947"
+                ],
+                correctIndex: 2,
+                explanation: "Tháng 4.1946, Người ký sắc lệnh thành lập Ủy ban Trung ương vận động đời sống mới để thúc đẩy nếp sống văn minh trên phạm vi cả nước[cite: 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Luận điểm của Bác: 'Đạo đức cách mạng không phải từ trên trời sa xuống...' nhấn mạnh ý chí và quy luật rèn luyện nào của con người?",
+                options: [
+                    "Đạo đức là bản tính tự nhiên, không cần rèn luyện thường xuyên",
+                    "Nó do đấu tranh, tu dưỡng và rèn luyện bền bỉ hàng ngày mà phát triển và củng cố",
+                    "Đạo đức chỉ hình thành khi con người đã về già và rời xa công vụ",
+                    "Sự tuân thủ mù quáng vô điều kiện theo các giáo điều trung cổ"
+                ],
+                correctIndex: 1,
+                explanation: "Người nhấn mạnh: Đạo đức cách mạng do đấu tranh rèn luyện bền bỉ hàng ngày mà phát triển, củng cố, như ngọc càng mài càng sáng, vàng càng luyện càng trong[cite: 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Sắc lệnh quy định hình phạt từ 5 năm đến 20 năm tù khổ sai đối với tội đưa và nhận hối lộ được Hồ Chí Minh ký vào ngày nào?",
+                options: [
+                    "Ngày 2 tháng 9 năm 1945",
+                    "Ngày 26 tháng 1 năm 1946",
+                    "Ngày 27 tháng 11 năm 1946",
+                    "Ngày 19 tháng 12 năm 1946"
+                ],
+                correctIndex: 2,
+                explanation: "Ngày 27-11-1946, Người ký Sắc lệnh ấn định hình phạt cực kỳ nghiêm khắc đối với tội đưa và nhận hối lộ để làm trong sạch bộ máy nhà nước[cite: 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Hồ Chí Minh chỉ ra quan điểm: 'Một trăm bài diễn thuyết hay không bằng một tấm gương sống' nhằm làm rõ ý nghĩa của việc gì?",
+                options: [
+                    "Tầm quan trọng của công tác lý luận chung chung",
+                    "Vai trò quyết định của việc nói đi đôi với làm và tự mình nêu gương đạo đức trước quần chúng",
+                    "Ý thức tuân thủ pháp luật một cách thụ động",
+                    "Sự thỏa hiệp lợi ích giữa các tầng lớp xã hội cũ"
+                ],
+                correctIndex: 1,
+                explanation: "Để lãnh đạo nhân dân, người cán bộ, đảng viên phải gieo một tấm gương đạo đức sống để nhân dân soi vào và tự giác làm theo[cite: 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Triết lý nhân văn cộng sản của Hồ Chí Minh khác biệt nhất với chủ nghĩa nhân văn tư sản ở điểm cốt lõi nào?",
+                options: [
+                    "Ở việc đề cao tuyệt đối quyền tư hữu của giới thương gia",
+                    "Hướng tới giải phóng con người thoát khỏi mọi áp bức bóc lột giai cấp và giải phóng dân tộc thực sự, gắn chặt với thực tiễn cách mạng",
+                    "Sự dung hòa, thỏa hiệp các mâu thuẫn giai cấp một cách hình thức",
+                    "Sự sùng bái tuyệt đối các lý thuyết tôn giáo phương Đông"
+                ],
+                correctIndex: 1,
+                explanation: "Chủ nghĩa nhân văn của Người là nhân văn hành động, giải phóng triệt để con người, giai cấp và dân tộc gắn liền với mục tiêu xây dựng xã hội mới[cite: 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền từ thích hợp: 'Thanh niên phải có đức, có tài. Có tài mà không có đức ví như một anh làm kinh tế giỏi nhưng lại đi đến............ thì chẳng những không làm được gì ích lợi cho xã hội, mà còn làm hại...'",
+                options: [
+                    "đầu cơ tích trữ",
+                    "phá sản tài chính",
+                    "thụt két",
+                    "thăng quan phát tài"
+                ],
+                correctIndex: 2,
+                explanation: "Nguyên văn lời Bác nói với sinh viên: 'Có tài mà không có đức ví như một anh làm kinh tế giỏi nhưng lại đi đến thụt két thì chẳng những không làm được gì...'[cite: 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Bác Hồ khuyên học sinh, sinh viên học tập lý luận chính trị và chuyên môn nghiệp vụ trong nhà trường cần chống căn bệnh kiêu ngạo nào?",
+                options: [
+                    "Bệnh lười biếng đọc sách dịch thuật",
+                    "Bệnh kiêu ngạo giả dối, khoe khoang, khinh rẻ lao động chân tay, xem nhẹ nông dân",
+                    "Ý thức tự lực tự cường sản xuất cơ sở",
+                    "Tinh thần dấn thân chiến đấu biên giới miền núi"
+                ],
+                correctIndex: 1,
+                explanation: "Học thức cao mà kiêu ngạo khinh dân, xem thường lao động chân tay là thói học phiến diện, hỏng đạo đức cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Khi đánh giá về sự phát triển của Phật giáo Thiền tông ở Việt Nam (đặc biệt là Thiền phái Trúc Lâm), Hồ Chí Minh đề cao giá trị nào của nó?",
+                options: [
+                    "Sự bế quan tỏa cảng và thủ tiêu mọi cuộc đấu tranh giai cấp",
+                    "Tinh thần nhập thế cứu đời, sống gắn bó và đồng hành cùng vận mệnh đất nước chống ngoại xâm",
+                    "Lối sống khổ hạnh cực đoan rời xa thực tế đời sống",
+                    "Sự tôn sùng tuyệt đối các nghi lễ phong kiến triều đình"
+                ],
+                correctIndex: 1,
+                explanation: "Phật giáo Việt Nam có truyền thống nhập thế yêu nước rất sâu sắc, đồng hành cùng nhân dân qua các thời kỳ chống ngoại xâm lịch sử[cite: 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong bài viết 'Đạo đức cách mạng' (1958), Hồ Chí Minh khẳng định kẻ thù hung ác nhất, nguy hiểm nhất của chủ nghĩa xã hội là gì?",
+                options: [
+                    "Các tập đoàn thực dân đế quốc phương Tây",
+                    "Chủ nghĩa cá nhân",
+                    "Thói quen lạc hậu của nền kinh tế tiểu nông",
+                    "Sự thiếu thốn về trang thiết bị công nghệ nặng"
+                ],
+                correctIndex: 1,
+                explanation: "Người viết: 'Chủ nghĩa cá nhân là một thứ vi trùng rất độc, đẻ ra trăm thứ bệnh nguy hiểm... Nó là kẻ thù hung ác của chủ nghĩa xã hội'[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Vai trò 'Người lãnh đạo' và 'Người đầy tớ' của cán bộ cầm quyền trong tư tưởng Hồ Chí Minh có mối quan hệ biện chứng thế nào?",
+                options: [
+                    "Là hai vai trò loại trừ, mâu thuẫn hoàn toàn với nhau",
+                    "Thống nhất biện chứng, cùng chung một mục đích cao cả là phụng sự Tổ quốc, phục vụ nhân dân",
+                    "Vai trò đầy tớ chỉ mang tính hình thức chuyển tiếp tạm thời",
+                    "Vai trò lãnh đạo cho phép cán bộ được hưởng đặc quyền đặc lợi"
+                ],
+                correctIndex: 1,
+                explanation: "Lãnh đạo bằng sự sáng suốt, dẫn đường; đầy tớ bằng tinh thần tận tụy phục vụ, chí công vô tư, tạo thành hai mặt thống nhất của cán bộ[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Tác phẩm lý luận đấu tranh sắc bén mang tên 'Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân' của Hồ Chí Minh được công bố vào thời điểm nào?",
+                options: [
+                    "Ngày 19 tháng 5 năm 1969",
+                    "Ngày 3 tháng 2 năm 1969 (kỷ niệm 39 năm ngày thành lập Đảng)",
+                    "Tháng 10 năm 1947",
+                    "Tháng 12 năm 1920"
+                ],
+                correctIndex: 1,
+                explanation: "Tác phẩm vĩ đại này được đăng trên báo Nhân Dân đúng ngày kỷ niệm thành lập Đảng (3-2-1969) nhằm chỉnh đốn đạo đức cán bộ[cite: 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống lời Bác Hồ căn dặn cán bộ Tư pháp: 'Đối với người, ai làm gì lợi cho nhân dân, cho Tổ quốc ta đều là........... Bất kỳ ai làm điều gì có hại cho nhân dân, cho tổ quốc và đồng bào đều là............'",
+                options: [
+                    "bạn / thù",
+                    "chiến hữu / đối thủ",
+                    "công bộc / quan cách mạng",
+                    "đồng bào / kẻ phản nghịch"
+                ],
+                correctIndex: 0,
+                explanation: "Người vạch rõ lăng kính phân biệt bạn và thù một cách chân thực, biện chứng: ai lợi cho dân cho nước đều là bạn, hại cho dân nước đều là thù[cite: 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Theo giáo trình, sự kết hợp giữa 'Hồng' và 'Chuyên' trong đào tạo thế hệ trẻ thực chất là giải quyết mối quan hệ nào?",
+                options: [
+                    "Mối quan hệ giữa thể chất và tinh thần nghệ thuật",
+                    "Mối quan hệ hữu cơ giữa phẩm chất đạo đức, bản lĩnh chính trị (Hồng) và trình độ chuyên môn, năng lực khoa học nghiệp vụ (Chuyên)",
+                    "Sự mâu thuẫn đối kháng giữa lý thuyết chính trị và thực hành công nghệ",
+                    "Sự ưu tiên tuyệt đối cho các môn khoa học kỹ thuật thực nghiệm"
+                ],
+                correctIndex: 1,
+                explanation: "Đào tạo thế hệ trẻ vừa hồng vừa chuyên nghĩa là rèn luyện con người phát triển toàn diện, vừa có đức độ cách mạng vừa có tài năng xây dựng đất nước[cite: 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh chỉ rõ, để quét sạch chủ nghĩa cá nhân thì người cán bộ, đảng viên phải thực hiện tốt phương pháp đấu tranh cốt lõi nào?",
+                options: [
+                    "Thực hành pháp luật một cách thụ động theo mệnh lệnh hành chính",
+                    "Thực hiện thường xuyên và nghiêm túc tự phê bình và phê bình sâu sắc từ trong Đảng ra quần chúng",
+                    "Sa thải bớt các đảng viên có nguồn gốc nông dân",
+                    "Tập trung đầu tư tài chính xây dựng công nghiệp hóa nặng"
+                ],
+                correctIndex: 1,
+                explanation: "Tự phê bình và phê bình là vũ khí sắc bén nhất của người cộng sản để tẩy sạch bụi bẩn của chủ nghĩa cá nhân, giữ gìn sự trong sạch[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Điền từ thích hợp vào lời Bác viết về sức mạnh của đạo đức: 'Người mà tự kiêu, tự mãn cũng như cái chén, cái đĩa cạn... Sông to, biển rộng thì bao nhiêu nước cũng chứa được, vì............................'",
+                options: [
+                    "nó có hệ thống đê điều kiên cố",
+                    "nó ở vị trí địa hình thấp kém nhất",
+                    "độ lượng nó rộng và sâu",
+                    "nó có sự điều phối của triều cường tự nhiên"
+                ],
+                correctIndex: 2,
+                explanation: "Nguyên văn: 'Sông to, biển rộng thì bao nhiêu nước cũng chứa được, vì độ lượng nó rộng và sâu...' Khuyên cán bộ phải có lòng bao dung, không kiêu ngạo tự mãn[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hội đồng Hòa bình thế giới tôn vinh Hồ Chí Minh là người chiến sĩ đấu tranh không mệt mỏi cho một thế giới mới chống lại sự đói nghèo, điều này thể hiện nội dung nào?",
+                options: [
+                    "Sự ảnh hưởng cục bộ của Người ở khu vực Đông Nam Á",
+                    "Giá trị nhân văn cao cả và cống hiến vĩ đại của tư tưởng Hồ Chí Minh đối với sự phát triển tiến bộ của nhân loại",
+                    "Sự phụ thuộc của cách mạng nước ta vào các học thuyết phương Tây",
+                    "Sự thành công của mô hình kinh tế thị trường tự do thuộc địa"
+                ],
+                correctIndex: 1,
+                explanation: "Sự tôn vinh của bạn bè quốc tế khẳng định tầm ảnh hưởng nhân văn vượt biên giới của tư tưởng Hồ Chí Minh, là tài sản tinh thần vô giá của loài người[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Bản chất của con người mới xã hội chủ nghĩa trong tư tưởng Hồ Chí Minh là sự kết hợp biện chứng giữa các yếu tố nào?",
+                options: [
+                    "Sự dung hòa giữa ý chí cá nhân ích kỷ và pháp luật khắt khe",
+                    "Sự kế thừa những giá trị văn hóa tốt đẹp của dân tộc kết hợp với những phẩm chất của thời đại mới xã hội chủ nghĩa",
+                    "Sự phục hồi hoàn toàn các nghi lễ phong kiến quân chủ xưa",
+                    "Sự rập khuôn máy móc các mô hình lối sống của phương Tây"
+                ],
+                correctIndex: 1,
+                explanation: "Con người mới xã hội chủ nghĩa vừa giữ vững bản sắc dân tộc, lòng yêu nước nồng nàn vừa có giác ngộ lý tưởng, đạo đức mới và khoa học kỷ luật[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Cuốn sách 'Nhật ký trong tù' (chứa bài thơ 'Nghe tiếng giã gạo') được Hồ Chí Minh sáng tác trong khoảng thời gian lịch sử nào?",
+                options: [
+                    "Tháng 6 năm 1925 đến tháng 2 năm 1927",
+                    "Tháng 8 năm 1942 đến tháng 9 năm 1943",
+                    "Tháng 12 năm 1946 đến tháng 3 năm 1947",
+                    "Tháng 5 năm 1954 đến tháng 7 năm 1954"
+                ],
+                correctIndex: 1,
+                explanation: "Người bị chính quyền Tưởng Giới Thạch bắt giam vô cớ và sáng tác tập thơ bất hủ này trong suốt 13 tháng tù đày Quảng Tây (8/1942 - 9/1943)[cite: 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Theo Hồ Chí Minh, văn hóa nghệ thuật là mặt trận, nghệ sĩ là chiến sĩ, tác phẩm văn nghệ là........................ trong đấu tranh cách mạng.'",
+                options: [
+                    "phương tiện giải trí xa xỉ",
+                    "tài sản thương mại cá nhân",
+                    "vũ khí sắc bén",
+                    "sách giáo khoa kinh điển"
+                ],
+                correctIndex: 2,
+                explanation: "Nguyên văn: 'Văn nghệ là mặt trận, nghệ sĩ là chiến sĩ, tác phẩm văn nghệ là vũ khí sắc bén...' Khẳng định chức năng chiến đấu của văn nghệ[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Giá trị thời sự sâu sắc nhất của tư tưởng đạo đức Hồ Chí Minh đối với công cuộc xây dựng Đảng và Nhà nước ta ngày nay là gì?",
+                options: [
+                    "Là tư liệu tham khảo lịch sử không còn giá trị thực tế đời sống công vụ",
+                    "Là cơ sở khoa học và định hướng tinh thần để đấu tranh ngăn chặn, đẩy lùi sự suy thoái về tư tưởng chính trị, đạo đức, lối sống và phòng chống tham nhũng",
+                    "Là công cụ để rập khuôn các mô hình hành chính của phương Tây",
+                    "Là cơ sở để khôi phục các quyền lực phong kiến triều đình cũ"
+                ],
+                correctIndex: 1,
+                explanation: "Di sản đạo đức cách mạng của Người luôn là tấm gương, là hệ chuẩn mực tinh thần tối cao để giáo dục cán bộ, đảng viên giữ vững liêm chính cách mạng ngày nay[cite: 1]."
+            }
+        ];
+
+        
+        
+        // Theme toggler for chapters
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.classList.contains('dark')) {
+                body.classList.remove('dark');
+                document.cookie = "tthcm_theme=light; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-moon text-slate-400";
+            } else {
+                body.classList.add('dark');
+                document.cookie = "tthcm_theme=dark; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-sun text-amber-400";
+            }
+        }
+
+        function initTheme() {
+            const savedTheme = getCookie('tthcm_theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Chapter page default is light mode
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-sun text-amber-400";
+            } else {
+                document.body.classList.remove('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-moon text-slate-400";
+            }
+        }
+        
+        // Cookie helpers for progress saving
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        function saveProgress() {
+            setCookie('tthcm_c7_answers', JSON.stringify(userAnswers), 30);
+            setCookie('tthcm_c7_bookmarks', JSON.stringify(bookmarkedQuestions), 30);
+            setCookie('tthcm_c7_current', currentQuestionIndex.toString(), 30);
+        }
+
+        function loadProgress() {
+            try {
+                const savedAnswers = getCookie('tthcm_c7_answers');
+                const savedBookmarks = getCookie('tthcm_c7_bookmarks');
+                const savedCurrent = getCookie('tthcm_c7_current');
+                
+                if (savedAnswers) {
+                    const parsed = JSON.parse(savedAnswers);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        userAnswers = parsed;
+                    }
+                }
+                if (savedBookmarks) {
+                    const parsed = JSON.parse(savedBookmarks);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        bookmarkedQuestions = parsed;
+                    }
+                }
+                if (savedCurrent) {
+                    const parsed = parseInt(savedCurrent, 10);
+                    if (!isNaN(parsed) && parsed >= 0 && parsed < quizData.length) {
+                        currentQuestionIndex = parsed;
+                    }
+                }
+            } catch (e) {
+                console.error("Lỗi khi tải tiến trình:", e);
+            }
+        }
+
+        let currentQuestionIndex = 0;
+        let userAnswers = new Array(quizData.length).fill(null); // Stores selected option index
+        let bookmarkedQuestions = new Array(quizData.length).fill(false); // Bookmarked state
+
+        // Initialize question buttons in the sidebar
+        function initSidebarGrid() {
+            const gridContainer = document.getElementById('question-grid');
+            gridContainer.innerHTML = '';
+            
+            // Get active filters
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            const categoryFilter = document.getElementById('category-filter').value;
+            const stateFilter = document.getElementById('state-filter').value;
+
+            let visibleCount = 0;
+
+            quizData.forEach((q, index) => {
+                // Apply Search filter
+                const matchesSearch = q.question.toLowerCase().includes(searchQuery);
+                
+                // Apply Category filter
+                const matchesCategory = (categoryFilter === 'all' || q.category === categoryFilter);
+                
+                // Apply State filter
+                let matchesState = true;
+                const isAnswered = userAnswers[index] !== null;
+                const isCorrect = isAnswered && userAnswers[index] === q.correctIndex;
+                const isBookmarked = bookmarkedQuestions[index];
+
+                if (stateFilter === 'unanswered') {
+                    matchesState = !isAnswered;
+                } else if (stateFilter === 'correct') {
+                    matchesState = isCorrect;
+                } else if (stateFilter === 'incorrect') {
+                    matchesState = (isAnswered && !isCorrect);
+                } else if (stateFilter === 'bookmarked') {
+                    matchesState = isBookmarked;
+                }
+
+                if (matchesSearch && matchesCategory && matchesState) {
+                    visibleCount++;
+                    const btn = document.createElement('button');
+                    btn.id = `grid-btn-${index}`;
+                    
+                    // Base classes
+                    btn.className = 'py-2 rounded-xl text-xs font-black transition-all border flex items-center justify-center relative ';
+                    btn.className += getGridBtnClass(index);
+                    btn.innerText = index + 1;
+                    
+                    // Add bookmark star inside if bookmarked
+                    if (isBookmarked) {
+                        const star = document.createElement('span');
+                        star.className = 'absolute top-0 right-0 w-2 h-2 bg-amber-500 rounded-full border border-white';
+                        btn.appendChild(star);
+                    }
+
+                    btn.onclick = () => jumpToQuestion(index);
+                    gridContainer.appendChild(btn);
+                }
+            });
+
+            document.getElementById('visible-count').innerText = `Hiện: ${visibleCount}/${quizData.length}`;
+        }
+
+        function getGridBtnClass(index) {
+            // Active Question
+            if (currentQuestionIndex === index) {
+                return 'bg-red-800 text-white border-red-900 ring-2 ring-red-300';
+            }
+            
+            // Unanswered state
+            if (userAnswers[index] === null) {
+                return 'bg-slate-50 text-slate-600 hover:bg-slate-100 border-slate-200';
+            }
+            
+            // Answered state
+            const isCorrect = userAnswers[index] === quizData[index].correctIndex;
+            return isCorrect 
+                ? 'bg-emerald-100 text-emerald-800 border-emerald-300 hover:bg-emerald-200' 
+                : 'bg-red-100 text-red-800 border-red-300 hover:bg-red-200';
+        }
+
+        // Handle Search and select filters dynamically
+        function filterQuestions() {
+            initSidebarGrid();
+        }
+
+        // Track stats and progress percentage
+        function updateProgress() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            const progressPercent = Math.round((answeredCount / quizData.length) * 100);
+            
+            document.getElementById('progress-percent').innerText = progressPercent + '%';
+            document.getElementById('progress-bar').style.width = progressPercent + '%';
+            document.getElementById('answered-count').innerText = answeredCount;
+
+            // Calculate exact score
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+            
+            document.getElementById('score-display').innerText = `${correctCount}/${answeredCount}`;
+            const accuracy = answeredCount === 0 ? 0 : Math.round((correctCount / answeredCount) * 100);
+            document.getElementById('score-accuracy').innerText = `${accuracy}%`;
+        }
+
+        // Render current selected question in detail
+        function renderQuestion() {
+            const currentQ = quizData[currentQuestionIndex];
+            
+            // Text values
+            document.getElementById('question-category').innerText = currentQ.category;
+            document.getElementById('question-index-label').innerText = `Câu ${currentQuestionIndex + 1} / ${quizData.length}`;
+            document.getElementById('question-text').innerText = currentQ.question;
+
+            // Handle Bookmarked badge and star icon
+            const isBookmarked = bookmarkedQuestions[currentQuestionIndex];
+            const bBadge = document.getElementById('bookmark-badge');
+            const bIcon = document.getElementById('bookmark-icon');
+            
+            if (isBookmarked) {
+                bBadge.classList.remove('hidden');
+                bBadge.classList.add('flex');
+                bIcon.className = "fa-solid fa-star text-amber-500 scale-110";
+            } else {
+                bBadge.classList.add('hidden');
+                bBadge.classList.remove('flex');
+                bIcon.className = "fa-regular fa-star text-slate-400";
+            }
+
+            // Options Renderer
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            const answered = userAnswers[currentQuestionIndex] !== null;
+            const selectedAnswer = userAnswers[currentQuestionIndex];
+
+            currentQ.options.forEach((opt, idx) => {
+                const button = document.createElement('button');
+                button.className = 'w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between group ';
+                
+                let iconHtml = `<span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs text-slate-400 font-bold group-hover:bg-slate-100 transition-all">${String.fromCharCode(65 + idx)}</span>`;
+
+                if (!answered) {
+                    // Not answered yet
+                    button.className += 'bg-white border-slate-200 hover:border-red-700 hover:bg-red-50/20 text-slate-700 active:scale-[0.99]';
+                    button.onclick = () => selectOption(idx);
+                } else {
+                    // Already answered state
+                    button.disabled = true;
+                    if (idx === currentQ.correctIndex) {
+                        // Correct option
+                        button.className += 'bg-emerald-50 border-emerald-500 text-emerald-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>';
+                    } else if (idx === selectedAnswer) {
+                        // User selected wrong choice
+                        button.className += 'bg-red-50 border-red-500 text-red-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-red-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-xmark"></i></span>';
+                    } else {
+                        // Normal unselected wrong option
+                        button.className += 'bg-slate-50 border-slate-200 text-slate-400 opacity-60';
+                    }
+                }
+
+                button.innerHTML = `
+                    <span class="text-xs md:text-sm pr-4 font-semibold leading-relaxed">${opt}</span>
+                    ${iconHtml}
+                `;
+                optionsContainer.appendChild(button);
+            });
+
+            // Handle Navigation Buttons
+            document.getElementById('prev-btn').disabled = currentQuestionIndex === 0;
+            const nextBtn = document.getElementById('next-btn');
+            if (currentQuestionIndex === quizData.length - 1) {
+                nextBtn.innerHTML = 'Nộp bài thi <i class="fa-solid fa-paper-plane"></i>';
+                nextBtn.onclick = () => showFinalReport();
+            } else {
+                nextBtn.innerHTML = 'Câu sau <i class="fa-solid fa-arrow-right"></i>';
+                nextBtn.onclick = () => navigateQuestion(1);
+            }
+
+            // Explanation Section
+            const expBox = document.getElementById('explanation-box');
+            if (answered) {
+                expBox.classList.remove('hidden');
+                const isUserCorrect = selectedAnswer === currentQ.correctIndex;
+                
+                if (isUserCorrect) {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-emerald-50/60 border-emerald-200 text-emerald-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-emerald-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-circle-check text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Chọn cực chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-emerald-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                } else {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-red-50/60 border-red-200 text-red-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-red-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-triangle-exclamation text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Rất tiếc, chưa chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-red-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                }
+                document.getElementById('explanation-text').innerText = currentQ.explanation;
+            } else {
+                expBox.classList.add('hidden');
+            }
+
+            initSidebarGrid();
+            updateProgress();
+            saveProgress();
+        }
+
+        // Toggle bookmarks
+        function toggleBookmarkActive() {
+            bookmarkedQuestions[currentQuestionIndex] = !bookmarkedQuestions[currentQuestionIndex];
+            renderQuestion();
+        }
+
+        // Handle option click
+        function selectOption(index) {
+            userAnswers[currentQuestionIndex] = index;
+            renderQuestion();
+        }
+
+        // Jump direct from sidebar grid
+        function jumpToQuestion(index) {
+            currentQuestionIndex = index;
+            renderQuestion();
+        }
+
+        // Navigate step-by-step
+        function navigateQuestion(direction) {
+            const nextIdx = currentQuestionIndex + direction;
+            if (nextIdx >= 0 && nextIdx < quizData.length) {
+                currentQuestionIndex = nextIdx;
+                renderQuestion();
+            }
+        }
+
+        // Reset confirmation
+        function showResetModal() {
+            document.getElementById('confirm-modal').classList.remove('hidden');
+        }
+
+        function closeResetModal() {
+            document.getElementById('confirm-modal').classList.add('hidden');
+        }
+
+        function executeReset() {
+            currentQuestionIndex = 0;
+            userAnswers = new Array(quizData.length).fill(null);
+            bookmarkedQuestions = new Array(quizData.length).fill(false);
+            eraseCookie('tthcm_c7_answers');
+            eraseCookie('tthcm_c7_bookmarks');
+            eraseCookie('tthcm_c7_current');
+            closeResetModal();
+            renderQuestion();
+        }
+
+        // Show Final Exam Performance report
+        function showFinalReport() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+
+            const incorrectCount = answeredCount - correctCount;
+            const accuracy = quizData.length === 0 ? 0 : Math.round((correctCount / quizData.length) * 100);
+            
+            document.getElementById('modal-answered').innerText = `${answeredCount}/${quizData.length} câu`;
+            document.getElementById('modal-correct').innerText = `${correctCount}/${quizData.length} câu`;
+            document.getElementById('modal-incorrect').innerText = `${incorrectCount} câu`;
+            document.getElementById('modal-accuracy').innerText = `${accuracy}%`;
+
+            const gradeLabel = document.getElementById('modal-grade');
+            if (accuracy >= 90) {
+                gradeLabel.innerText = "XUẤT SẮC (A+)";
+                gradeLabel.className = "font-black text-emerald-600 text-base";
+            } else if (accuracy >= 80) {
+                gradeLabel.innerText = "GIỎI (A)";
+                gradeLabel.className = "font-black text-blue-600 text-base";
+            } else if (accuracy >= 70) {
+                gradeLabel.innerText = "KHÁ (B)";
+                gradeLabel.className = "font-black text-amber-500 text-base";
+            } else if (accuracy >= 50) {
+                gradeLabel.innerText = "ĐẠT (C/D)";
+                gradeLabel.className = "font-black text-slate-500 text-base";
+            } else {
+                gradeLabel.innerText = "CHƯA ĐẠT (F)";
+                gradeLabel.className = "font-black text-red-700 text-base";
+            }
+
+            document.getElementById('report-modal').classList.remove('hidden');
+        }
+
+        function closeReportModal() {
+            document.getElementById('report-modal').classList.add('hidden');
+        }
+
+        // Keyboard triggers for rapid testing
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                navigateQuestion(-1);
+            } else if (e.key === 'ArrowRight') {
+                navigateQuestion(1);
+            }
+        });
+
+        // App Boot on ready
+        window.onload = function () {
+            initTheme();
+            loadProgress();
+            renderQuestion();
+        }
+    
+        // Header thu gọn khi cuộn xuống (chỉ trên di động)
+        (function() {
+            const header = document.querySelector('header');
+            if (!header) return;
+            let ticking = false;
+
+            function updateHeader() {
+                if (window.innerWidth < 1024) {
+                    if (window.scrollY > 60) {
+                        header.classList.add('header-scrolled');
+                    } else {
+                        header.classList.remove('header-scrolled');
+                    }
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateHeader);
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            window.addEventListener('resize', updateHeader);
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Chương 5 (77 Câu Phân Hóa)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        /* Custom scrollbar for sidebar grid */
+        #question-grid::-webkit-scrollbar {
+            width: 5px;
+        }
+        #question-grid::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    
+        /* Chế độ Tối (Dark Mode Overrides cho Chương) */
+        body.dark {
+            background-color: #0b0f19 !important;
+            color: #f1f5f9 !important;
+        }
+        body.dark .text-slate-700 {
+            color: #e2e8f0 !important;
+        }
+        body.dark .text-slate-400 {
+            color: #94a3b8 !important;
+        }
+        body.dark .text-red-950 {
+            color: #fca5a5 !important;
+        }
+        body.dark .text-emerald-950 {
+            color: #a7f3d0 !important;
+        }
+        body.dark .border-slate-300 {
+            border-color: #475569 !important;
+        }
+        body.dark .group:hover .group-hover\:bg-slate-100 {
+            background-color: #334155 !important;
+            color: #ffffff !important;
+            border-color: #64748b !important;
+        }
+        body.dark .bg-white {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3) !important;
+        }
+        body.dark .text-slate-900,
+        body.dark .text-slate-800,
+        body.dark .text-slate-950 {
+            color: #f8fafc !important;
+        }
+        body.dark .text-slate-600,
+        body.dark .text-slate-500 {
+            color: #cbd5e1 !important;
+        }
+        body.dark .bg-slate-50 {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-100 {
+            background-color: #0b0f19 !important;
+        }
+        body.dark input, 
+        body.dark select {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #475569 !important;
+        }
+        body.dark .border-slate-200,
+        body.dark .border-slate-100 {
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-50.border-slate-300 {
+            background-color: #1e293b !important;
+            border-color: #475569 !important;
+        }
+        body.dark .hover\:bg-red-50\/20:hover {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+        }
+        body.dark .hover\:border-red-700:hover {
+            border-color: #b91c1c !important;
+        }
+        body.dark .bg-emerald-50 {
+            background-color: rgba(16, 185, 129, 0.1) !important;
+            color: #34d399 !important;
+            border-color: #10b981 !important;
+        }
+        body.dark .bg-red-50 {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+            color: #f87171 !important;
+            border-color: #ef4444 !important;
+        }
+        body.dark .bg-slate-50.border-slate-200.text-slate-400 {
+            background-color: #1e293b !important;
+            color: #64748b !important;
+            opacity: 0.5;
+        }
+        body.dark #report-modal > div,
+        body.dark #confirm-modal > div {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+        }
+        body.dark #report-modal h3,
+        body.dark #report-modal p,
+        body.dark #confirm-modal h3,
+        body.dark #confirm-modal p {
+            color: #f8fafc !important;
+        }
+            header.header-scrolled .header-brand {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+                pointer-events: none;
+            }
+            header {
+                transition: padding 0.25s ease;
+            }
+            header.header-scrolled {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    
+        /* Scroll-based Header: Thu gọn khi cuộn xuống trên di động */
+        @media (max-width: 1023px) {
+            header .header-brand {
+                transition: opacity 0.2s ease;
+                opacity: 1;
+            }
+            header.header-scrolled .header-brand {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-red-800 text-white shadow-md py-2.5 px-4 lg:py-4 lg:px-6 sticky top-0 z-50 border-b border-amber-500">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4">
+            <div class="header-brand flex items-center gap-3">
+                <div class="bg-amber-500 p-2.5 rounded-xl shadow-inner">
+                    <i class="fa-solid fa-users-line text-2xl text-red-900 animate-pulse"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black tracking-tight flex items-center gap-2">
+                        SIÊU NGÂN HÀNG ĐỀ THI TRẮC NGHIỆM <span class="bg-amber-500 text-red-900 text-[10px] px-2 py-0.5 rounded font-extrabold uppercase align-middle">PRO A+</span>
+                    </h1>
+                    <p class="text-xs text-red-100 font-medium">Chương 5: Tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc và đoàn kết quốc tế (77 Câu hỏi phân hóa sâu sắc)[cite: 1]</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+                <a href="/" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 transition-all duration-200" title="Quay lại trang chủ">
+                    <i class="fa-solid fa-house"></i> <span class="hidden md:inline">Trang chủ</span>
+                </a>
+                <button id="theme-toggle" onclick="toggleTheme()" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white p-2.5 rounded-xl text-sm transition-all duration-200 flex items-center justify-center" title="Chuyển chế độ Sáng/Tối">
+                    <i class="fa-solid fa-sun text-amber-400" id="theme-icon"></i>
+                </button>
+                <div class="bg-red-950 px-4 py-2 rounded-xl text-sm font-bold border border-red-700/50 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                    <span>Tỉ lệ: <span id="score-accuracy" class="text-amber-300">0%</span></span>
+                    <span class="text-slate-500">|</span>
+                    <span>Đúng: <span id="score-display" class="text-emerald-400">0/0</span></span>
+                </div>
+                <button onclick="showResetModal()" class="bg-amber-500 hover:bg-amber-600 active:scale-95 transition-all text-slate-950 px-4 py-2 rounded-xl text-sm font-extrabold flex items-center gap-2 shadow-md">
+                    <i class="fa-solid fa-rotate-right"></i> Làm lại toàn bộ
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        
+        <!-- Sidebar: Grid & Advanced Filters -->
+        <aside class="lg:col-span-1 bg-white p-4 rounded-2xl shadow-sm border border-slate-200 h-fit flex flex-col gap-4">
+            
+            <!-- Search & Filters Container -->
+            <div>
+                <h2 class="font-bold text-slate-900 mb-3 flex items-center gap-2 pb-2 border-b border-slate-100 text-sm uppercase tracking-wider">
+                    <i class="fa-solid fa-filter text-red-700"></i> Bộ lọc nâng cao
+                </h2>
+                
+                <!-- Search Input -->
+                <div class="relative mb-2.5">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400 text-xs"></i>
+                    </span>
+                    <input type="text" id="search-input" onkeyup="filterQuestions()" placeholder="Tìm từ khóa trong câu hỏi..." class="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:ring-1 focus:ring-red-600 focus:border-red-600 outline-none transition-all">
+                </div>
+
+                <!-- Category Selector -->
+                <div class="mb-2">
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Theo danh mục</label>
+                    <select id="category-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả danh mục (77 câu)</option>
+                        <option value="Nhận biết">Nhận biết</option>
+                        <option value="Thông hiểu">Thông hiểu</option>
+                        <option value="Trích dẫn">Trích dẫn</option>
+                        <option value="Lịch sử">Lịch sử</option>
+                        <option value="Điền từ">Điền vào chỗ trống</option>
+                        <option value="Trừu tượng">Tư duy trừu tượng</option>
+                        <option value="Nâng cao">Nâng cao / Cực khó</option>
+                    </select>
+                </div>
+
+                <!-- State Selector -->
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Trạng thái câu hỏi</label>
+                    <select id="state-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả câu hỏi</option>
+                        <option value="unanswered">Chưa làm</option>
+                        <option value="correct">Làm đúng</option>
+                        <option value="incorrect">Làm sai</option>
+                        <option value="bookmarked">Có đánh dấu (★)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Progress Tracker -->
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                <div class="flex justify-between text-xs text-slate-600 font-bold mb-1.5">
+                    <span>Tiến độ học tập</span>
+                    <span id="progress-percent" class="text-red-700">0%</span>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-2.5">
+                    <div id="progress-bar" class="bg-gradient-to-r from-red-600 to-amber-500 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-semibold">
+                    <span>Đã làm: <span id="answered-count">0</span>/77</span>
+                    <span>Cần đạt: 80% trở lên</span>
+                </div>
+            </div>
+
+            <!-- Question Selection Grid -->
+            <div>
+                <h3 class="font-bold text-slate-950 text-xs uppercase tracking-wider mb-2 flex justify-between items-center">
+                    <span>Bản đồ câu hỏi</span>
+                    <span class="text-[10px] text-slate-400 normal-case font-medium" id="visible-count">Hiện: 77/77</span>
+                </h3>
+                <div class="grid grid-cols-5 gap-1.5 max-h-[340px] overflow-y-auto pr-1" id="question-grid">
+                    <!-- Dynamically populated buttons -->
+                </div>
+            </div>
+
+            <!-- Legend Info -->
+            <div class="pt-3 border-t border-slate-200 grid grid-cols-2 gap-2 text-[10px] text-slate-500 font-bold">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-slate-50 border border-slate-300 inline-block"></span>
+                    <span>Chưa làm</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300 inline-block"></span>
+                    <span>Làm đúng</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-red-100 border border-red-300 inline-block"></span>
+                    <span>Làm sai</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-amber-100 border border-amber-400 inline-block"></span>
+                    <span>Đánh dấu (★)</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Active Question Viewport -->
+        <section class="lg:col-span-3 flex flex-col gap-5">
+            
+            <!-- Active Question Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 relative overflow-hidden flex flex-col gap-4">
+                
+                <!-- Tag & Info Header bar -->
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <span id="question-category" class="bg-red-50 text-red-800 text-[10px] font-black px-2.5 py-1 rounded-full border border-red-100 uppercase tracking-wider">
+                            DANH MỤC
+                        </span>
+                        <span id="bookmark-badge" class="hidden bg-amber-50 text-amber-700 text-[10px] font-black px-2.5 py-1 rounded-full border border-amber-200 uppercase tracking-wider items-center gap-1">
+                            <i class="fa-solid fa-star text-amber-500"></i> Đã đánh dấu
+                        </span>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <button onclick="toggleBookmarkActive()" class="text-slate-400 hover:text-amber-500 text-lg transition-all focus:outline-none" title="Đánh dấu câu hỏi này">
+                            <i class="fa-regular fa-star" id="bookmark-icon"></i>
+                        </button>
+                        <span class="text-xs text-slate-400 font-bold bg-slate-100 px-2.5 py-1 rounded-lg" id="question-index-label">
+                            Câu hỏi -- / --
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Question Text -->
+                <h3 class="text-base md:text-lg font-black text-slate-900 leading-snug" id="question-text">
+                    Nội dung câu hỏi đang được khởi tạo...
+                </h3>
+
+                <!-- Options -->
+                <div class="space-y-2.5" id="options-container">
+                    <!-- Dynamic option buttons -->
+                </div>
+
+                <!-- Explanation Box (Initially Hidden) -->
+                <div id="explanation-box" class="hidden mt-2 p-5 rounded-2xl border transition-all duration-300">
+                    <div class="flex items-start gap-3">
+                        <div id="explanation-icon-container" class="p-2.5 rounded-xl text-white shadow-sm flex items-center justify-center">
+                            <!-- Icon -->
+                        </div>
+                        <div class="flex-1">
+                            <h4 id="explanation-title" class="font-extrabold text-slate-900 text-sm mb-1 uppercase tracking-wider">Kết quả</h4>
+                            <p id="explanation-text" class="text-xs md:text-sm text-slate-600 leading-relaxed font-medium">
+                                Giải thích học thuyết chi tiết...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <button onclick="navigateQuestion(-1)" id="prev-btn" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 active:scale-95 font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed">
+                    <i class="fa-solid fa-circle-arrow-left"></i> Câu trước
+                </button>
+                
+                <div class="text-xs text-slate-400 font-bold hidden md:block">
+                    Mẹo: Dùng phím mũi tên <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">←</kbd> và <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">→</kbd> để chuyển câu nhanh
+                </div>
+
+                <button onclick="navigateQuestion(1)" id="next-btn" class="flex items-center gap-2 bg-red-700 hover:bg-red-800 active:scale-95 text-white font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all shadow-sm">
+                    Câu kế tiếp <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Complete Submission Bar -->
+            <div class="bg-gradient-to-r from-red-900 to-amber-700 text-white rounded-2xl p-5 shadow-md border border-amber-500/30 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <h4 class="font-black text-sm uppercase tracking-wider text-amber-300">Hoàn tất kiểm tra</h4>
+                    <p class="text-xs text-red-100 mt-1">Nộp bài để hệ thống phân tích chi tiết học lực và chấm điểm A+ theo chuẩn Đại học[cite: 1].</p>
+                </div>
+                <button onclick="showFinalReport()" class="bg-white hover:bg-amber-400 active:scale-95 text-red-950 font-black px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md">
+                    <i class="fa-solid fa-paper-plane mr-1"></i> Nộp bài & xem báo cáo
+                </button>
+            </div>
+
+
+            <!-- Chapter Navigation Bar -->
+            <div class="flex justify-between items-center bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+                <a href="/chuong4.html" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-700 active:scale-95 font-bold px-4 py-2.5 rounded-xl text-xs md:text-sm transition-all shadow-sm"><i class="fa-solid fa-circle-chevron-left text-amber-500"></i> Chương 4</a>
+                <a href="/chuong6.html" class="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 active:scale-95 text-slate-950 font-extrabold px-4 py-2.5 rounded-xl text-xs md:text-sm transition-all shadow-md ml-auto"><i class="fa-solid fa-circle-chevron-right text-red-800"></i> Chương 6</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 border-t border-slate-800 text-xs">
+        <p class="font-bold text-slate-200">Ứng dụng Siêu Ôn Tập Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Phiên Bản Cao Cấp</p>
+        <p class="mt-1 text-slate-500">Nội dung học thuật được thiết kế chuẩn xác dựa theo Bài giảng 2016 PTIT, NEU, HUST[cite: 1]</p>
+    </footer>
+
+    <!-- Confirm Reset Modal -->
+    <div id="confirm-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-amber-500 text-5xl text-center mb-4">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 text-center mb-2 uppercase tracking-wide">Làm lại từ đầu?</h3>
+            <p class="text-xs md:text-sm text-slate-500 text-center mb-6 leading-relaxed">
+                Hành động này sẽ xóa toàn bộ tiến trình trả lời và thống kê điểm hiện tại của bạn. Bạn đã sẵn sàng reset?
+            </p>
+            <div class="flex gap-3">
+                <button onclick="closeResetModal()" class="flex-1 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 font-bold text-xs transition-all">
+                    Quay lại
+                </button>
+                <button onclick="executeReset()" class="flex-1 py-2.5 rounded-xl bg-red-700 text-white hover:bg-red-800 font-bold text-xs transition-all shadow-md">
+                    Xác nhận xóa
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Score Report Modal -->
+    <div id="report-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-red-700 text-5xl text-center mb-4">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900 text-center mb-1 uppercase tracking-wide">Báo Cáo Học Lực</h3>
+            <p class="text-xs text-slate-400 text-center mb-5">Học phần Tư tưởng Hồ Chí Minh - Chương 5[cite: 1]</p>
+            
+            <div class="bg-slate-50 rounded-2xl p-4 mb-6 space-y-3.5 border border-slate-100">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu hỏi đã làm:</span>
+                    <span id="modal-answered" class="font-extrabold text-slate-800 text-sm">0/77 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm đúng:</span>
+                    <span id="modal-correct" class="font-extrabold text-emerald-600 text-sm">0/80 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm sai:</span>
+                    <span id="modal-incorrect" class="font-extrabold text-red-600 text-sm">0 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Tỷ lệ chính xác:</span>
+                    <span id="modal-accuracy" class="font-black text-amber-500 text-base">0%</span>
+                </div>
+                <div class="flex justify-between items-center text-xs pt-2.5 border-t border-slate-200">
+                    <span class="text-slate-500 font-bold">Xếp loại học phần:</span>
+                    <span id="modal-grade" class="font-black text-red-700 text-base">F</span>
+                </div>
+            </div>
+
+            <button onclick="closeReportModal()" class="w-full py-3 rounded-xl bg-red-800 hover:bg-red-900 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md">
+                Tiếp tục xem chi tiết đáp án câu hỏi
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Siêu cơ sở dữ liệu: 80 câu hỏi phân hóa tinh vi của Chương 5
+        const quizData = [
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh xác định vị trí của đại đoàn kết dân tộc đối với tiến trình cách mạng Việt Nam như thế nào?",
+                options: [
+                    "Là một giải pháp tình thế trong giai đoạn chiến tranh",
+                    "Là một vấn đề có ý nghĩa chiến lược, quyết định thành công của cách mạng",
+                    "Là một công cụ ngoại giao tạm thời để liên kết với các nước bạn",
+                    "Là một chủ trương hỗ trợ bổ sung khi lực lượng vũ trang suy yếu"
+                ],
+                correctIndex: 1,
+                explanation: "Đại đoàn kết dân tộc được Hồ Chí Minh xác định là vấn đề chiến lược, cơ bản, nhất quán và xuyên suốt tiến trình cách mạng Việt Nam[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tại sao trong thời đại mới, Hồ Chí Minh cho rằng chỉ có tinh thần yêu nước thì chưa đủ để giành thắng lợi?",
+                options: [
+                    "Vì tinh thần yêu nước của nhân dân ta bị phai nhạt dưới ách cai trị của thực dân Pháp",
+                    "Vì cách mạng muốn đạt mục tiêu phải tập hợp được tất cả các lực lượng, phải xây dựng được khối đại đoàn kết dân tộc bền vững",
+                    "Vì tinh thần yêu nước không thể kết hợp được với sức mạnh vũ khí tối tân",
+                    "Vì Quốc tế Cộng sản bắt buộc phải tổ chức cách mạng theo mô hình quốc tế"
+                ],
+                correctIndex: 1,
+                explanation: "Để đánh đổ đế quốc thực dân, giải phóng dân tộc, giải phóng giai cấp và con người, cách mạng đòi hỏi phải xây dựng khối đại đoàn kết dân tộc bền vững trên cơ sở yêu nước[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Luận điểm: \"Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công\" nhấn mạnh ý nghĩa nào sau đây?",
+                options: [
+                    "Đoàn kết là một thủ đoạn chính trị nhất thời",
+                    "Đoàn kết là yếu tố tạo nên thực lực tinh thần nhưng không quyết định vật chất",
+                    "Mối quan hệ biện chứng giữa đoàn kết và thắng lợi; có đoàn kết rộng rãi mới có thành công hoàn toàn",
+                    "Đoàn kết chỉ cần thiết trong giai đoạn kháng chiến chống thực dân Pháp"
+                ],
+                correctIndex: 2,
+                explanation: "Luận điểm kinh điển này chỉ rõ mối quan hệ khăng khít: đoàn kết là nguồn gốc, là động lực đưa cách mạng đi đến thắng lợi cuối cùng[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống lời dạy của Hồ Chí Minh: \"Bây giờ còn một điểm rất quan trọng, cũng là điểm mẹ. Điểm này mà thực hiện tốt thì đẻ ra con cháu đều tốt: Đó là ........................\"?",
+                options: [
+                    "Lý luận cách mạng",
+                    "Tự lực cánh sinh",
+                    "Đoàn kết",
+                    "Kỷ luật nghiêm minh"
+                ],
+                correctIndex: 2,
+                explanation: "Hồ Chí Minh ví von 'đoàn kết' là 'điểm mẹ' (sợi chỉ đỏ) xuyên suốt để từ đó sinh ra muôn vàn thành công tốt đẹp khác cho cách mạng[cite: 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Sự kiện lịch sử nào đánh dấu sự ra đời của một mặt trận thống nhất đầu tiên ở nước ta dưới sự lãnh đạo của Đảng (tháng 11 năm 1930)?",
+                options: [
+                    "Thành lập Mặt trận Việt Minh",
+                    "Thành lập Hội phản đế đồng minh",
+                    "Thành lập Mặt trận Liên Việt",
+                    "Thành lập Mặt trận Tổ quốc Việt Nam"
+                ],
+                correctIndex: 1,
+                explanation: "Thành lập Hội phản đế đồng minh (tháng 11-1930) là hình thức mặt trận thống nhất đầu tiên của nhân dân ta dưới sự lãnh đạo của Đảng Cộng sản[cite: 1]."
+            },
+            {
+                category: "Trực quan",
+                question: "Khi bàn về vai trò của Mặt trận Tổ quốc Việt Nam năm 1955, Hồ Chí Minh đã khẳng định điều gì về thành quả lịch sử của đại đoàn kết?",
+                options: [
+                    "Đoàn kết trong Mặt trận Việt Minh đã giúp nhân dân ta làm cách mạng Tháng Tám thành công, lập nên nước Việt Nam Dân chủ Cộng hoà",
+                    "Đoàn kết giúp nước ta đứng đầu về kinh tế công nghiệp Đông Nam Á",
+                    "Đoàn kết trong Mặt trận giúp tiêu diệt hoàn toàn giai cấp địa chủ trong một năm",
+                    "Đoàn kết quốc tế là nhân tố duy nhất đem lại hòa bình 1954"
+                ],
+                correctIndex: 0,
+                explanation: "Mỗi thắng lợi vĩ đại của đất nước đều gắn liền với một hình thức Mặt trận tương ứng, chứng minh sức mạnh của đoàn kết toàn dân[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Hồ Chí Minh khẳng định đại đoàn kết dân tộc là nhiệm vụ hàng đầu của Đảng và của dân tộc có ý nghĩa học thuật gì?",
+                options: [
+                    "Đoàn kết chỉ là khẩu hiệu tuyên truyền của công tác dân vận",
+                    "Đoàn kết là một nhu cầu khách quan của lịch sử, là chính sách dân tộc nhất quán xuyên suốt, không phải thủ đoạn chính trị nhất thời",
+                    "Đoàn kết là công việc riêng biệt của Ban Chấp hành Trung ương Đảng",
+                    "Đoàn kết chỉ phát huy hiệu quả khi kết thúc cuộc kháng chiến cứu nước"
+                ],
+                correctIndex: 1,
+                explanation: "Đại đoàn kết dân tộc là yêu cầu khách quan, là chính sách nhất quán suốt đời của Đảng và của cả dân tộc Việt Nam chứ không phải biện pháp mị dân tình thế[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Lực lượng của khối đại đoàn kết dân tộc theo tư tưởng Hồ Chí Minh bao gồm những đối tượng nào?",
+                options: [
+                    "Chỉ bao gồm giai cấp công nhân và nông dân nghèo khổ",
+                    "Toàn bộ con dân đất Việt, mọi thành viên trong đại gia đình dân tộc Việt Nam",
+                    "Chỉ bao gồm các tầng lớp trí thức tiểu tư sản đô thị",
+                    "Những người theo học thuyết vô sản ở trong nước và chính quốc"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh khẳng định đối tượng của đại đoàn kết dân tộc là toàn dân, mọi con dân đất Việt, không phân biệt giai cấp, tôn giáo, dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Khái niệm 'Dân' và 'Nhân dân' trong tư tưởng Hồ Chí Minh được hiểu rộng rãi như thế nào?",
+                options: [
+                    "Là những người lao động trực tiếp trong các nhà máy và công xưởng",
+                    "Là mọi con dân đất Việt, mỗi một con Rồng cháu Tiên, không phân biệt giàu nghèo, tôn giáo, lứa tuổi",
+                    "Chỉ bao gồm những người ủng hộ chế độ cộng sản từ năm 1930",
+                    "Là giai cấp nông dân sản xuất nông nghiệp nông thôn"
+                ],
+                correctIndex: 1,
+                explanation: "Khái niệm dân trong tư tưởng Bác có biên độ rộng nhất, bao gồm mọi giai tầng, con người mang dòng máu Lạc Hồng[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Lời răn dạy của Hồ Chí Minh: \"Sông to, biển rộng thì bao nhiêu nước cũng chứa được, vì độ lượng nó rộng và sâu...\" muốn nhắc nhở người cán bộ điều gì khi làm công tác đại đoàn kết?",
+                options: [
+                    "Phải có lòng khoan dung, độ lượng, trân trọng phần tốt ở mỗi con người để quy tụ sức mạnh",
+                    "Phải tích lũy nhiều của cải vật chất mới chứa đựng được lòng dân",
+                    "Phải xây dựng hệ thống đê điều phòng chống lụt lội",
+                    "Phải hạn chế kết nạp những đảng viên xuất thân từ giai cấp bóc lột"
+                ],
+                correctIndex: 0,
+                explanation: "Lòng khoan dung độ lượng, 'cầu đồng tồn dị' là phương pháp thu phục nhân tâm tối thượng của Bác để mở rộng tối đa khối đoàn kết dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống lời khẳng định của Bác: \"Bất kỳ ai mà thật thà tán thành hòa bình, thống nhất, độc lập, dân chủ thì dù những người đó trước đây chống chúng ta, bây giờ chúng ta cũng ........................ với họ.\"",
+                options: [
+                    "Cảnh giác đấu tranh",
+                    "Thật thà đoàn kết",
+                    "Phạt tù cải tạo",
+                    "Trục xuất ra nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Chính sách đại đoàn kết là thật thà, chân thành, xóa bỏ thành kiến cũ, hướng tới tương lai hòa hợp dân tộc vì Tổ quốc[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Để chuẩn bị lực lượng đoàn kết quốc tế rộng lớn chống chủ nghĩa đế quốc, Nguyễn Ái Quốc đã tham gia thành lập tổ chức nào tại Quảng Châu (Trung Quốc) vào năm 1925?",
+                options: [
+                    "Hội liên hiệp thuộc địa",
+                    "Hội liên hiệp các dân tộc bị áp bức ở Á Đông",
+                    "Hội phản đế đồng minh Đông Dương",
+                    "Mặt trận dân chủ Đông Dương"
+                ],
+                correctIndex: 1,
+                explanation: "Năm 1925, tại Quảng Châu, Người cùng các nhà cách mạng châu Á lập Hội liên hiệp các dân tộc bị áp bức để liên kết phong trào giải phóng thuộc địa[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Điều kiện cốt lõi để xây dựng khối đại đoàn kết toàn dân tộc vững chắc, lâu dài theo Hồ Chí Minh là gì?",
+                options: [
+                    "Phải dựa trên sự thống nhất về lợi ích tối cao của dân tộc và quyền lợi cơ bản của nhân dân lao động",
+                    "Phải dựa vào nguồn tài chính dồi dào từ các nhà hảo tâm nước ngoài",
+                    "Phải áp dụng các biện pháp cưỡng chế hành chính nghiêm ngặt",
+                    "Phải xóa bỏ hoàn toàn sự khác biệt về tôn giáo trong toàn dân"
+                ],
+                correctIndex: 0,
+                explanation: "Đoàn kết muốn bền chặt lâu dài phải dựa trên sự thống nhất lợi ích, đặt lợi ích dân tộc lên trên hết và bảo đảm lợi ích của nhân dân lao động[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Tại sao nói đại đoàn kết dân tộc trong tư tưởng Hồ Chí Minh là một chính sách nhất quán, không phải thủ đoạn chính trị nhất thời?",
+                options: [
+                    "Vì nó được quy định bắt buộc trong hiến pháp của các nước xã hội chủ nghĩa",
+                    "Vì nó bắt nguồn từ truyền thống lịch sử dựng nước, giữ nước của dân tộc và vị thế làm chủ thực sự của quần chúng nhân dân",
+                    "Vì nó phụ thuộc hoàn toàn vào viện trợ quân sự bên ngoài",
+                    "Vì nó chỉ được sử dụng khi cách mạng gặp bế tắc, khó khăn"
+                ],
+                correctIndex: 1,
+                explanation: "Đoàn kết là quy luật tồn tại của dân tộc Việt Nam chống ngoại xâm thiên tai, là sự nghiệp tự giác của nhân dân dưới sự dẫn dắt của Đảng[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hình thức tổ chức cơ bản nhất của khối đại đoàn kết dân tộc Việt Nam là gì?",
+                options: [
+                    "Hợp tác xã nông nghiệp tập trung",
+                    "Mặt trận dân tộc thống nhất",
+                    "Hội liên hiệp thanh niên trí thức",
+                    "Nghiệp đoàn công nhân đô thị"
+                ],
+                correctIndex: 1,
+                explanation: "Mặt trận dân tộc thống nhất là nơi quy tụ, tập hợp sức mạnh của mọi con dân đất Việt đấu tranh cho độc lập tự do[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Nhiệm vụ hàng đầu của Mặt trận dân tộc thống nhất qua các thời kỳ cách mạng được Hồ Chí Minh xác định dựa trên cơ sở nào?",
+                options: [
+                    "Yêu cầu tích lũy tài sản công nghiệp đô thị",
+                    "Mâu thuẫn chủ yếu và nhiệm vụ cách mạng cụ thể của từng giai đoạn lịch sử nước nhà",
+                    "Sự chỉ đạo bằng văn bản hành chính của Quốc tế Cộng sản",
+                    "Chính sách tô thuế đất đai đối với địa chủ phong kiến"
+                ],
+                correctIndex: 1,
+                explanation: "Tùy theo thời kỳ lịch sử, nhiệm vụ Mặt trận có thể điều chỉnh để tập trung sức mạnh đánh bại kẻ thù nguy hiểm nhất của dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Lời khẳng định: \"Đại đoàn kết tức là trước hết phải đoàn kết đại số nhân dân... đó là nền gốc của đại đoàn kết. Nó cũng như cái nền của nhà, gốc của cây...\" xác định vị trí của lực lượng nào?",
+                options: [
+                    "Tầng lớp tư sản dân tộc và điền chủ lớn An Nam",
+                    "Liên minh công nhân, nông dân và nhân dân lao động",
+                    "Sĩ phu phong kiến yêu nước",
+                    "Trí thức tiểu tư sản đô thị"
+                ],
+                correctIndex: 1,
+                explanation: "Công nông là đại đa số nhân dân, bị bóc lột nặng nề nhất, có tinh thần cách mạng triệt để nhất nên là nền gốc của khối đại đoàn kết[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: \"Theo Hồ Chí Minh, lực lượng chủ yếu trong khối đại đoàn kết dân tộc là công nông, cho nên ........................ là nền nòng cốt của Mặt trận dân tộc thống nhất.\"",
+                options: [
+                    "Sự bảo trợ của quốc tế",
+                    "Liên minh công nông (và lao động trí óc)",
+                    "Liên minh tư sản và tiểu tư sản",
+                    "Sự thỏa hiệp lợi ích phong kiến"
+                ],
+                correctIndex: 1,
+                explanation: "Liên minh công nông là nền tảng cốt tử của khối đại đoàn kết dân tộc và hoạt động của Mặt trận[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Mặt trận Việt Minh (Việt Nam độc lập đồng minh) được thành lập vào năm nào dưới sự chủ trì của Hồ Chí Minh?",
+                options: [
+                    "Năm 1930",
+                    "Năm 1936",
+                    "Năm 1941",
+                    "Năm 1946"
+                ],
+                correctIndex: 2,
+                explanation: "Tháng 5-1941, tại Hội nghị Trung ương 8 (Cao Bằng), Người đã sáng lập Mặt trận Việt Minh để đoàn kết toàn dân cứu nước[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Mối quan hệ giữa Đảng Cộng sản và Mặt trận dân tộc thống nhất được Hồ Chí Minh xác định như thế nào là đúng khoa học?",
+                options: [
+                    "Đảng là lực lượng đứng ngoài, kiểm soát Mặt trận bằng sắc lệnh hành chính quân sự",
+                    "Đảng vừa là một thành viên bình đẳng của Mặt trận, vừa là lực lượng hạt nhân lãnh đạo Mặt trận nhờ đường lối đúng đắn và sự gương mẫu",
+                    "Đảng phục tùng tuyệt đối và vô điều kiện mọi chủ trương của các đảng phái khác trong Mặt trận",
+                    "Đảng là cơ quan duy nhất tài trợ tài chính kinh tế cho Mặt trận hoạt động"
+                ],
+                correctIndex: 1,
+                explanation: "Đảng là thành viên của Mặt trận nhưng giữ vai trò lãnh đạo nhờ uy tín chính trị, trí tuệ khoa học và tính tiên phong[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Để lãnh đạo tốt Mặt trận dân tộc thống nhất, Hồ Chí Minh yêu cầu Đảng Cộng sản và mỗi đảng viên phải quyết liệt chống căn bệnh kiêu ngạo nào?",
+                options: [
+                    "Bệnh nôn nóng duy ý chí trong sản xuất",
+                    "Bệnh bao biện, độc đoán, quan liêu, mệnh lệnh coi mình đứng trên quần chúng nhân dân",
+                    "Ý chí tự lực cánh sinh dựa vào sức mình là chính",
+                    "Bệnh sùng bái kinh nghiệm nước ngoài máy móc"
+                ],
+                correctIndex: 1,
+                explanation: "Đảng lãnh đạo bằng phương pháp thuyết phục, giáo dục, làm gương, tránh thói lộng quyền áp đặt hách dịch làm mất lòng tin ở dân[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Nguyên tắc hoạt động cơ bản nhất của Mặt trận dân tộc thống nhất nhằm bảo đảm sự đồng thuận bền chặt là gì?",
+                options: [
+                    "Mệnh lệnh cưỡng chế từ cấp trên",
+                    "Hiệp thương dân chủ",
+                    "Tập trung tuyệt đối không thảo luận",
+                    "Thỏa hiệp vô nguyên tắc lợi ích"
+                ],
+                correctIndex: 1,
+                explanation: "Hiệp thương dân chủ yêu cầu bàn bạc công khai, tôn trọng lẫn nhau để đi đến nhất trí hành động, không áp đặt ý chí đơn phương[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Trong hoạt động Mặt trận, nguyên tắc \"Đoàn kết chặt chẽ đi đôi với đấu tranh phê bình\" được Hồ Chí Minh lý giải thế nào?",
+                options: [
+                    "Đấu tranh để tiêu trừ loại bỏ các thành viên có ý kiến khác biệt",
+                    "Đoàn kết không phải là dĩ hòa vi quý, bao che khuyết điểm mà đấu tranh chân thành để giúp nhau cùng tiến bộ, củng cố đoàn kết thật sự",
+                    "Đấu tranh là mục đích chủ yếu, đoàn kết chỉ là hình thức chuyển tiếp",
+                    "Chấp nhận mọi xu hướng phản cách mạng để giữ vững hòa khí Mặt trận"
+                ],
+                correctIndex: 1,
+                explanation: "Đoàn kết phải gắn với đấu tranh chân thành, xây dựng trên lập trường yêu nước để loại bỏ khuyết điểm, phát huy ưu điểm của nhau[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Văn kiện nào của Hồ Chí Minh chỉ rõ: \"Chính sách Mặt trận là một chính sách rất quan trọng. Công tác Mặt trận là một công tác rất quan trọng trong toàn bộ công tác cách mạng\"?",
+                options: [
+                    "Đường Kách mệnh (1927)",
+                    "Bài nói tại Hội nghị cán bộ Mặt trận năm 1962",
+                    "Tuyên ngôn Độc lập (1945)",
+                    "Bản Di chúc thiêng liêng (1969)"
+                ],
+                correctIndex: 1,
+                explanation: "Người luôn nhắc nhở toàn Đảng phải đặt công tác Mặt trận ở vị trí chiến lược hàng đầu để huy động sức mạnh dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống lời Bác Hồ dặn: \"Đoàn kết thực sự nghĩa là mục đích phải nhất trí và ........................ cũng phải nhất trí.\"",
+                options: [
+                    "Phương thức kinh doanh",
+                    "Lập trường cách mạng",
+                    "Thu nhập tài chính",
+                    "Địa vị hành chính"
+                ],
+                correctIndex: 1,
+                explanation: "Đoàn kết thật sự đòi hỏi sự đồng thuận sâu sắc về mục đích tối cao và lập trường phụng sự Tổ quốc, phục vụ nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Tháng 3 năm 1951, Đại hội thống nhất Mặt trận Việt Minh và Mặt trận Liên Việt thành tổ chức nào dưới sự chứng kiến của Bác?",
+                options: [
+                    "Mặt trận Tổ quốc Việt Nam",
+                    "Mặt trận Liên Việt (Mặt trận liên hiệp quốc dân Việt Nam)",
+                    "Mặt trận dân tộc giải phóng miền Nam",
+                    "Hội phản đế đồng minh Đông Dương"
+                ],
+                correctIndex: 1,
+                explanation: "Sự thống nhất Việt Minh và Liên Việt thành Mặt trận Liên Việt (1951) đã nhân lên gấp bội sức mạnh khối đoàn kết toàn dân trong kháng chiến chống Pháp[cite: 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Giải quyết hài hòa mối quan hệ giữa lợi ích chung của dân tộc và lợi ích riêng của bộ phận trong Mặt trận được Hồ Chí Minh giải quyết theo nguyên tắc nào?",
+                options: [
+                    "Đặt lợi ích tối cao của Tổ quốc lên trên hết, trước hết; đồng thời tôn trọng lợi ích riêng chính đáng của các thành viên",
+                    "Thủ tiêu toàn bộ các lợi ích riêng tư cá nhân ngay năm 1945",
+                    "Ưu tiên tuyệt đối lợi ích riêng của địa chủ phú nông để tranh thủ tài chính",
+                    "Bỏ qua lợi ích tối cao của Tổ quốc để bảo vệ lợi ích giai cấp công nhân"
+                ],
+                correctIndex: 0,
+                explanation: "Lợi ích Tổ quốc là mẫu số chung cao nhất, là cơ sở để bảo đảm vững chắc cho mọi lợi ích riêng chính đáng khác[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sức mạnh của đại đoàn kết toàn dân tộc Việt Nam theo Hồ Chí Minh thực chất là sự kế thừa và nâng tầm yếu tố văn hóa tinh thần nào?",
+                options: [
+                    "Truyền thống tô thuế phong kiến trung quân",
+                    "Chủ nghĩa yêu nước truyền thống hàng ngàn năm dựng nước, giữ nước kết hợp với lý luận khoa học Mác-Lênin",
+                    "Hệ tư tưởng nho giáo tam cương ngũ thường lỗi thời",
+                    "Kinh nghiệm sản xuất tự cung tự cấp nông thôn cổ"
+                ],
+                correctIndex: 1,
+                explanation: "Sức mạnh dân tộc kết hợp với lý luận thời đại đã nâng chủ nghĩa yêu nước truyền thống lên chất lượng mới: yêu nước gắn liền với chủ nghĩa xã hội[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh khẳng định mục đích tối cao của việc đoàn kết quốc tế đối với cách mạng Việt Nam là gì?",
+                options: [
+                    "Để nhận viện trợ tài chính và di cư tự do ra nước ngoài",
+                    "Nhằm kết hợp sức mạnh dân tộc với sức mạnh thời đại, tạo sức mạnh tổng hợp cho thắng lợi cách mạng",
+                    "Để thiết lập liên minh quân sự tiến công bành trướng lãnh thổ",
+                    "Nhằm phục tùng vô điều kiện mọi nghị quyết của các đảng nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Đoàn kết quốc tế để tranh thủ sự đồng tình, ủng hộ của nhân loại tiến bộ, nhân lên gấp bội sức mạnh nội sinh của dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh lý giải thế nào về mối quan hệ biện chứng giữa đại đoàn kết dân tộc và đoàn kết quốc tế?",
+                options: [
+                    "Đại đoàn kết dân tộc hoàn toàn phụ thuộc vào việc đoàn kết quốc tế thành công trước",
+                    "Đại đoàn kết dân tộc là cơ sở cho đoàn kết quốc tế; đoàn kết quốc tế là nhân tố quan trọng bổ trợ thúc đẩy thắng lợi cách mạng",
+                    "Hai khối đoàn kết này mâu thuẫn và triệt tiêu động lực của nhau",
+                    "Đoàn kết quốc tế là nhân tố duy nhất quyết định thắng lợi kháng chiến"
+                ],
+                correctIndex: 1,
+                explanation: "Sức mạnh nội sinh dân tộc là gốc rễ vững chắc để tiến hành ngoại giao và đoàn kết quốc tế có hiệu quả thực tế[cite: 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Luận điểm của Hồ Chí Minh: \"Tinh thần yêu nước chân chính khác hẳn với tinh thần vị quốc của bọn đế quốc phản động. Nó là một bộ phận của tinh thần quốc tế\" trích từ văn kiện nào?",
+                options: [
+                    "Đường Kách mệnh (1927)",
+                    "Báo cáo chính trị tại Đại hội II (2-1951)",
+                    "Tuyên ngôn Độc lập (1945)",
+                    "Bản Di chúc thiêng liêng (1969)"
+                ],
+                correctIndex: 1,
+                explanation: "Bác luôn giáo dục tinh thần yêu nước chân chính phải đi đôi với chủ nghĩa quốc tế vô sản trong sáng, chống chủ nghĩa vị kỷ sô vanh[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống luận điểm của Bác: \"Thái độ nước Việt Nam đối với những nước Á châu là một thái độ anh em, đối với ngũ cường là một thái độ .........................\"",
+                options: [
+                    "Đối lập cảnh giác",
+                    "Bạn bè",
+                    "Kính trọng phục tùng",
+                    "Thương lượng hòa hoãn"
+                ],
+                correctIndex: 1,
+                explanation: "Thái độ ngoại giao rộng mở, chân thành làm bạn với tất cả các nước dân chủ là chính sách nhất quán của Bác[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Ngay sau khi Việt Nam giành độc lập năm 1945, Hồ Chí Minh đã thay mặt Chính phủ lâm thời tuyên bố nguyên tắc ngoại giao nào với thế giới?",
+                options: [
+                    "Độc quyền giao lưu kinh tế với phe xã hội chủ nghĩa",
+                    "Làm bạn với tất cả các nước dân chủ trên thế giới và không gây thù oán với một ai",
+                    "Thiết lập liên minh quân sự tấn công các nước lân cận",
+                    "Đóng cửa bế quan tỏa cảng chống phương Tây"
+                ],
+                correctIndex: 1,
+                explanation: "Nguyên tắc ngoại giao hòa bình, hữu nghị, đa phương hóa, đa dạng hóa mối quan hệ quốc tế của Bác đặt nền móng cho ngoại giao hiện đại[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Thế giới quan khoa học nào giúp Hồ Chí Minh xác định giai cấp vô sản thế giới và nhân dân thuộc địa là đồng minh tự nhiên của nhau?",
+                options: [
+                    "Lý luận Nho giáo quân tử và tiểu nhân",
+                    "Học thuyết Mác-Lênin về sứ mệnh lịch sử giai cấp công nhân và bản chất con đỉa hai vòi của chủ nghĩa tư bản",
+                    "Triết học duy tâm khai sáng Pháp thế kỷ XVIII",
+                    "Học thuyết kinh tế tư bản tự do phương Tây"
+                ],
+                correctIndex: 1,
+                explanation: "Chủ nghĩa tư bản hút máu cả vô sản chính quốc lẫn nhân dân thuộc địa, đòi hỏi sự liên minh chặt chẽ để chặt đứt cả hai vòi của con quái vật này[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sự sáng tạo xuất sắc nhất của Hồ Chí Minh trong việc xây dựng hệ thống Mặt trận quốc tế vì Việt Nam thể hiện ở việc hình thành bao nhiêu tầng Mặt trận?",
+                options: [
+                    "2 tầng Mặt trận",
+                    "3 tầng Mặt trận",
+                    "4 tầng Mặt trận",
+                    "5 tầng Mặt trận"
+                ],
+                correctIndex: 2,
+                explanation: "Bác đã xây dựng 4 tầng mặt trận: Đại đoàn kết dân tộc; Đoàn kết Việt-Miên-Lào; Đoàn kết Á-Phi; Mặt trận nhân dân thế giới ủng hộ Việt Nam[cite: 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Ba lực lượng quốc tế lớn được Hồ Chí Minh xác định cần phải tăng cường đoàn kết chặt chẽ là gì?",
+                options: [
+                    "Phong trào cộng sản công nhân quốc tế; Phong trào giải phóng dân tộc; Phong trào hòa bình dân chủ tiến bộ thế giới",
+                    "Các tập đoàn tư bản xuyên quốc gia; Hoàng gia phong kiến láng giềng; Quân đội Liên hợp quốc",
+                    "Các tổ chức phi chính phủ phương Tây; Phú nông địa chủ châu Á; Thương gia đô thị lớn",
+                    "Phong trào vô chính phủ; Phe trục phát xít; Các lực lượng lính đánh thuê quốc tế"
+                ],
+                correctIndex: 0,
+                explanation: "Ba lực lượng cách mạng và tiến bộ lớn tạo nên dòng chảy thời đại, nhân lên sức mạnh cho cách mạng nước ta[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tại sao Hồ Chí Minh đặc biệt coi trọng việc củng cố khối đoàn kết thống nhất trong phong trào Cộng sản và công nhân quốc tế?",
+                options: [
+                    "Vì đây là lực lượng tiên phong, hạt nhân lãnh đạo và là chỗ dựa vững chắc nhất của cách mạng thế giới và Việt Nam",
+                    "Vì các nước xã hội chủ nghĩa có nguồn vốn tích lũy tài chính lớn nhất thế giới",
+                    "Vì Quốc tế Cộng sản bắt buộc các nước nhỏ phải đóng thuế hoạt động",
+                    "Để thiết lập một thị trường thương mại tự do quốc tế độc quyền"
+                ],
+                correctIndex: 0,
+                explanation: "Khối đoàn kết giữa các Đảng Cộng sản dựa trên chủ nghĩa Mác-Lênin là bảo đảm tối cao cho sự thắng lợi của chủ nghĩa xã hội[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Hồ Chí Minh lên tiếng khẩn thiết tại Đại hội Tua (12-1920): \"Nhân danh toàn thể loài người, nhân danh tất cả các đảng viên xã hội... Các đồng chí, hãy cứu chúng tôi!\" nhằm đòi hỏi điều gì?",
+                options: [
+                    "Đòi hỏi viện trợ kinh tế khổng lồ cho An Nam",
+                    "Đòi hỏi giai cấp vô sản Pháp và các đảng xã hội phải quan tâm hành động giải phóng các dân tộc thuộc địa bị áp bức dã man",
+                    "Đòi hỏi Pháp nhượng quyền thương mại tự do đô thị",
+                    "Đòi hỏi thành lập ngay một liên minh quân sự tiến công bạo lực"
+                ],
+                correctIndex: 1,
+                explanation: "Lời kêu gọi thức tỉnh lương tri của giai cấp vô sản chính quốc đối với tình cảnh nô lệ đau khổ của nhân dân các thuộc địa An Nam[cite: 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền từ: \"Theo Hồ Chí Minh, chủ nghĩa tư bản là một lực lượng ........................, kẻ thù của giai cấp công nhân và nhân dân lao động toàn thế giới, nên cuộc đấu tranh chống lại nó phải mang tính quốc tế khăng khít.\"",
+                options: [
+                    "Nội địa nhỏ bé",
+                    "Quốc tế",
+                    "Phong kiến bảo thủ",
+                    "Vô hại lâm thời"
+                ],
+                correctIndex: 1,
+                explanation: "Kẻ thù là quốc tế thì lực lượng đấu tranh lật đổ nó cũng phải mang tính liên minh quốc tế rộng rãi[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Trong kháng chiến chống Pháp (1946-1954), sự đồng tình, ủng hộ của phong trào hòa bình thế giới đã dấy lên mạnh mẽ ở quốc gia xâm lược nào nhằm bảo vệ chính nghĩa Việt Nam?",
+                options: [
+                    "Nước Mỹ",
+                    "Nước Anh",
+                    "Nước Pháp (tiêu biểu là hành động của Henri Martin, Raymonde Dien)",
+                    "Nước Nhật"
+                ],
+                correctIndex: 2,
+                explanation: "Phong trào phản chiến, đấu tranh của nhân dân Pháp ngay tại chính quốc đã góp phần làm suy yếu ý chí xâm lược của thực dân Pháp[cite: 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Nguyên tắc ứng xử cốt tử nhất trong quan hệ giữa các Đảng Cộng sản quốc tế được Hồ Chí Minh ghi trong Di chúc (1969) là gì?",
+                options: [
+                    "Mọi quyết định đều tuân theo ý chí chủ quan của Đảng lớn nhất",
+                    "Đoàn kết nhất trí giúp đỡ lẫn nhau trên cơ sở chủ nghĩa Mác-Lênin và chủ nghĩa quốc tế vô sản, có lý, có tình",
+                    "Phủ nhận các nguyên lý cơ bản của vô sản khi có bất đồng ý kiến",
+                    "Cắt đứt hoàn toàn quan hệ ngoại giao khi có sự bất đồng quan điểm lý luận"
+                ],
+                correctIndex: 1,
+                explanation: "Đoàn kết trên nguyên tắc khoa học (có lý) và tình cảm cách mạng đồng chí chân thành, tôn trọng lẫn nhau (có tình)[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Nội dung \"Có tình\" trong nguyên tắc đoàn kết quốc tế của Hồ Chí Minh phê phán tệ nạn nguy hiểm nào giữa các nước xã hội chủ nghĩa bấy giờ?",
+                options: [
+                    "Bệnh lười biếng sản xuất nông nghiệp",
+                    "Tư tưởng sô vanh nước lớn, áp đặt ý chí đơn phương, can thiệp thô bạo vào công việc nội bộ của nước khác",
+                    "Ý chí tự lực cánh sinh dựa vào sức mình là chính",
+                    "Tính chủ động sáng tạo phát triển kinh tế nhiều thành phần"
+                ],
+                correctIndex: 1,
+                explanation: "Có tình yêu cầu tôn trọng sự độc lập, bình đẳng giữa các Đảng, tránh thói nước lớn áp đặt gây chia rẽ phong trào cộng sản[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Để đoàn kết tốt với nhân dân thế giới, Hồ Chí Minh đã giương cao ngọn cờ hòa bình gắn liền với yếu tố nào?",
+                options: [
+                    "Hòa bình trong sự thỏa hiệp đầu hàng vô điều kiện",
+                    "Hòa bình trong công lý, hòa bình thật sự gắn liền với độc lập chủ quyền dân tộc thiêng liêng",
+                    "Hòa bình tạm thời để chờ đợi viện trợ quân sự nước ngoài",
+                    "Hòa bình thông qua nhượng bộ toàn bộ chủ quyền lãnh thổ"
+                ],
+                correctIndex: 1,
+                explanation: "Hòa bình không gắn với tự do độc lập là hòa bình giả tạo, nô lệ. Hòa bình thật sự phải là hòa bình trong công lý[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh khẳng định mối quan hệ biện chứng giữa thực lực nội sinh của đất nước và công tác ngoại giao như thế nào?",
+                options: [
+                    "Ngoại giao là quyết định hoàn toàn, thực lực nội sinh chỉ là hình thức phụ trợ",
+                    "Thực lực là cái chiêng, ngoại giao là cái tiếng; chiêng có to thì tiếng mới lớn",
+                    "Đất nước không cần xây dựng thực lực, chỉ cần khôn khéo ngoại giao",
+                    "Thực lực quân sự mạnh sẽ tự động xóa bỏ hoàn toàn nhu cầu ngoại giao quốc tế"
+                ],
+                correctIndex: 1,
+                explanation: "Ngoại giao chỉ có thể phát huy sức mạnh khi đất nước tự nỗ lực xây dựng thực lực cách mạng vững vàng trong nước[cite: 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong Bản Di chúc thiêng liêng (1969), Hồ Chí Minh viết về sự bất hòa giữa các Đảng anh em với tâm trạng ra sao và căn dặn điều gì?",
+                options: [
+                    "Bác bày tỏ sự thờ ơ không bận tâm đến phong trào quốc tế",
+                    "Bác bày tỏ sự đau lòng và mong muốn Đảng ta ra sức hoạt động, góp phần đắc lực vào việc khôi phục lại khối đoàn kết có lý, có tình",
+                    "Bác yêu cầu Đảng ta đứng hẳn về một phía để công kích phía bên kia",
+                    "Bác dặn Đảng ta giải tán các quan hệ đối ngoại để tập trung xây dựng trong nước"
+                ],
+                correctIndex: 1,
+                explanation: "Tâm nguyện cháy bỏng của Bác là khôi phục khối đoàn kết nhất trí của các Đảng anh em trên nền tảng khoa học và tình đồng chí[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: \"Học thuyết đại đoàn kết của Hồ Chí Minh chứng minh rằng: Sức mạnh nội lực dân tộc là nhân tố ........................, sức mạnh ngoại lực quốc tế là nhân tố rất quan trọng.\"",
+                options: [
+                    "Phụ trợ lâm thời",
+                    "Quyết định thắng lợi cách mạng",
+                    "Không đáng kể",
+                    "Thứ yếu có thể bỏ qua"
+                ],
+                correctIndex: 1,
+                explanation: "Nội lực tự lực tự cường luôn giữ vai trò quyết định tối cao đến sự sống còn và thành bại của cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Nguyễn Ái Quốc tham gia sáng lập Hội Liên hiệp thuộc địa tại Pháp vào năm nào để khơi nguồn đoàn kết các nước thuộc địa Pháp?",
+                options: [
+                    "Năm 1911",
+                    "Năm 1920",
+                    "Năm 1921",
+                    "Năm 1925"
+                ],
+                correctIndex: 2,
+                explanation: "Tháng 10-1921, tại Paris, Người cùng các đồng chí lập Hội Liên hiệp thuộc địa, ra báo Le Paria để tuyên truyền cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Phương châm hành động \"Đem sức ta mà giải phóng cho ta\" thể hiện tinh thần nào của Hồ Chí Minh?",
+                options: [
+                    "Tinh thần ỷ lại, chờ đợi sự giúp đỡ của các nước lớn xã hội chủ nghĩa",
+                    "Tinh thần độc lập, tự chủ, tự lực cánh sinh, dựa vào nguồn nội lực vĩ đại của chính nhân dân mình",
+                    "Sự cô lập tuyệt đối, bài trừ quan hệ quốc tế",
+                    "Sự nhượng bộ chính trị để nhận quy chế tự trị từ Pháp"
+                ],
+                correctIndex: 1,
+                explanation: "Tự cứu lấy mình trước khi chờ người khác đến cứu là nguyên tắc sống còn của một dân tộc muốn có độc lập thực chất[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Trong hai cuộc kháng chiến vĩ đại, đường lối độc lập tự chủ của Đảng ta đã giúp giải quyết xuất sắc mâu thuẫn bất đồng gay gắt giữa hai nước lớn xã hội chủ nghĩa nào?",
+                options: [
+                    "Liên Xô và Trung Quốc",
+                    "Trung Quốc và Triều Tiên",
+                    "Liên Xô và Ba Lan",
+                    "Trung Quốc và Cuba"
+                ],
+                correctIndex: 0,
+                explanation: "Đường lối độc lập, tự chủ, sáng tạo của Đảng ta đã đoàn kết tranh thủ được tối đa sự giúp đỡ của cả Liên Xô và Trung Quốc cho cuộc kháng chiến đánh Mỹ[cite: 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Theo Hồ Chí Minh, đại đoàn kết dân tộc có vai trò như thế nào trong sự nghiệp cách mạng?",
+                options: [
+                    "Là một giải pháp tạm thời trong chiến tranh",
+                    "Là vấn đề có ý nghĩa chiến lược, quyết định thành công của cách mạng",
+                    "Là một công cụ để thỏa hiệp chính trị với thực dân Pháp",
+                    "Là việc phụ thuộc hoàn toàn vào chỉ đạo của Quốc tế Cộng sản"
+                ],
+                correctIndex: 1,
+                explanation: "Đại đoàn kết dân tộc có ý nghĩa chiến lược, là sợi chỉ đỏ xuyên suốt toàn bộ tiến trình cách mạng Việt Nam[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh lý giải thế nào về khái niệm 'chiến lược' đối với chính sách đại đoàn kết dân tộc?",
+                options: [
+                    "Là kế hoạch ngắn hạn để đối phó với kẻ thù",
+                    "Là chính sách cơ bản, nhất quán, lâu dài và xuyên suốt, không phải thủ đoạn mị dân nhất thời",
+                    "Là biện pháp áp dụng khi lực lượng vũ trang suy yếu",
+                    "Là phương châm hành động chỉ dành riêng cho giai cấp công nhân"
+                ],
+                correctIndex: 1,
+                explanation: "Đại đoàn kết toàn dân là chiến lược tập hợp lực lượng, quyết định sự thành bại lâu dài của cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong Bản Di chúc thiêng liêng (1969), Hồ Chí Minh căn dặn điều gì về sự đoàn kết nhất trí của Đảng?",
+                options: [
+                    "Phải giữ gìn sự đoàn kết nhất trí của Đảng như giữ gìn tài sản của cá nhân mình",
+                    "Các đồng chí từ Trung ương đến các chi bộ cần phải giữ gìn sự đoàn kết nhất trí của Đảng như giữ gìn con ngươi của mắt mình",
+                    "Chỉ cần đoàn kết nhất trí giữa các cán bộ cấp cao của Đảng",
+                    "Sự đoàn kết nhất trí chỉ cần thiết khi đất nước hòa bình thống nhất"
+                ],
+                correctIndex: 1,
+                explanation: "Bác ví sự đoàn kết trong Đảng như 'con ngươi của mắt mình', nhấn mạnh tầm quan trọng tối cao của nó đối với sinh mệnh của Đảng[cite: 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: \"Hồ Chí Minh chỉ rõ, Mặt trận dân tộc thống nhất phải được xây dựng trên nền tảng khối ........................ , đặt dưới sự lãnh đạo của Đảng.\"",
+                options: [
+                    "Liên minh tư sản và tiểu tư sản ái quốc",
+                    "Liên minh công - nông - trí thức",
+                    "Hợp tác kinh tế thương mại tự do",
+                    "Liên kết với các đảng phái tiến bộ quốc tế"
+                ],
+                correctIndex: 1,
+                explanation: "Khối liên minh công - nông - trí thức là nền tảng cốt tử, vững chắc nhất của Mặt trận dân tộc thống nhất[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Mặt trận Liên Việt (Mặt trận liên hiệp quốc dân Việt Nam) được thành lập vào năm nào dưới sự lãnh đạo của Đảng và Bác Hồ?",
+                options: [
+                    "Năm 1930",
+                    "Năm 1941",
+                    "Năm 1946",
+                    "Năm 1951"
+                ],
+                correctIndex: 2,
+                explanation: "Mặt trận Liên Việt thành lập năm 1946 nhằm mở rộng tối đa khối đại đoàn kết toàn dân tộc chống thực dân Pháp xâm lược[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Tại sao Hồ Chí Minh khẳng định đại đoàn kết dân tộc phải là sự nghiệp của chính quần chúng nhân dân, do nhân dân tự xây dựng?",
+                options: [
+                    "Vì nhân dân chiếm số đông và có nguồn lực tài chính lớn nhất",
+                    "Vì cách mạng là sự nghiệp của dân chúng bị áp bức, dân là gốc, dân có sức mạnh vô địch dời non lấp bể",
+                    "Vì được sự đồng ý bằng văn bản của chính phủ thực dân",
+                    "Để giảm bớt gánh nặng chi phí hành chính cho bộ máy nhà nước"
+                ],
+                correctIndex: 1,
+                explanation: "Dân là gốc, dân là nguồn lực vĩ đại của cách mạng. Dân có thông, dân có đồng lòng thì cách mạng mới thành công[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Giá trị lý luận trường tồn nhất của tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc đối với công cuộc xây dựng đất nước hiện nay là gì?",
+                options: [
+                    "Là công cụ để rập khuôn các mô hình liên minh chính trị của nước ngoài",
+                    "Là cơ sở khoa học, kim chỉ nam đúng đắn để tập hợp, phát huy nguồn nội lực vĩ đại của mọi người Việt Nam, xây dựng đất nước giàu mạnh phồn vinh",
+                    "Là tài liệu lịch sử tham khảo không còn giá trị thực tiễn",
+                    "Là cơ sở để thiết lập hệ thống nghị viện đa đảng đối lập"
+                ],
+                correctIndex: 1,
+                explanation: "Tư tưởng đại đoàn kết của Người vẫn nguyên giá trị thời sự, định hướng sự đồng thuận, tập hợp sức mạnh toàn dân tộc ngày nay[cite: 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Học thuyết đại đoàn kết của Hồ Chí Minh xác định ai là hạt nhân lãnh đạo khối đại đoàn kết toàn dân tộc?",
+                options: [
+                    "Giai cấp tư sản dân tộc",
+                    "Đảng Cộng sản Việt Nam",
+                    "Mặt trận Tổ quốc Việt Nam",
+                    "Các chuyên gia cố vấn quốc tế"
+                ],
+                correctIndex: 1,
+                explanation: "Đảng Cộng sản Việt Nam là lực lượng duy nhất đủ uy tín, năng lực lãnh đạo khối đại đoàn kết toàn dân tộc đi đến thắng lợi[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh chỉ rõ, Đảng Cộng sản lãnh đạo Mặt trận dân tộc thống nhất bằng phương thức chủ yếu nào?",
+                options: [
+                    "Sử dụng các sắc lệnh hành chính bắt buộc phục tùng",
+                    "Thông qua đường lối đúng đắn, sự thuyết phục, giáo dục, cảm hóa và tính gương mẫu của cán bộ, đảng viên",
+                    "Độc quyền phân phối tài sản vật chất cho các thành viên",
+                    "Sử dụng lực lượng quân đội để cưỡng chế đồng thuận"
+                ],
+                correctIndex: 1,
+                explanation: "Đảng là thành viên bình đẳng của Mặt trận, lãnh đạo bằng sự thuyết phục, làm gương và đường lối khoa học đúng đắn[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Lời dạy của Bác Hồ: \"Ai có tài, có đức, có sức, có lòng phụng sự Tổ quốc và nhân dân thì ta đoàn kết với họ\" thể hiện khía cạnh nào của chính sách đại đoàn kết?",
+                options: [
+                    "Tính hẹp hòi, cô lập giai cấp triệt để",
+                    "Biên độ đoàn kết rộng rãi, cởi mở, không thành kiến, sẵn sàng đoàn kết với mọi người yêu nước chân chính",
+                    "Sự thỏa hiệp vô nguyên tắc với kẻ thù phản cách mạng",
+                    "Chính sách phân phối sản phẩm bình quân cào bằng"
+                ],
+                correctIndex: 1,
+                explanation: "Chính sách của Bác rất rộng mở, khoan dung, hướng tới quy tụ tối đa mọi nguồn lực của con dân đất Việt phụng sự đất nước[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: \"Đại đoàn kết toàn dân trong tư tưởng Hồ Chí Minh có đối tượng rất đa dạng... nhưng đều có chung một mục tiêu tối cao là ........................ , hạnh phúc của nhân dân.\"",
+                options: [
+                    "Hợp tác quốc tế đa phương",
+                    "Độc lập dân tộc, tự do",
+                    "Phát triển kinh tế đô thị lớn",
+                    "Thủ tiêu hoàn toàn kinh tế tư nhân"
+                ],
+                correctIndex: 1,
+                explanation: "Mục tiêu tối cao thống nhất hành động của mọi thành viên Mặt trận là độc lập tự do cho Tổ quốc, ấm no cho nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Năm 1941, Hồ Chí Minh về nước và quyết định thành lập Mặt trận nào riêng biệt cho Việt Nam để tập trung lực lượng cứu nước?",
+                options: [
+                    "Hội phản đế đồng minh Đông Dương",
+                    "Mặt trận Việt Minh (Việt Nam độc lập đồng minh)",
+                    "Mặt trận Liên Việt",
+                    "Mặt trận Tổ quốc Việt Nam"
+                ],
+                correctIndex: 1,
+                explanation: "Sự thành lập Mặt trận Việt Minh năm 1941 là bước chuẩn bị quyết định về mặt lực lượng cho sự thắng lợi của Cách mạng Tháng Tám[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Tại sao Hồ Chí Minh cho rằng Mặt trận dân tộc thống nhất hoạt động phải tuân thủ nguyên tắc 'Hiệp thương dân chủ'?",
+                options: [
+                    "Để dễ dàng áp đặt ý chí đơn phương của Đảng Cộng sản",
+                    "Để bảo đảm sự tôn trọng lẫn nhau, cùng bàn bạc, tự nguyện thống nhất hành động vì mục tiêu chung, tránh áp đặt gò ép",
+                    "Vì đây là yêu cầu tài chính của các nhà tài trợ nước ngoài",
+                    "Để kéo dài thời gian tranh luận hành chính giữa các thành viên"
+                ],
+                correctIndex: 1,
+                explanation: "Hiệp thương dân chủ bảo đảm tính tự nguyện, tự giác và sự đồng thuận bền chặt của tất cả các lực lượng tham gia Mặt trận[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sự khác biệt lớn nhất giữa tư tưởng đại đoàn kết của Hồ Chí Minh với tư tưởng tập hợp lực lượng của các bậc tiền bối phong kiến là gì?",
+                options: [
+                    "Tiền bối chỉ dựa vào súng ống đạn dược hiện đại phương Tây",
+                    "Hồ Chí Minh khẳng định đại đoàn kết toàn dân tộc dựa trên liên minh công - nông - trí thức làm nòng cốt; sỹ phu yêu nước phong kiến nặng về tôn quân phong kiến",
+                    "Bác chủ trương dựa hẳn vào sự viện trợ hoàn toàn từ bên ngoài",
+                    "Bác từ chối tập hợp lực lượng trí thức và tư sản dân tộc"
+                ],
+                correctIndex: 1,
+                explanation: "Sự đoàn kết của Bác dựa trên cơ sở khoa học giai cấp vững chắc là khối liên minh công nông trí, bám rễ sâu trong lòng nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Lực lượng đoàn kết quốc tế đầu tiên và quan trọng nhất được Hồ Chí Minh xác định là gì?",
+                options: [
+                    "Tập đoàn công thương phương Tây",
+                    "Phong trào cộng sản và công nhân quốc tế",
+                    "Hoàng gia phong kiến các nước châu Á",
+                    "Các tổ chức tôn giáo quốc tế lớn"
+                ],
+                correctIndex: 1,
+                explanation: "Phong trào cộng sản và công nhân quốc tế là chỗ dựa, là đồng minh tin cậy nhất của cách mạng vô sản ở thuộc địa[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh lý giải thế nào về ý nghĩa của việc thực hiện nguyên tắc đoàn kết quốc tế 'Có lý, có tình'?",
+                options: [
+                    "Là sự phục tùng tuyệt đối không thảo luận các chỉ thị từ nước ngoài",
+                    "Là đoàn kết trên cơ sở chủ nghĩa Mác-Lênin, tôn trọng độc lập chủ quyền lẫn nhau, đối xử chân thành đồng chí, tránh áp đặt nước lớn",
+                    "Là việc cắt đứt quan hệ ngoại giao khi có bất đồng ý kiến nhỏ",
+                    "Là sự nhượng bộ toàn bộ quyền lợi dân tộc để đổi lấy hòa bình"
+                ],
+                correctIndex: 1,
+                explanation: "Đoàn kết quốc tế đòi hỏi sự vững vàng về nguyên tắc khoa học (lý) và ứng xử văn hóa, ân nghĩa cách mạng (tình)[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Luận điểm của Bác Hồ: \"Giúp nhân dân nước bạn chính là tự giúp mình\" được thể hiện sâu sắc nhất trong mối quan hệ chiến đấu giữa Việt Nam với những nước nào?",
+                options: [
+                    "Các nước xã hội chủ nghĩa Đông Âu",
+                    "Lào và Campuchia trên bán đảo Đông Dương",
+                    "Hợp chủng quốc Hoa Kỳ và Pháp",
+                    "Liên Xô và Trung Quốc"
+                ],
+                correctIndex: 1,
+                explanation: "Mối quan hệ liên minh chiến đấu chặt chẽ giữa ba nước Đông Dương cùng chung kẻ thù là thực tế sinh động của luận điểm này[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống lời Bác Hồ căn dặn: \"Chúng ta phải tranh đấu cho tự do, độc lập của các dân tộc khác như là tranh đấu cho ........................ vậy.\"",
+                options: [
+                    "Lợi ích kinh tế của nước lớn",
+                    "Dân tộc ta",
+                    "Hợp tác xã thuộc địa An Nam",
+                    "Giai cấp địa chủ phong kiến"
+                ],
+                correctIndex: 1,
+                explanation: "Tinh thần quốc tế trong sáng, cao cả coi sự nghiệp giải phóng của bạn như của chính mình là bản chất nhân văn Hồ Chí Minh[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Hồ Chí Minh đã tham gia sáng lập Hội Liên hiệp thuộc địa tại Pháp vào năm nào nhằm tuyên truyền và liên kết phong trào giải phóng thuộc địa?",
+                options: [
+                    "Năm 1911",
+                    "Năm 1919",
+                    "Năm 1921",
+                    "Năm 1925"
+                ],
+                correctIndex: 2,
+                explanation: "Năm 1921, tại Paris, Người cùng các chiến sỹ cách mạng thuộc địa sáng lập Hội Liên hiệp thuộc địa, ra tờ báo Le Paria[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Ý nghĩa của phương châm chiến lược \"Tự lực cánh sinh, dựa vào sức mình là chính\" trong quan hệ quốc tế của Hồ Chí Minh là gì?",
+                options: [
+                    "Từ chối mọi sự giúp đỡ, viện trợ của quốc tế để giữ độc lập",
+                    "Khẳng định thực lực nội sinh của dân tộc là quyết định; muốn người ta giúp mình thì trước hết mình phải tự giúp lấy mình",
+                    "Chờ đợi sự tự sụp đổ của chủ nghĩa đế quốc không cần đấu tranh",
+                    "Thỏa hiệp với chính phủ thực dân để nhận hỗ trợ tài chính"
+                ],
+                correctIndex: 1,
+                explanation: "Sức mạnh nội lực tự lực tự cường là nền tảng để tiếp nhận và nhân lên sức mạnh viện trợ quốc tế có hiệu quả[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Đường lối ngoại giao độc lập, tự chủ của Đảng ta dưới sự định hướng của Hồ Chí Minh đã mang lại thắng lợi ngoại giao lịch sử xuất sắc nào năm 1954?",
+                options: [
+                    "Ký kết Hiệp định Sơ bộ 6-3",
+                    "Ký kết Hiệp định Giơ-ne-vơ về chấm dứt chiến tranh ở Đông Dương",
+                    "Ký kết Hiệp ước Hòa bình Versailles",
+                    "Ký kết Hiệp định Paris 1973"
+                ],
+                correctIndex: 1,
+                explanation: "Hiệp định Giơ-ne-vơ 1954 là thắng lợi to lớn của ngoại giao Việt Nam, buộc Pháp rút quân, miền Bắc độc lập đi lên chủ nghĩa xã hội[cite: 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh coi yếu tố nào là động lực chủ yếu thúc đẩy sự phát triển của xã hội Việt Nam tiến lên chủ nghĩa xã hội?",
+                options: [
+                    "Sự cạnh tranh của các thành phần kinh tế tư nhân",
+                    "Khối đại đoàn kết toàn dân tộc trên nền tảng liên minh công - nông - trí thức",
+                    "Sự viện trợ vũ khí tối tân từ nước ngoài",
+                    "Các sắc lệnh bạo lực hành chính cưỡng chế"
+                ],
+                correctIndex: 1,
+                explanation: "Sức mạnh của cả cộng đồng dân tộc đoàn kết chặt chẽ là nguồn nội lực quyết định sự thành công của công cuộc kiến thiết đất nước[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh phê phán thói quen hẹp hòi, ích kỷ cục bộ bè phái trong công tác đại đoàn kết vì tác hại của nó là gì?",
+                options: [
+                    "Làm giảm nguồn thu thuế đất đai nông nghiệp",
+                    "Làm suy yếu, rạn nứt khối đại đoàn kết toàn dân tộc, cô lập Đảng trước quần chúng nhân dân",
+                    "Khiến cho Liên Xô ngừng viện trợ tài chính",
+                    "Làm chậm tiến trình công nghiệp hóa nặng"
+                ],
+                correctIndex: 1,
+                explanation: "Bệnh hẹp hòi, bè phái chia rẽ làm mất sức mạnh của Đảng, phá hoại Mặt trận thống nhất toàn dân[cite: 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Câu nói: \"Nếu không giải quyết được vấn đề dân tộc giải phóng... thì quyền lợi của bộ phận, giai cấp đến vạn năm cũng không đòi lại được\" trích từ văn kiện nào?",
+                options: [
+                    "Đường Kách mệnh (1927)",
+                    "Nghị quyết Hội nghị Trung ương lần thứ 8 (tháng 5-1941)",
+                    "Tuyên ngôn Độc lập (1945)",
+                    "Bản Di chúc thiêng liêng (1969)"
+                ],
+                correctIndex: 1,
+                explanation: "Hội nghị Trung ương 8 (1941) do Người chủ trì đã chuyển hướng chiến lược cách mạng, đặt nhiệm vụ giải phóng dân tộc lên cao nhất[cite: 1, 1]."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: \"Học thuyết đại đoàn kết của Hồ Chí Minh chỉ rõ: Đoàn kết trong Đảng là hạt nhân, đoàn kết ........................ là nền tảng vững chắc của sự nghiệp cách mạng.\""
+                ,
+                options: [
+                    "Quốc tế vô sản",
+                    "Toàn dân tộc",
+                    "Các đảng phái đối lập",
+                    "Tầng lớp phú nông"
+                ],
+                correctIndex: 1,
+                explanation: "Đoàn kết trong Đảng là nòng cốt, dẫn dắt đại đoàn kết toàn dân tộc đi từ thắng lợi này đến thắng lợi khác[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Tháng 10 năm 1947, giữa chiến khu Việt Bắc kháng chiến chống Pháp, Bác Hồ viết tác phẩm lý luận xây dựng Đảng và Mặt trận nổi tiếng nào?",
+                options: [
+                    "Đường Kách mệnh",
+                    "Sửa đổi lối làm việc",
+                    "Đạo đức cách mạng",
+                    "Đời sống mới"
+                ],
+                correctIndex: 1,
+                explanation: "Tác phẩm 'Sửa đổi lối làm việc' là cẩm nang lý luận vô giá chỉ đạo sửa chữa khuyết điểm, củng cố tác phong cán bộ, đảng viên[cite: 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Lối sống đạo đức \"lo trước thiên hạ, vui sau thiên hạ\" của Hồ Chí Minh đóng góp thế nào cho khối đại đoàn kết toàn dân tộc?",
+                options: [
+                    "Gây lãng phí sức lao động của cán bộ",
+                    "Tạo niềm tin tuyệt đối, sự kính phục của quần chúng nhân dân đối với cán bộ, làm hạt nhân quy tụ sức mạnh đoàn kết toàn dân",
+                    "Hạn chế sự tích lũy tài chính của cá nhân đảng viên",
+                    "Thỏa hiệp với chủ nghĩa cơ hội thực dụng"
+                ],
+                correctIndex: 1,
+                explanation: "Sự gương mẫu, chí công vô tư của cán bộ là thỏi nam châm mạnh nhất thu phục nhân tâm, củng cố khối đại đoàn kết[cite: 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sự sáng tạo của Hồ Chí Minh khi kết hợp chủ nghĩa yêu nước chân chính với chủ nghĩa quốc tế vô sản trong sáng có ý nghĩa lý luận gì?",
+                options: [
+                    "Từ bỏ mục tiêu giải phóng giai cấp để giành độc lập dân tộc danh nghĩa",
+                    "Đưa chủ nghĩa yêu nước truyền thống tiến hóa thành chủ nghĩa yêu nước hiện đại, kết hợp chặt chẽ lợi ích của dân tộc mình với lợi ích nhân loại tiến bộ",
+                    "Rập khuôn máy móc mô hình liên minh quân sự của nước ngoài",
+                    "Phục tùng vô điều kiện mọi chỉ thị của các cường quốc"
+                ],
+                correctIndex: 1,
+                explanation: "Bác đã nâng tầm chủ nghĩa yêu nước lên chất lượng thời đại, hòa quyện lợi ích độc lập quốc gia với xu thế chủ nghĩa xã hội và hòa bình thế giới[cite: 1, 1]."
+            }
+        ];
+
+        
+        
+        // Theme toggler for chapters
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.classList.contains('dark')) {
+                body.classList.remove('dark');
+                document.cookie = "tthcm_theme=light; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-moon text-slate-400";
+            } else {
+                body.classList.add('dark');
+                document.cookie = "tthcm_theme=dark; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-sun text-amber-400";
+            }
+        }
+
+        function initTheme() {
+            const savedTheme = getCookie('tthcm_theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Chapter page default is light mode
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-sun text-amber-400";
+            } else {
+                document.body.classList.remove('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-moon text-slate-400";
+            }
+        }
+        
+        // Cookie helpers for progress saving
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        function saveProgress() {
+            setCookie('tthcm_c5_answers', JSON.stringify(userAnswers), 30);
+            setCookie('tthcm_c5_bookmarks', JSON.stringify(bookmarkedQuestions), 30);
+            setCookie('tthcm_c5_current', currentQuestionIndex.toString(), 30);
+        }
+
+        function loadProgress() {
+            try {
+                const savedAnswers = getCookie('tthcm_c5_answers');
+                const savedBookmarks = getCookie('tthcm_c5_bookmarks');
+                const savedCurrent = getCookie('tthcm_c5_current');
+                
+                if (savedAnswers) {
+                    const parsed = JSON.parse(savedAnswers);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        userAnswers = parsed;
+                    }
+                }
+                if (savedBookmarks) {
+                    const parsed = JSON.parse(savedBookmarks);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        bookmarkedQuestions = parsed;
+                    }
+                }
+                if (savedCurrent) {
+                    const parsed = parseInt(savedCurrent, 10);
+                    if (!isNaN(parsed) && parsed >= 0 && parsed < quizData.length) {
+                        currentQuestionIndex = parsed;
+                    }
+                }
+            } catch (e) {
+                console.error("Lỗi khi tải tiến trình:", e);
+            }
+        }
+
+        let currentQuestionIndex = 0;
+        let userAnswers = new Array(quizData.length).fill(null); // Stores selected option index
+        let bookmarkedQuestions = new Array(quizData.length).fill(false); // Bookmarked state
+
+        // Initialize question buttons in the sidebar
+        function initSidebarGrid() {
+            const gridContainer = document.getElementById('question-grid');
+            gridContainer.innerHTML = '';
+            
+            // Get active filters
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            const categoryFilter = document.getElementById('category-filter').value;
+            const stateFilter = document.getElementById('state-filter').value;
+
+            let visibleCount = 0;
+
+            quizData.forEach((q, index) => {
+                // Apply Search filter
+                const matchesSearch = q.question.toLowerCase().includes(searchQuery);
+                
+                // Apply Category filter
+                const matchesCategory = (categoryFilter === 'all' || q.category === categoryFilter);
+                
+                // Apply State filter
+                let matchesState = true;
+                const isAnswered = userAnswers[index] !== null;
+                const isCorrect = isAnswered && userAnswers[index] === q.correctIndex;
+                const isBookmarked = bookmarkedQuestions[index];
+
+                if (stateFilter === 'unanswered') {
+                    matchesState = !isAnswered;
+                } else if (stateFilter === 'correct') {
+                    matchesState = isCorrect;
+                } else if (stateFilter === 'incorrect') {
+                    matchesState = (isAnswered && !isCorrect);
+                } else if (stateFilter === 'bookmarked') {
+                    matchesState = isBookmarked;
+                }
+
+                if (matchesSearch && matchesCategory && matchesState) {
+                    visibleCount++;
+                    const btn = document.createElement('button');
+                    btn.id = `grid-btn-${index}`;
+                    
+                    // Base classes
+                    btn.className = 'py-2 rounded-xl text-xs font-black transition-all border flex items-center justify-center relative ';
+                    btn.className += getGridBtnClass(index);
+                    btn.innerText = index + 1;
+                    
+                    // Add bookmark star inside if bookmarked
+                    if (isBookmarked) {
+                        const star = document.createElement('span');
+                        star.className = 'absolute top-0 right-0 w-2 h-2 bg-amber-500 rounded-full border border-white';
+                        btn.appendChild(star);
+                    }
+
+                    btn.onclick = () => jumpToQuestion(index);
+                    gridContainer.appendChild(btn);
+                }
+            });
+
+            document.getElementById('visible-count').innerText = `Hiện: ${visibleCount}/${quizData.length}`;
+        }
+
+        function getGridBtnClass(index) {
+            // Active Question
+            if (currentQuestionIndex === index) {
+                return 'bg-red-800 text-white border-red-900 ring-2 ring-red-300';
+            }
+            
+            // Unanswered state
+            if (userAnswers[index] === null) {
+                return 'bg-slate-50 text-slate-600 hover:bg-slate-100 border-slate-200';
+            }
+            
+            // Answered state
+            const isCorrect = userAnswers[index] === quizData[index].correctIndex;
+            return isCorrect 
+                ? 'bg-emerald-100 text-emerald-800 border-emerald-300 hover:bg-emerald-200' 
+                : 'bg-red-100 text-red-800 border-red-300 hover:bg-red-200';
+        }
+
+        // Handle Search and select filters dynamically
+        function filterQuestions() {
+            initSidebarGrid();
+        }
+
+        // Track stats and progress percentage
+        function updateProgress() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            const progressPercent = Math.round((answeredCount / quizData.length) * 100);
+            
+            document.getElementById('progress-percent').innerText = progressPercent + '%';
+            document.getElementById('progress-bar').style.width = progressPercent + '%';
+            document.getElementById('answered-count').innerText = answeredCount;
+
+            // Calculate exact score
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+            
+            document.getElementById('score-display').innerText = `${correctCount}/${answeredCount}`;
+            const accuracy = answeredCount === 0 ? 0 : Math.round((correctCount / answeredCount) * 100);
+            document.getElementById('score-accuracy').innerText = `${accuracy}%`;
+        }
+
+        // Render current selected question in detail
+        function renderQuestion() {
+            const currentQ = quizData[currentQuestionIndex];
+            
+            // Text values
+            document.getElementById('question-category').innerText = currentQ.category;
+            document.getElementById('question-index-label').innerText = `Câu ${currentQuestionIndex + 1} / ${quizData.length}`;
+            document.getElementById('question-text').innerText = currentQ.question;
+
+            // Handle Bookmarked badge and star icon
+            const isBookmarked = bookmarkedQuestions[currentQuestionIndex];
+            const bBadge = document.getElementById('bookmark-badge');
+            const bIcon = document.getElementById('bookmark-icon');
+            
+            if (isBookmarked) {
+                bBadge.classList.remove('hidden');
+                bBadge.classList.add('flex');
+                bIcon.className = "fa-solid fa-star text-amber-500 scale-110";
+            } else {
+                bBadge.classList.add('hidden');
+                bBadge.classList.remove('flex');
+                bIcon.className = "fa-regular fa-star text-slate-400";
+            }
+
+            // Options Renderer
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            const answered = userAnswers[currentQuestionIndex] !== null;
+            const selectedAnswer = userAnswers[currentQuestionIndex];
+
+            currentQ.options.forEach((opt, idx) => {
+                const button = document.createElement('button');
+                button.className = 'w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between group ';
+                
+                let iconHtml = `<span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs text-slate-400 font-bold group-hover:bg-slate-100 transition-all">${String.fromCharCode(65 + idx)}</span>`;
+
+                if (!answered) {
+                    // Not answered yet
+                    button.className += 'bg-white border-slate-200 hover:border-red-700 hover:bg-red-50/20 text-slate-700 active:scale-[0.99]';
+                    button.onclick = () => selectOption(idx);
+                } else {
+                    // Already answered state
+                    button.disabled = true;
+                    if (idx === currentQ.correctIndex) {
+                        // Correct option
+                        button.className += 'bg-emerald-50 border-emerald-500 text-emerald-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>';
+                    } else if (idx === selectedAnswer) {
+                        // User selected wrong choice
+                        button.className += 'bg-red-50 border-red-500 text-red-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-red-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-xmark"></i></span>';
+                    } else {
+                        // Normal unselected wrong option
+                        button.className += 'bg-slate-50 border-slate-200 text-slate-400 opacity-60';
+                    }
+                }
+
+                button.innerHTML = `
+                    <span class="text-xs md:text-sm pr-4 font-semibold leading-relaxed">${opt}</span>
+                    ${iconHtml}
+                `;
+                optionsContainer.appendChild(button);
+            });
+
+            // Handle Navigation Buttons
+            document.getElementById('prev-btn').disabled = currentQuestionIndex === 0;
+            const nextBtn = document.getElementById('next-btn');
+            if (currentQuestionIndex === quizData.length - 1) {
+                nextBtn.innerHTML = 'Nộp bài thi <i class="fa-solid fa-paper-plane"></i>';
+                nextBtn.onclick = () => showFinalReport();
+            } else {
+                nextBtn.innerHTML = 'Câu sau <i class="fa-solid fa-arrow-right"></i>';
+                nextBtn.onclick = () => navigateQuestion(1);
+            }
+
+            // Explanation Section
+            const expBox = document.getElementById('explanation-box');
+            if (answered) {
+                expBox.classList.remove('hidden');
+                const isUserCorrect = selectedAnswer === currentQ.correctIndex;
+                
+                if (isUserCorrect) {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-emerald-50/60 border-emerald-200 text-emerald-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-emerald-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-circle-check text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Chọn cực chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-emerald-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                } else {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-red-50/60 border-red-200 text-red-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-red-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-triangle-exclamation text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Rất tiếc, chưa chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-red-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                }
+                document.getElementById('explanation-text').innerText = currentQ.explanation;
+            } else {
+                expBox.classList.add('hidden');
+            }
+
+            initSidebarGrid();
+            updateProgress();
+            saveProgress();
+        }
+
+        // Toggle bookmarks
+        function toggleBookmarkActive() {
+            bookmarkedQuestions[currentQuestionIndex] = !bookmarkedQuestions[currentQuestionIndex];
+            renderQuestion();
+        }
+
+        // Handle option click
+        function selectOption(index) {
+            userAnswers[currentQuestionIndex] = index;
+            renderQuestion();
+        }
+
+        // Jump direct from sidebar grid
+        function jumpToQuestion(index) {
+            currentQuestionIndex = index;
+            renderQuestion();
+        }
+
+        // Navigate step-by-step
+        function navigateQuestion(direction) {
+            const nextIdx = currentQuestionIndex + direction;
+            if (nextIdx >= 0 && nextIdx < quizData.length) {
+                currentQuestionIndex = nextIdx;
+                renderQuestion();
+            }
+        }
+
+        // Reset confirmation
+        function showResetModal() {
+            document.getElementById('confirm-modal').classList.remove('hidden');
+        }
+
+        function closeResetModal() {
+            document.getElementById('confirm-modal').classList.add('hidden');
+        }
+
+        function executeReset() {
+            currentQuestionIndex = 0;
+            userAnswers = new Array(quizData.length).fill(null);
+            bookmarkedQuestions = new Array(quizData.length).fill(false);
+            eraseCookie('tthcm_c5_answers');
+            eraseCookie('tthcm_c5_bookmarks');
+            eraseCookie('tthcm_c5_current');
+            closeResetModal();
+            renderQuestion();
+        }
+
+        // Show Final Exam Performance report
+        function showFinalReport() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+
+            const incorrectCount = answeredCount - correctCount;
+            const accuracy = quizData.length === 0 ? 0 : Math.round((correctCount / quizData.length) * 100);
+            
+            document.getElementById('modal-answered').innerText = `${answeredCount}/${quizData.length} câu`;
+            document.getElementById('modal-correct').innerText = `${correctCount}/${quizData.length} câu`;
+            document.getElementById('modal-incorrect').innerText = `${incorrectCount} câu`;
+            document.getElementById('modal-accuracy').innerText = `${accuracy}%`;
+
+            const gradeLabel = document.getElementById('modal-grade');
+            if (accuracy >= 90) {
+                gradeLabel.innerText = "XUẤT SẮC (A+)";
+                gradeLabel.className = "font-black text-emerald-600 text-base";
+            } else if (accuracy >= 80) {
+                gradeLabel.innerText = "GIỎI (A)";
+                gradeLabel.className = "font-black text-blue-600 text-base";
+            } else if (accuracy >= 70) {
+                gradeLabel.innerText = "KHÁ (B)";
+                gradeLabel.className = "font-black text-amber-500 text-base";
+            } else if (accuracy >= 50) {
+                gradeLabel.innerText = "ĐẠT (C/D)";
+                gradeLabel.className = "font-black text-slate-500 text-base";
+            } else {
+                gradeLabel.innerText = "CHƯA ĐẠT (F)";
+                gradeLabel.className = "font-black text-red-700 text-base";
+            }
+
+            document.getElementById('report-modal').classList.remove('hidden');
+        }
+
+        function closeReportModal() {
+            document.getElementById('report-modal').classList.add('hidden');
+        }
+
+        // Keyboard triggers for rapid testing
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                navigateQuestion(-1);
+            } else if (e.key === 'ArrowRight') {
+                navigateQuestion(1);
+            }
+        });
+
+        // App Boot on ready
+        window.onload = function () {
+            initTheme();
+            loadProgress();
+            renderQuestion();
+        }
+    
+        // Header thu gọn khi cuộn xuống (chỉ trên di động)
+        (function() {
+            const header = document.querySelector('header');
+            if (!header) return;
+            let ticking = false;
+
+            function updateHeader() {
+                if (window.innerWidth < 1024) {
+                    if (window.scrollY > 60) {
+                        header.classList.add('header-scrolled');
+                    } else {
+                        header.classList.remove('header-scrolled');
+                    }
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateHeader);
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            window.addEventListener('resize', updateHeader);
+        })();
+    </script>
+</body>
+</html>

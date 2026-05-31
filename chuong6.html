@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Chương 6 (80 Câu Phân Hóa)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        /* Custom scrollbar for sidebar grid */
+        #question-grid::-webkit-scrollbar {
+            width: 5px;
+        }
+        #question-grid::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    
+        /* Chế độ Tối (Dark Mode Overrides cho Chương) */
+        body.dark {
+            background-color: #0b0f19 !important;
+            color: #f1f5f9 !important;
+        }
+        body.dark .text-slate-700 {
+            color: #e2e8f0 !important;
+        }
+        body.dark .text-slate-400 {
+            color: #94a3b8 !important;
+        }
+        body.dark .text-red-950 {
+            color: #fca5a5 !important;
+        }
+        body.dark .text-emerald-950 {
+            color: #a7f3d0 !important;
+        }
+        body.dark .border-slate-300 {
+            border-color: #475569 !important;
+        }
+        body.dark .group:hover .group-hover\:bg-slate-100 {
+            background-color: #334155 !important;
+            color: #ffffff !important;
+            border-color: #64748b !important;
+        }
+        body.dark .bg-white {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3) !important;
+        }
+        body.dark .text-slate-900,
+        body.dark .text-slate-800,
+        body.dark .text-slate-950 {
+            color: #f8fafc !important;
+        }
+        body.dark .text-slate-600,
+        body.dark .text-slate-500 {
+            color: #cbd5e1 !important;
+        }
+        body.dark .bg-slate-50 {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-100 {
+            background-color: #0b0f19 !important;
+        }
+        body.dark input, 
+        body.dark select {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #475569 !important;
+        }
+        body.dark .border-slate-200,
+        body.dark .border-slate-100 {
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-50.border-slate-300 {
+            background-color: #1e293b !important;
+            border-color: #475569 !important;
+        }
+        body.dark .hover\:bg-red-50\/20:hover {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+        }
+        body.dark .hover\:border-red-700:hover {
+            border-color: #b91c1c !important;
+        }
+        body.dark .bg-emerald-50 {
+            background-color: rgba(16, 185, 129, 0.1) !important;
+            color: #34d399 !important;
+            border-color: #10b981 !important;
+        }
+        body.dark .bg-red-50 {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+            color: #f87171 !important;
+            border-color: #ef4444 !important;
+        }
+        body.dark .bg-slate-50.border-slate-200.text-slate-400 {
+            background-color: #1e293b !important;
+            color: #64748b !important;
+            opacity: 0.5;
+        }
+        body.dark #report-modal > div,
+        body.dark #confirm-modal > div {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+        }
+        body.dark #report-modal h3,
+        body.dark #report-modal p,
+        body.dark #confirm-modal h3,
+        body.dark #confirm-modal p {
+            color: #f8fafc !important;
+        }
+            header.header-scrolled .header-brand {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+                pointer-events: none;
+            }
+            header {
+                transition: padding 0.25s ease;
+            }
+            header.header-scrolled {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    
+        /* Scroll-based Header: Thu gọn khi cuộn xuống trên di động */
+        @media (max-width: 1023px) {
+            header .header-brand {
+                transition: opacity 0.2s ease;
+                opacity: 1;
+            }
+            header.header-scrolled .header-brand {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-red-800 text-white shadow-md py-2.5 px-4 lg:py-4 lg:px-6 sticky top-0 z-50 border-b border-amber-500">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4">
+            <div class="header-brand flex items-center gap-3">
+                <div class="bg-amber-500 p-2.5 rounded-xl shadow-inner">
+                    <i class="fa-solid fa-gavel text-2xl text-red-900 animate-pulse"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black tracking-tight flex items-center gap-2">
+                        SIÊU NGÂN HÀNG ĐỀ THI TRẮC NGHIỆM <span class="bg-amber-500 text-red-900 text-[10px] px-2 py-0.5 rounded font-extrabold uppercase align-middle">PRO A+</span>
+                    </h1>
+                    <p class="text-xs text-red-100 font-medium">Chương 6: Tư tưởng Hồ Chí Minh về xây dựng Nhà nước của dân, do dân, vì dân (80 Câu hỏi phân hóa sâu sắc)[cite: 1]</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+                <a href="/" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 transition-all duration-200" title="Quay lại trang chủ">
+                    <i class="fa-solid fa-house"></i> <span class="hidden md:inline">Trang chủ</span>
+                </a>
+                <button id="theme-toggle" onclick="toggleTheme()" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white p-2.5 rounded-xl text-sm transition-all duration-200 flex items-center justify-center" title="Chuyển chế độ Sáng/Tối">
+                    <i class="fa-solid fa-sun text-amber-400" id="theme-icon"></i>
+                </button>
+                <div class="bg-red-950 px-4 py-2 rounded-xl text-sm font-bold border border-red-700/50 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                    <span>Tỉ lệ: <span id="score-accuracy" class="text-amber-300">0%</span></span>
+                    <span class="text-slate-500">|</span>
+                    <span>Đúng: <span id="score-display" class="text-emerald-400">0/0</span></span>
+                </div>
+                <button onclick="showResetModal()" class="bg-amber-500 hover:bg-amber-600 active:scale-95 transition-all text-slate-950 px-4 py-2 rounded-xl text-sm font-extrabold flex items-center gap-2 shadow-md">
+                    <i class="fa-solid fa-rotate-right"></i> Làm lại toàn bộ
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        
+        <!-- Sidebar: Grid & Advanced Filters -->
+        <aside class="lg:col-span-1 bg-white p-4 rounded-2xl shadow-sm border border-slate-200 h-fit flex flex-col gap-4">
+            
+            <!-- Search & Filters Container -->
+            <div>
+                <h2 class="font-bold text-slate-900 mb-3 flex items-center gap-2 pb-2 border-b border-slate-100 text-sm uppercase tracking-wider">
+                    <i class="fa-solid fa-filter text-red-700"></i> Bộ lọc nâng cao
+                </h2>
+                
+                <!-- Search Input -->
+                <div class="relative mb-2.5">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400 text-xs"></i>
+                    </span>
+                    <input type="text" id="search-input" onkeyup="filterQuestions()" placeholder="Tìm từ khóa trong câu hỏi..." class="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:ring-1 focus:ring-red-600 focus:border-red-600 outline-none transition-all">
+                </div>
+
+                <!-- Category Selector -->
+                <div class="mb-2">
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Theo danh mục</label>
+                    <select id="category-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả danh mục (80 câu)</option>
+                        <option value="Nhận biết">Nhận biết</option>
+                        <option value="Thông hiểu">Thông hiểu</option>
+                        <option value="Trích dẫn">Trích dẫn</option>
+                        <option value="Lịch sử">Lịch sử</option>
+                        <option value="Điền từ">Điền vào chỗ trống</option>
+                        <option value="Trừu tượng">Tư duy trừu tượng</option>
+                        <option value="Nâng cao">Nâng cao / Cực khó</option>
+                    </select>
+                </div>
+
+                <!-- State Selector -->
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Trạng thái câu hỏi</label>
+                    <select id="state-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả câu hỏi</option>
+                        <option value="unanswered">Chưa làm</option>
+                        <option value="correct">Làm đúng</option>
+                        <option value="incorrect">Làm sai</option>
+                        <option value="bookmarked">Có đánh dấu (★)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Progress Tracker -->
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                <div class="flex justify-between text-xs text-slate-600 font-bold mb-1.5">
+                    <span>Tiến độ học tập</span>
+                    <span id="progress-percent" class="text-red-700">0%</span>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-2.5">
+                    <div id="progress-bar" class="bg-gradient-to-r from-red-600 to-amber-500 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-semibold">
+                    <span>Đã làm: <span id="answered-count">0</span>/80</span>
+                    <span>Cần đạt: 80% trở lên</span>
+                </div>
+            </div>
+
+            <!-- Question Selection Grid -->
+            <div>
+                <h3 class="font-bold text-slate-950 text-xs uppercase tracking-wider mb-2 flex justify-between items-center">
+                    <span>Bản đồ câu hỏi</span>
+                    <span class="text-[10px] text-slate-400 normal-case font-medium" id="visible-count">Hiện: 80/80</span>
+                </h3>
+                <div class="grid grid-cols-5 gap-1.5 max-h-[340px] overflow-y-auto pr-1" id="question-grid">
+                    <!-- Dynamically populated buttons -->
+                </div>
+            </div>
+
+            <!-- Legend Info -->
+            <div class="pt-3 border-t border-slate-200 grid grid-cols-2 gap-2 text-[10px] text-slate-500 font-bold">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-slate-50 border border-slate-300 inline-block"></span>
+                    <span>Chưa làm</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300 inline-block"></span>
+                    <span>Làm đúng</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-red-100 border border-red-300 inline-block"></span>
+                    <span>Làm sai</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-amber-100 border border-amber-400 inline-block"></span>
+                    <span>Đánh dấu (★)</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Active Question Viewport -->
+        <section class="lg:col-span-3 flex flex-col gap-5">
+            
+            <!-- Active Question Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 relative overflow-hidden flex flex-col gap-4">
+                
+                <!-- Tag & Info Header bar -->
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <span id="question-category" class="bg-red-50 text-red-800 text-[10px] font-black px-2.5 py-1 rounded-full border border-red-100 uppercase tracking-wider">
+                            DANH MỤC
+                        </span>
+                        <span id="bookmark-badge" class="hidden bg-amber-50 text-amber-700 text-[10px] font-black px-2.5 py-1 rounded-full border border-amber-200 uppercase tracking-wider items-center gap-1">
+                            <i class="fa-solid fa-star text-amber-500"></i> Đã đánh dấu
+                        </span>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <button onclick="toggleBookmarkActive()" class="text-slate-400 hover:text-amber-500 text-lg transition-all focus:outline-none" title="Đánh dấu câu hỏi này">
+                            <i class="fa-regular fa-star" id="bookmark-icon"></i>
+                        </button>
+                        <span class="text-xs text-slate-400 font-bold bg-slate-100 px-2.5 py-1 rounded-lg" id="question-index-label">
+                            Câu hỏi -- / --
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Question Text -->
+                <h3 class="text-base md:text-lg font-black text-slate-900 leading-snug" id="question-text">
+                    Nội dung câu hỏi đang được khởi tạo...
+                </h3>
+
+                <!-- Options -->
+                <div class="space-y-2.5" id="options-container">
+                    <!-- Dynamic option buttons -->
+                </div>
+
+                <!-- Explanation Box (Initially Hidden) -->
+                <div id="explanation-box" class="hidden mt-2 p-5 rounded-2xl border transition-all duration-300">
+                    <div class="flex items-start gap-3">
+                        <div id="explanation-icon-container" class="p-2.5 rounded-xl text-white shadow-sm flex items-center justify-center">
+                            <!-- Icon -->
+                        </div>
+                        <div class="flex-1">
+                            <h4 id="explanation-title" class="font-extrabold text-slate-900 text-sm mb-1 uppercase tracking-wider">Kết quả</h4>
+                            <p id="explanation-text" class="text-xs md:text-sm text-slate-600 leading-relaxed font-medium">
+                                Giải thích học thuyết chi tiết...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <button onclick="navigateQuestion(-1)" id="prev-btn" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 active:scale-95 font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed">
+                    <i class="fa-solid fa-circle-arrow-left"></i> Câu trước
+                </button>
+                
+                <div class="text-xs text-slate-400 font-bold hidden md:block">
+                    Mẹo: Dùng phím mũi tên <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">←</kbd> và <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">→</kbd> để chuyển câu nhanh
+                </div>
+
+                <button onclick="navigateQuestion(1)" id="next-btn" class="flex items-center gap-2 bg-red-700 hover:bg-red-800 active:scale-95 text-white font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all shadow-sm">
+                    Câu kế tiếp <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Complete Submission Bar -->
+            <div class="bg-gradient-to-r from-red-900 to-amber-700 text-white rounded-2xl p-5 shadow-md border border-amber-500/30 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <h4 class="font-black text-sm uppercase tracking-wider text-amber-300">Hoàn tất kiểm tra</h4>
+                    <p class="text-xs text-red-100 mt-1">Nộp bài để hệ thống phân tích chi tiết học lực và chấm điểm A+ theo chuẩn Đại học[cite: 1].</p>
+                </div>
+                <button onclick="showFinalReport()" class="bg-white hover:bg-amber-400 active:scale-95 text-red-950 font-black px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md">
+                    <i class="fa-solid fa-paper-plane mr-1"></i> Nộp bài & xem báo cáo
+                </button>
+            </div>
+
+
+            <!-- Chapter Navigation Bar -->
+            <div class="flex justify-between items-center bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+                <a href="/chuong5.html" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-700 active:scale-95 font-bold px-4 py-2.5 rounded-xl text-xs md:text-sm transition-all shadow-sm"><i class="fa-solid fa-circle-chevron-left text-amber-500"></i> Chương 5</a>
+                <a href="/chuong7.html" class="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 active:scale-95 text-slate-950 font-extrabold px-4 py-2.5 rounded-xl text-xs md:text-sm transition-all shadow-md ml-auto"><i class="fa-solid fa-circle-chevron-right text-red-800"></i> Chương 7</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 border-t border-slate-800 text-xs">
+        <p class="font-bold text-slate-200">Ứng dụng Siêu Ôn Tập Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Phiên Bản Cao Cấp</p>
+        <p class="mt-1 text-slate-500">Nội dung học thuật được thiết kế chuẩn xác dựa theo Bài giảng 2016 PTIT, NEU, HUST[cite: 1]</p>
+    </footer>
+
+    <!-- Confirm Reset Modal -->
+    <div id="confirm-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-amber-500 text-5xl text-center mb-4">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 text-center mb-2 uppercase tracking-wide">Làm lại từ đầu?</h3>
+            <p class="text-xs md:text-sm text-slate-500 text-center mb-6 leading-relaxed">
+                Hành động này sẽ xóa toàn bộ tiến trình trả lời và thống kê điểm hiện tại của bạn. Bạn đã sẵn sàng reset?
+            </p>
+            <div class="flex gap-3">
+                <button onclick="closeResetModal()" class="flex-1 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 font-bold text-xs transition-all">
+                    Quay lại
+                </button>
+                <button onclick="executeReset()" class="flex-1 py-2.5 rounded-xl bg-red-700 text-white hover:bg-red-800 font-bold text-xs transition-all shadow-md">
+                    Xác nhận xóa
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Score Report Modal -->
+    <div id="report-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-red-700 text-5xl text-center mb-4">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900 text-center mb-1 uppercase tracking-wide">Báo Cáo Học Lực</h3>
+            <p class="text-xs text-slate-400 text-center mb-5">Học phần Tư tưởng Hồ Chí Minh - Chương 6[cite: 1]</p>
+            
+            <div class="bg-slate-50 rounded-2xl p-4 mb-6 space-y-3.5 border border-slate-100">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu hỏi đã làm:</span>
+                    <span id="modal-answered" class="font-extrabold text-slate-800 text-sm">0/80 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm đúng:</span>
+                    <span id="modal-correct" class="font-extrabold text-emerald-600 text-sm">0/80 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm sai:</span>
+                    <span id="modal-incorrect" class="font-extrabold text-red-600 text-sm">0 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Tỷ lệ chính xác:</span>
+                    <span id="modal-accuracy" class="font-black text-amber-500 text-base">0%</span>
+                </div>
+                <div class="flex justify-between items-center text-xs pt-2.5 border-t border-slate-200">
+                    <span class="text-slate-500 font-bold">Xếp loại học phần:</span>
+                    <span id="modal-grade" class="font-black text-red-700 text-base">F</span>
+                </div>
+            </div>
+
+            <button onclick="closeReportModal()" class="w-full py-3 rounded-xl bg-red-800 hover:bg-red-900 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md">
+                Tiếp tục xem chi tiết đáp án câu hỏi
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Siêu cơ sở dữ liệu: 80 câu hỏi phân hóa tinh vi của Chương 6
+        const quizData = [
+            {
+                category: "Nhận biết",
+                question: "Khái niệm 'dân chủ' theo tư tưởng Hồ Chí Minh được định nghĩa một cách mộc mạc nhất nghĩa là gì?",
+                options: [
+                    "Nước nhà do nhà vua và triều đình trị vì",
+                    "Nước nhà do nhân dân làm chủ, mọi quyền hành đều ở nơi dân",
+                    "Sự độc quyền quản lý của giai cấp công nhân",
+                    "Sự tự do tuyệt đối không có pháp luật kiềm chế"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh chỉ rõ: 'Nước ta là nước dân chủ, nghĩa là nước nhà do nhân dân làm chủ'. 'Dân chủ là dân là chủ, dân làm chủ'[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trong chế độ dân chủ mới, theo Hồ Chí Minh, địa vị cao nhất trong Nhà nước thuộc về ai?",
+                options: [
+                    "Ban Chấp hành Trung ương Đảng",
+                    "Chủ tịch nước và Thủ tướng Chính phủ",
+                    "Nhân dân, vì dân là chủ",
+                    "Quốc hội nước Cộng hòa xã hội chủ nghĩa"
+                ],
+                correctIndex: 2,
+                explanation: "Người khẳng định: 'Nước ta là nước dân chủ, địa vị cao nhất là dân, vì dân là chủ'[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Khái niệm 'Dân là chủ' trong tư tưởng Hồ Chí Minh nhấn mạnh khía cạnh nào ở người dân?",
+                options: [
+                    "Chỉ vị thế, địa vị tối cao của người dân trong xã hội",
+                    "Chỉ năng lực và nghĩa vụ thực thi quyền lực của người dân",
+                    "Chỉ quyền lợi nhận phân phối tài sản bình quân",
+                    "Chỉ sự lệ thuộc vào các quyết định hành chính của chính quyền"
+                ],
+                correctIndex: 0,
+                explanation: "'Dân là chủ' (danh từ) xác định địa vị, vị thế chủ thể của dân; còn 'Dân làm chủ' (động từ) xác định vai trò, nghĩa vụ thực thi quyền lực[cite: 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Khái niệm 'Dân làm chủ' trong tư tưởng Hồ Chí Minh xác định khía cạnh nào ở người dân?",
+                options: [
+                    "Sự thụ động chấp hành nghị quyết từ cấp trên",
+                    "Quyền được hưởng thụ mà không cần thực hiện nghĩa vụ",
+                    "Năng lực và trách nhiệm trực tiếp tham gia quản lý, thực thi quyền lực nhà nước",
+                    "Sự bình đẳng tuyệt đối về thu nhập tài chính"
+                ],
+                correctIndex: 2,
+                explanation: "'Dân làm chủ' phản ánh nghĩa vụ, năng lực hành động và trách nhiệm thực tế của người dân trong quản lý nhà nước và xã hội[cite: 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh chỉ rõ bản chất dân chủ của chế độ ta được thể hiện tập trung và sâu sắc nhất ở đâu?",
+                options: [
+                    "Trong các hoạt động thương nghiệp tư nhân tự do",
+                    "Trong tổ chức và hoạt động của bộ máy Nhà nước",
+                    "Trong việc ban hành các sắc lệnh cấm tôn giáo",
+                    "Trong các buổi họp báo của Bộ Ngoại giao"
+                ],
+                correctIndex: 1,
+                explanation: "Nhà nước là công cụ quyền lực của nhân dân, do đó bản chất dân chủ được thể hiện tập trung nhất ở bộ máy Nhà nước của dân, do dân, vì dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Đặc trưng cốt lõi nhất của Nhà nước 'của dân' theo tư tưởng Hồ Chí Minh là gì?",
+                options: [
+                    "Nhà nước do một đảng phái quân phiệt độc quyền kiểm soát",
+                    "Tất cả quyền lực trong nhà nước và xã hội đều thuộc về nhân dân",
+                    "Nhà nước được hỗ trợ tài chính hoàn toàn từ nước ngoài",
+                    "Sự bình đẳng tuyệt đối không phân biệt tội phạm"
+                ],
+                correctIndex: 1,
+                explanation: "Nhà nước của dân nghĩa là mọi quyền lực trong nước đều thuộc về nhân dân, dân là chủ thể tối cao của quyền lực nhà nước[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Điều mấy trong Hiến pháp đầu tiên của nước ta (Hiến pháp 1946) khẳng định quyền bính trong nước thuộc về toàn thể nhân dân?",
+                options: [
+                    "Điều 1 Hiến pháp 1946",
+                    "Điều 10 Hiến pháp 1946",
+                    "Điều 32 Hiến pháp 1946",
+                    "Điều 70 Hiến pháp 1946"
+                ],
+                correctIndex: 0,
+                explanation: "Điều 1 Hiến pháp 1946 quy định rõ: 'Nước Việt Nam là một nước dân chủ cộng hòa. Tất cả quyền bính trong nước là của toàn thể nhân dân Việt Nam...'[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Quy định về trưng cầu dân ý tại Điều 32 Hiến pháp 1946 phản ánh hình thức dân chủ nào?",
+                options: [
+                    "Dân chủ đại diện",
+                    "Dân chủ trực tiếp",
+                    "Dân chủ tập trung quân sự",
+                    "Dân chủ thỏa hiệp đa đảng"
+                ],
+                correctIndex: 1,
+                explanation: "Trưng cầu dân ý là hình thức dân chủ trực tiếp, cho phép nhân dân trực tiếp bỏ phiếu quyết định những việc hệ trọng của quốc gia[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trong Nhà nước ta, nhân dân thực hiện quyền lực của mình thông qua cơ quan đại biểu nào do mình trực tiếp bầu ra?",
+                options: [
+                    "Mặt trận Tổ quốc Việt Nam và các hội đoàn",
+                    "Quốc hội và Hội đồng nhân dân các cấp",
+                    "Tòa án nhân dân và Viện kiểm sát nhân dân",
+                    "Bộ Công an và các đơn vị quân đội"
+                ],
+                correctIndex: 1,
+                explanation: "Quốc hội và Hội đồng nhân dân các cấp là các cơ quan đại biểu do dân bầu ra để thực thi quyền làm chủ (dân chủ gián tiếp)[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Quyền lực tối cao của nhân dân đối với các đại biểu do mình bầu ra được khẳng định qua quyền hạn đặc biệt nào?",
+                options: [
+                    "Quyền được nhận lương trực tiếp từ đại biểu",
+                    "Quyền bãi miễn đại biểu nếu họ tỏ ra không còn xứng đáng với sự tín nhiệm của nhân dân",
+                    "Quyền yêu cầu đại biểu cấp đất đai xây nhà",
+                    "Quyền tự do phán quyết tòa án không cần luật pháp"
+                ],
+                correctIndex: 1,
+                explanation: "Để giữ vững bản chất của dân, nhân dân có quyền bãi miễn các đại biểu Quốc hội và Hội đồng nhân dân nếu họ tha hóa, thoái hóa[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Bản chất của Nhà nước 'do dân' theo tư tưởng Hồ Chí Minh được thể hiện ở khía cạnh nào?",
+                options: [
+                    "Nhà nước do nhân dân tự đóng cửa kinh tế để xây dựng",
+                    "Nhà nước do nhân dân lựa chọn, bầu ra, ủng hộ, đóng thuế nuôi dưỡng và kiểm soát, đóng góp phê bình",
+                    "Nhà nước chỉ sử dụng cán bộ là nông dân lao động",
+                    "Nhà nước được quản lý trực tiếp bằng ý chí tự phát của nhân dân"
+                ],
+                correctIndex: 1,
+                explanation: "Nhà nước do dân là nhà nước do dân xây dựng, ủng hộ, nuôi dưỡng, đóng góp ý kiến phê bình để không ngừng hoàn thiện[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trong cơ cấu bộ máy Nhà nước, cơ quan nào được Hồ Chí Minh xác định là cơ quan hành chính cao nhất, thực hiện quản lý điều hành?",
+                options: [
+                    "Ủy ban Thường vụ Quốc hội",
+                    "Chính phủ",
+                    "Tòa án nhân dân tối cao",
+                    "Ban Chấp hành Trung ương Đảng"
+                ],
+                correctIndex: 1,
+                explanation: "Chính phủ là cơ quan hành chính nhà nước cao nhất, chấp hành pháp luật và nghị quyết của Quốc hội dưới sự lãnh đạo của Đảng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Bản chất cốt tử của Nhà nước 'vì dân' theo tư tưởng Hồ Chí Minh là gì?",
+                options: [
+                    "Nhà nước chỉ quan tâm phục vụ quyền lợi của cán bộ công chức",
+                    "Nhà nước đặt mục tiêu chăm lo, phục vụ lợi ích, quyền lợi chính đáng và hạnh phúc của nhân dân lên trên hết, trước hết",
+                    "Nhà nước độc quyền phân phối bình quân mọi loại tài sản",
+                    "Nhà nước sử dụng bạo lực để cưỡng bức nhân dân đồng thuận"
+                ],
+                correctIndex: 1,
+                explanation: "Nhà nước vì dân phục vụ lợi ích nhân dân, không mưu cầu đặc quyền đặc lợi, lấy hạnh phúc của dân làm thước đo[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Luận điểm của Bác: 'Việc gì có lợi cho dân, ta phải hết sức làm. Việc gì có hại cho dân, ta phải hết sức tránh' phản ánh sâu sắc bản chất nào?",
+                options: [
+                    "Bản chất Nhà nước của dân",
+                    "Bản chất Nhà nước do dân",
+                    "Bản chất Nhà nước vì dân",
+                    "Bản chất Nhà nước đa đảng lập hiến"
+                ],
+                correctIndex: 2,
+                explanation: "Mọi việc làm của Chính phủ và cán bộ đều phải hướng tới lợi ích của dân, đó là bản chất của Nhà nước vì dân phục vụ[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Bản chất giai cấp công nhân của Nhà nước ta theo tư tưởng Hồ Chí Minh được quy định và bảo đảm vững chắc nhất bởi nhân tố nào?",
+                options: [
+                    "Sự bảo trợ tài chính của các nước xã hội chủ nghĩa",
+                    "Sự lãnh đạo duy nhất của Đảng Cộng sản Việt Nam",
+                    "Số lượng đảng viên xuất thân từ giai cấp nông dân chiếm đa số",
+                    "Sự giám sát của các tổ chức phi chính phủ quốc tế"
+                ],
+                correctIndex: 1,
+                explanation: "Sự lãnh đạo của Đảng Cộng sản Việt Nam (đội tiên phong giai cấp công nhân) là nhân tố quyết định giữ vững bản chất giai cấp công nhân của Nhà nước[cite: 1, 1]."
+            },
+            {
+                category: "STREAMING_CHUNK: Continuing questions on State's working principles... -->",
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh chỉ rõ, Đảng Cộng sản lãnh đạo Nhà nước bằng những phương thức chủ yếu nào sau đây?",
+                options: [
+                    "Trực tiếp điều hành mọi công việc hành chính thay thế Chính phủ",
+                    "Bằng đường lối chủ trương; thông qua các tổ chức đảng, đảng viên gương mẫu trong bộ máy nhà nước và bằng công tác kiểm tra",
+                    "Sử dụng các chỉ thị quân sự bắt buộc phục tùng hành chính",
+                    "Độc quyền phân phối tài sản công cho các cán bộ"
+                ],
+                correctIndex: 1,
+                explanation: "Đảng lãnh đạo bằng nghị quyết, định hướng chiến lược, phát huy vai trò của đảng viên và kiểm tra giám sát, không bao biện làm thay Nhà nước[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Nguyên tắc tổ chức và hoạt động cơ bản nhất của bộ máy Nhà nước ta được Hồ Chí Minh xác định là nguyên tắc nào?",
+                options: [
+                    "Tập thể lãnh đạo, cá nhân phụ trách",
+                    "Tập trung dân chủ",
+                    "Hiệp thương dân chủ công khai",
+                    "Tự phê bình và phê bình"
+                ],
+                correctIndex: 1,
+                explanation: "Tập trung dân chủ là nguyên tắc tổ chức cơ bản nhất của cả Đảng và bộ máy Nhà nước ta nhằm thống nhất ý chí và hành động[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Sự thống nhất giữa bản chất giai cấp công nhân với tính nhân dân và tính dân tộc của Nhà nước ta thể hiện sâu sắc nhất ở khía cạnh nào?",
+                options: [
+                    "Sự thỏa hiệp lợi ích với giai cấp địa chủ tư sản",
+                    "Lợi ích tối cao của giai cấp công nhân hoàn toàn thống nhất với lợi ích, khát vọng của nhân dân lao động và toàn dân tộc",
+                    "Nhà nước thực hiện cào bằng thu nhập của tất cả các giai cấp",
+                    "Việc Nhà nước đóng cửa kinh tế tự cung tự cấp nông thôn"
+                ],
+                correctIndex: 1,
+                explanation: "Giai cấp công nhân không có lợi ích riêng biệt ngoài lợi ích của cả dân tộc; giải phóng giai cấp gắn liền với giải phóng dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Cuộc Tổng tuyển cử đầu tiên bầu Quốc hội khóa I của nước Việt Nam mới được tiến hành vào ngày tháng năm nào?",
+                options: [
+                    "Ngày 2 tháng 9 năm 1945",
+                    "Toàn quốc kháng chiến ngày 19 tháng 12 năm 1946",
+                    "Ngày 6 tháng 1 năm 1946",
+                    "Ngày 3 tháng 2 năm 1930"
+                ],
+                correctIndex: 2,
+                explanation: "Ngày 6-1-1946, bất chấp sự chống phá của kẻ thù, cuộc Tổng tuyển cử đầu tiên đã diễn ra thắng lợi trên cả nước[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Trong cuộc Tổng tuyển cử đầu tiên năm 1946, nhân dân cả nước đã bầu ra bao nhiêu đại biểu Quốc hội?",
+                options: [
+                    " bầu ra 100 đại biểu",
+                    " bầu ra 200 đại biểu",
+                    " bầu ra 333 đại biểu",
+                    " bầu ra 500 đại biểu"
+                ],
+                correctIndex: 2,
+                explanation: "Cuộc Tổng tuyển cử đầu tiên đã bầu ra 333 đại biểu Quốc hội chân chính, đại diện cho ý chí, nguyện vọng của toàn dân[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Ai là người giữ vai trò Trưởng ban dự thảo Hiến pháp đầu tiên của nước Việt Nam độc lập?",
+                options: [
+                    "Đồng chí Trường Chinh",
+                    "Đồng chí Trần Phú",
+                    "Chủ tịch Hồ Chí Minh",
+                    "Đồng chí Võ Nguyên Giáp"
+                ],
+                correctIndex: 2,
+                explanation: "Hồ Chí Minh làm Trưởng ban dự thảo Hiến pháp, trực tiếp định hướng xây dựng bản Hiến pháp dân chủ đầu tiên năm 1946[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Bản Hiến pháp đầu tiên của nước Việt Nam Dân chủ Cộng hòa được Quốc hội thông qua vào năm nào?",
+                options: [
+                    "Năm 1945",
+                    "Năm 1946",
+                    "Năm 1954",
+                    "Năm 1959"
+                ],
+                correctIndex: 1,
+                explanation: "Bản Hiến pháp lịch sử đầu tiên của nước ta được Quốc hội thông qua vào tháng 11 năm 1946, đặt nền móng pháp lý vững chắc cho chế độ mới[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Tại phiên họp đầu tiên ngày 2-3-1946, Quốc hội khóa I đã bầu Hồ Chí Minh giữ chức vụ gì trong bộ máy Nhà nước?",
+                options: [
+                    "Chủ tịch Ủy ban Thường vụ Quốc hội",
+                    "Chủ tịch Chính phủ liên hiệp kháng chiến",
+                    "Thủ tướng Chính phủ lâm thời nước Việt Nam",
+                    "Tổng tư lệnh quân đội và lực lượng vũ trang"
+                ],
+                correctIndex: 1,
+                explanation: "Người được Quốc hội nhất trí bầu làm Chủ tịch Chính phủ liên hiệp kháng chiến, người đứng đầu cơ quan hành chính tối cao[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Mối quan hệ biện chứng giữa 'dân chủ' và 'pháp luật' trong nhà nước pháp quyền theo Hồ Chí Minh là gì?",
+                options: [
+                    "Dân chủ và pháp luật loại trừ nhau; có pháp luật thì không có dân chủ",
+                    "Dân chủ phải đi đôi với pháp luật; pháp luật bảo đảm, bảo vệ quyền dân chủ của dân; pháp luật là bà đỡ của dân chủ",
+                    "Pháp luật chỉ dành riêng để trừng trị nhân dân lao động",
+                    "Dân chủ được thực thi tự phát không cần pháp luật kiềm chế"
+                ],
+                correctIndex: 1,
+                explanation: "Dân chủ không thể nằm ngoài pháp luật. Pháp luật thể chế hóa dân chủ và bảo đảm quyền làm chủ thực tế của nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Để xây dựng nhà nước có hiệu lực pháp lý mạnh mẽ, Hồ Chí Minh đặc biệt coi trọng công việc nào trước hết?",
+                options: [
+                    "Tăng cường súng ống trang bị quân sự dồi dào",
+                    "Xây dựng một nhà nước hợp hiến, hợp pháp thông qua bầu cử dân chủ và Hiến pháp",
+                    "Thiết lập các trạm kiểm soát an ninh nghiêm ngặt",
+                    "Cấm đoán hoàn toàn các quan hệ ngoại giao với phương Tây"
+                ],
+                correctIndex: 1,
+                explanation: "Nhà nước muốn có tiếng nói chính nghĩa đối nội, đối ngoại thì phải hợp hiến, hợp pháp, do dân bầu ra thông qua tuyển cử[cite: 1, 1]."
+            },
+            {
+                category: "STREAMING_CHUNK: Writing questions on cadre build and anti-corruption... -->",
+                category: "Nhận biết",
+                question: "Yêu cầu hàng đầu, là phẩm chất chính trị cốt tử đối với đội ngũ cán bộ, công chức nhà nước theo Hồ Chí Minh là gì?",
+                options: [
+                    "Có nguồn gốc gia thế từ phú nông địa chủ",
+                    "Tuyệt đối trung thành với sự nghiệp cách mạng, trung với nước, hiếu với dân",
+                    "Nắm giữ các chứng chỉ bằng cấp của nước ngoài",
+                    "Khả năng tích lũy của cải tài chính cá nhân giỏi"
+                ],
+                correctIndex: 1,
+                explanation: "Trung thành tuyệt đối với lý tưởng cách mạng, hết lòng phụng sự Tổ quốc, phục vụ nhân dân là cái gốc của đạo đức công vụ[cite: 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh chỉ rõ ba tệ nạn kìm hãm, tàn phá Nhà nước từ bên trong, được ví như 'giặc nội xâm' gồm những gì?",
+                options: [
+                    "Lười biếng, thiếu học thức, mê tín dị đoan",
+                    "Tham ô, lãng phí và bệnh quan liêu",
+                    "Cục bộ bè phái, tự do thương mại, tư hữu ruộng đất",
+                    "Bảo thủ, rụt rè, sùng bái kinh nghiệm cổ"
+                ],
+                correctIndex: 1,
+                explanation: "Tham ô, lãng phí, quan liêu phá hoại tài sản của dân, làm rạn nứt lòng tin của nhân dân đối với chính quyền cách mạng[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Sắc lệnh trừng trị nghiêm khắc tội tham ô, trộm cắp của công bằng hình phạt cao nhất là tử hình được Bác ký vào ngày nào?",
+                options: [
+                    "Ngày 2 tháng 9 năm 1945",
+                    "Ngày 26 tháng 1 năm 1946",
+                    "Ngày 27 tháng 11 năm 1946",
+                    "Ngày 19 tháng 12 năm 1946"
+                ],
+                correctIndex: 1,
+                explanation: "Ngày 26-1-1946, Người ký Sắc lệnh quy định hình phạt tử hình đối với tội tham ô của công để giữ gìn sự trong sạch của bộ máy[cite: 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Để tăng cường hiệu lực quản lý xã hội, Hồ Chí Minh chủ trương kết hợp nhuần nhuyễn hai yếu tố nào?",
+                options: [
+                    "Cưỡng chế quân sự và cấm vận ngoại giao",
+                    "Phép nước nghiêm minh ('pháp trị') đi đôi với giáo dục đạo đức cách mạng ('đức trị')",
+                    "Thương lượng hòa hoãn ôn hòa và thỏa hiệp vô nguyên tắc",
+                    "Cơ chế bao cấp hành chính và triệt tiêu kinh tế cá thể"
+                ],
+                correctIndex: 1,
+                explanation: "Đức trị định hướng lương tâm, pháp trị giữ vững kỷ cương phép nước; hai yếu tố bổ sung hoàn hảo cho nhau[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Lời dặn của Bác Hồ: 'Phải thiết diện vô tư' khi giao nhiệm vụ cho ngành công an năm 1945 mang ý nghĩa học thuật gì?",
+                options: [
+                    "Phải áp dụng các cực hình tra tấn nghiêm khắc",
+                    "Phải thực thi pháp luật một cách công bằng, nghiêm minh, mặt sắt không vị nể lợi ích cá nhân, riêng tư",
+                    "Phải hạn chế tuyển dụng những người có học thức cao",
+                    "Phải tuyệt đối giữ bí mật thông tin tài chính"
+                ],
+                correctIndex: 1,
+                explanation: "Thiết diện (mặt sắt) vô tư yêu cầu người bảo vệ pháp luật phải vô tư, công minh, thượng tôn pháp luật trên hết[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Vụ án xử tử hình Cục trưởng Cục Quân nhu Trần Dụ Châu vì tội tham ô, biển thủ tài sản của bộ đội diễn ra vào năm nào?",
+                options: [
+                    "Năm 1946",
+                    "Năm 1950",
+                    "Năm 1954",
+                    "Năm 1956"
+                ],
+                correctIndex: 1,
+                explanation: "Vụ án Trần Dụ Châu năm 1950 là minh chứng đanh thép cho tinh thần thượng tôn pháp luật, 'thiết diện vô tư' của Bác và Chính phủ[cite: 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong tác phẩm 'Dân vận' (1949), Hồ Chí Minh viết: 'Lực lượng của dân chúng...' thế nào?",
+                options: [
+                    "Là nhỏ bé, cần được bao bọc hoàn toàn",
+                    "Là vô cùng vô tận, dân liệu việc khó trăm lần cũng xong",
+                    "Chỉ phát huy khi có súng ống hiện đại",
+                    "Phụ thuộc hoàn toàn vào viện trợ của nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Dân chúng là chủ thể cách mạng, lực lượng của dân là vô địch khi được giác ngộ và tổ chức chặt chẽ[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Bản chất của Nhà nước Việt Nam mới được Hồ Chí Minh xác định xuyên suốt là gì?",
+                options: [
+                    "Nhà nước phong kiến quân chủ lập hiến",
+                    "Nhà nước dân chủ nhân dân, thực sự của dân, do dân, vì dân",
+                    "Nhà nước tư sản đại nghị cộng hòa",
+                    "Nhà nước độc tài vô sản kiểu quân sự"
+                ],
+                correctIndex: 1,
+                explanation: "Bản chất thống nhất của Nhà nước là dân chủ nhân dân, tất cả quyền lực thuộc về nhân dân dưới sự dẫn dắt của Đảng[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Quyền lực tối cao của nhân dân trong Nhà nước ta được thực thi chủ yếu qua hình thức dân chủ nào?",
+                options: [
+                    "Dân chủ trực tiếp tự phát ngoài đường phố",
+                    "Dân chủ đại diện (gián tiếp) thông qua Quốc hội và Hội đồng nhân dân các cấp",
+                    "Dân chủ thỏa hiệp đa đảng đối lập tư sản",
+                    "Sự chỉ đạo bằng sắc lệnh hành chính của một nhóm tinh hoa"
+                ],
+                correctIndex: 1,
+                explanation: "Dân cử ra đại biểu thay mặt mình để quản lý và vận hành đất nước là hình thức dân chủ đại diện khoa học, thực tế[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh chỉ rõ, nếu Chính phủ làm hại dân, không phục vụ lợi ích của dân thì nhân dân có quyền gì?",
+                options: [
+                    "Có nghĩa vụ cam chịu số phận nô lệ vạn năm",
+                    "Có quyền bãi miễn và đuổi Chính phủ đó đi",
+                    "Yêu cầu các cường quốc nước ngoài can thiệp quân sự",
+                    "Ngừng hoàn toàn việc lao động sản xuất nông nghiệp"
+                ],
+                correctIndex: 1,
+                explanation: "Quyền lực tối cao thuộc về nhân dân; Chính phủ do dân lập ra thì dân có quyền thay thế nếu Chính phủ phản bội lợi ích của dân[cite: 1, 1]."
+            },
+            {
+                category: "STREAMING_CHUNK: Deploying questions on Government service and official conduct... -->",
+                category: "Trích dẫn",
+                question: "Tác phẩm lý luận nào của Bác răn đe cán bộ cầm quyền bằng cách khẳng định: 'Chính phủ là công bộc của dân. Việc gì hại cho dân phải hết sức tránh'?",
+                options: [
+                    "Đường Kách mệnh (1927)",
+                    "Thư gửi Ủy ban nhân dân các kỳ, tỉnh, huyện và làng (tháng 10-1945)",
+                    "Sửa đổi lối làm việc (1947)",
+                    "Đạo đức cách mạng (1958)"
+                ],
+                correctIndex: 1,
+                explanation: "Bức thư tháng 10-1945 vạch rõ trách nhiệm của cán bộ là công bộc phục vụ nhân dân, phê phán các thói hách dịch, cửa quyền[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo Hồ Chí Minh, để giữ vững nền dân chủ, cán bộ chính quyền phải quyết liệt tránh tệ nạn lạm quyền nào?",
+                options: [
+                    "Thói quen chăm chỉ lắng nghe nhân dân phê bình",
+                    "Tệ cậy thế, lộng quyền, coi mình là 'quan cách mạng' đứng trên nhân dân",
+                    "Tác phong đi thực tế bám sát cơ sở địa phương",
+                    "Ý thức thượng tôn pháp luật nghiêm minh"
+                ],
+                correctIndex: 1,
+                explanation: "Bệnh kiêu ngạo cộng sản, thói lộng quyền cậy thế phá hoại bản chất công bộc của Nhà nước, làm mất lòng dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Bản chất giai cấp công nhân của Nhà nước ta không bị phai nhạt là bởi Nhà nước kiên định mục tiêu lịch sử nào?",
+                options: [
+                    "Sự phát triển của thương mại tự do tư bản nghĩa",
+                    "Độc lập dân tộc gắn liền với định hướng xã hội chủ nghĩa",
+                    "Sự khôi phục các quyền lực phong kiến triều Nguyễn",
+                    "Sự cô lập tuyệt đối quan hệ với các nước tư sản"
+                ],
+                correctIndex: 1,
+                explanation: "Tính định hướng đi lên chủ nghĩa xã hội bảo đảm cho bản chất giai cấp công nhân của Nhà nước luôn vững chắc, trong sạch[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Hồ Chí Minh chỉ rõ, Nhà nước dân chủ mới thực chất là công cụ chính trị dùng để làm gì trong thời kỳ quá độ?",
+                options: [
+                    "Duy trì mãi mâu thuẫn giai cấp đối kháng gay gắt",
+                    "Chăm lo lợi ích cho nhân dân, bảo vệ độc lập và làm cho trong xã hội không có người bóc lột người",
+                    "Độc quyền phân chia hàng hóa kinh tế thuộc địa",
+                    "Liên minh quân sự tiến công các quốc gia láng giềng"
+                ],
+                correctIndex: 1,
+                explanation: "Mục đích tối cao của Nhà nước là phụng sự Tổ quốc, phục vụ nhân dân, tiến tới xóa bỏ hoàn toàn áp bức bóc lột[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Để đấu tranh triệt tiêu bệnh quan liêu trong bộ máy hành chính, cán bộ công chức phải thực hiện tác phong công tác nào?",
+                options: [
+                    "Ngồi phòng lạnh ban hành các sắc lệnh giấy tờ hành chính gò ép",
+                    "Sâu sát quần chúng, gắn bó mật thiết với nhân dân, 'dân biết, dân bàn, dân làm, dân kiểm tra'",
+                    "Ủ quyền hoàn toàn công việc cho các nhóm tự phát",
+                    "Hạn chế tối đa việc tiếp xúc trò chuyện với người lao động"
+                ],
+                correctIndex: 1,
+                explanation: "Tác phong sâu sát, liên hệ mật thiết với dân là liều thuốc mạnh nhất quét sạch tệ nạn quan liêu hách dịch[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Hồ Chí Minh ký Sắc lệnh xử phạt hối lộ với hình phạt rất nặng (từ 5 năm đến 20 năm tù khổ sai) vào mốc thời gian nào?",
+                options: [
+                    "Ngày 2 tháng 9 năm 1945",
+                    "Ngày 26 tháng 1 năm 1946",
+                    "Ngày 27 tháng 11 năm 1946",
+                    "Ngày 19 tháng 12 năm 1946"
+                ],
+                correctIndex: 2,
+                explanation: "Ngày 27-11-1946, Người ký sắc lệnh ấn định hình phạt cực kỳ nghiêm khắc đối với tội hối lộ nhằm quét sạch tệ hủ bại[cite: 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Sự kiện Quốc hội khóa I đồng ý mở rộng thêm 70 ghế không qua bầu cử cho đại diện Việt Quốc, Việt Cách thể hiện tư tưởng nào của Bác?",
+                options: [
+                    "Sự yếu thế của lực lượng Việt Minh",
+                    "Tinh thần đại đoàn kết dân tộc, hòa hợp dân tộc cao cả vì lợi ích tối cao của Tổ quốc",
+                    "Sự thỏa hiệp vô nguyên tắc lợi ích cách mạng",
+                    "Sự phụ thuộc vào chỉ đạo quân sự của Tưởng Giới Thạch"
+                ],
+                correctIndex: 1,
+                explanation: "Đặt độc lập của đất nước lên hàng đầu, Bác sẵn sàng hòa hợp, lôi kéo các lực lượng chính trị đối lập để cùng đoàn kết kháng chiến[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Luận điểm: 'Pháp luật là bà đỡ của dân chủ' trong nhà nước pháp quyền có ý nghĩa học thuật gì?",
+                options: [
+                    "Pháp luật dùng để hạn chế tối đa các quyền tự do của dân chúng",
+                    "Pháp luật là công cụ thể chế hóa, bảo vệ và bảo đảm cho các quyền tự do dân chủ của người dân được thực thi trong thực tế",
+                    "Pháp luật chỉ bảo vệ quyền lợi của giới tinh hoa cầm quyền",
+                    "Pháp luật tạo ra sự phân hóa giai cấp sâu sắc hơn"
+                ],
+                correctIndex: 1,
+                explanation: "Dân chủ không thể thực hiện tự phát, vô tổ chức. Pháp luật bảo vệ dân chủ và trừng trị những kẻ phá hoại dân chủ[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Yêu cầu cốt lõi về năng lực chuyên môn đối với công chức nhà nước theo tư tưởng Hồ Chí Minh là gì?",
+                options: [
+                    "Khả năng hùng biện tuyên truyền giáo điều",
+                    "Hăng hái, thành thạo công việc, giỏi chuyên môn nghiệp vụ",
+                    "Sự thông thuộc các nghi lễ phong kiến cổ xưa",
+                    "Khả năng tài chính cá nhân dồi dào"
+                ],
+                correctIndex: 1,
+                explanation: "Đầy tớ muốn phục vụ dân tốt thì phải giỏi chuyên môn, thành thạo việc hành chính, tránh thói nghiệp dư làm hỏng việc của dân[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Phẩm chất đạo đức cách mạng giữ vai trò là 'gốc' của người cán bộ trong Nhà nước sạch là gì?",
+                options: [
+                    "Sự mưu mẹo, thực dụng chính trị ngoại giao",
+                    "Cần, Kiệm, Liêm, Chính, Chí công vô tư",
+                    "Sự tuân thủ các triết lý Nho giáo quân thần cổ",
+                    "Ý chí tích lũy ruộng đất nông nghiệp cá nhân"
+                ],
+                correctIndex: 1,
+                explanation: "Cần Kiệm Liêm Chính, Chí công vô tư là chuẩn mực đạo đức công vụ tối cao để giữ bộ máy sạch, liêm chính[cite: 1, 1]."
+            },
+            {
+                category: "STREAMING_CHUNK: Creating questions on leadership role and legal framework... -->",
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh yêu cầu cán bộ nhà nước khi thực thi công vụ phải kiên quyết tránh tệ nạn cá nhân nào sau đây?",
+                options: [
+                    "Ý thức lắng nghe phê bình từ nhân dân lao động",
+                    "Tệ tư túng, kéo bè kéo cánh, gia đình trị, đưa người thân bất tài vào bộ máy",
+                    "Tác phong sâu sát kiểm tra cơ sở nông thôn",
+                    "Tinh thần thượng tôn Hiến pháp và luật pháp"
+                ],
+                correctIndex: 1,
+                explanation: "Bệnh tư túng, kéo bè cánh tàn phá sự công bằng và tính trong sạch, vững mạnh của bộ máy quản lý nhà nước[cite: 1, 1]."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong Bản Di chúc thiêng liêng (1969), Hồ Chí Minh căn dặn mỗi cán bộ, đảng viên cầm quyền phải xứng đáng giữ vị trí kép nào?",
+                options: [
+                    "Vừa là lãnh chúa phong kiến, vừa là chủ nhân của nhân dân",
+                    "Vừa là người lãnh đạo, vừa là người đầy tớ thật trung thành của nhân dân",
+                    "Vừa là thẩm phán tối cao, vừa là tướng quân chiến đấu",
+                    "Vừa là chuyên gia kinh tế, vừa là thương gia giàu có"
+                ],
+                correctIndex: 1,
+                explanation: "Mối quan hệ biện chứng: lãnh đạo bằng trí tuệ sáng suốt, dẫn đường; đầy tớ bằng tinh thần tận tụy phục vụ, chí công vô tư[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Vai trò 'người lãnh đạo' của cán bộ Nhà nước theo tư tưởng Hồ Chí Minh được thể hiện rõ nhất ở điểm nào?",
+                options: [
+                    "Quyền lực áp đặt cưỡng chế bằng bạo lực hành chính",
+                    "Có trí tuệ mẫn cảm, đường lối đúng đắn, tầm nhìn sáng suốt, gương mẫu dẫn đường cho nhân dân",
+                    "Quyền độc quyền phân chia tài sản công quỹ",
+                    "Sự bế quan tỏa cảng quan hệ ngoại giao"
+                ],
+                correctIndex: 1,
+                explanation: "Lãnh đạo bằng sự thuyết phục, làm gương và tri thức khoa học sáng suốt, không phải bằng uy quyền áp đặt đứng trên đầu dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Ý nghĩa cao cả nhất của từ 'đầy tớ' trong tư tưởng công chức của Hồ Chí Minh là gì?",
+                options: [
+                    "Sự cam chịu sống nghèo khổ, lười biếng sản xuất",
+                    "Tinh thần tận tụy phục vụ lợi ích chung của nhân dân, lo trước nỗi lo của dân, vui sau niềm vui của dân",
+                    "Sự tuân thủ mù quáng vô nguyên tắc mọi đòi hỏi tự phát",
+                    "Sự phục tùng giáo điều các chỉ thị từ nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Đầy tớ là hiến dâng, phục vụ nhân dân bằng cả trái tim và trách nhiệm nghề nghiệp cao nhất, chí công vô tư[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Nhà nước dân chủ nhân dân quản lý, điều hành và giữ vững trật tự xã hội bằng công cụ chủ yếu nào?",
+                options: [
+                    "Hệ thống mật thám bí mật",
+                    "Hiến pháp và hệ thống pháp luật nghiêm minh",
+                    "Các bài diễn văn tuyên truyền đạo đức chung chung",
+                    "Sự viện trợ vũ khí tối tân bên ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Nhà nước pháp quyền quản lý xã hội bằng luật pháp chứ không bằng ý chí chủ quan độc đoán của cá nhân cầm quyền[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Sự thống nhất giữa bản chất giai cấp công nhân với tính nhân dân và tính dân tộc của Nhà nước thể hiện rõ nhất ở mục tiêu lịch sử nào?",
+                options: [
+                    "Thiết lập nền tư bản công thương nghiệp đại đô thị",
+                    "Giải phóng dân tộc gắn liền với xây dựng xã hội mới tự do, ấm no, hạnh phúc thật sự cho nhân dân",
+                    "Sự duy trì mãi mãi ngôi vua triều đại nhà Nguyễn",
+                    "Sự đóng cửa tuyệt đối tự cung tự cấp nông thôn"
+                ],
+                correctIndex: 1,
+                explanation: "Mục tiêu độc lập dân tộc gắn liền với chủ nghĩa xã hội là mẫu số chung kết tinh quyền lợi tối cao của cả dân tộc và giai cấp công nhân[cite: 1, 1]."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Để bảo đảm quyền lực thực sự thuộc về nhân dân, nhà nước pháp quyền phải xây dựng hệ thống pháp luật đáp ứng tiêu chí nào?",
+                options: [
+                    "Cực kỳ phức tạp để nhân dân khó lòng am hiểu",
+                    "Dân chủ, công bằng, nghiêm minh, dễ hiểu, dễ thực hiện và đưa pháp luật vào đời sống",
+                    "Chỉ tập trung bảo vệ quyền sở hữu của giai cấp bóc lột",
+                    "Phục tùng tuyệt đối các hiến chương pháp luật nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Pháp luật phải vì dân, bảo vệ quyền làm chủ của dân, dễ tiếp cận và được nhân dân tự giác tuân thủ nghiêm chỉnh[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo Hồ Chí Minh, trở lực 'quan liêu' trong bộ máy hành chính nhà nước đẻ ra những trở lực nguy hại nào?",
+                options: [
+                    "Tinh thần sáng tạo hăng hái của cán bộ cơ sở",
+                    "Tham ô, lãng phí, xa dân, khinh dân và làm hỏng việc cách mạng",
+                    "Sự gia tăng nguồn thu tài chính hành chính",
+                    "Ý thức thượng tôn pháp luật nghiêm minh công cộng"
+                ],
+                correctIndex: 1,
+                explanation: "Bệnh quan liêu là nguồn gốc sinh ra tham ô, lãng phí, làm mọc lên bức tường ngăn cách chính quyền cách mạng với nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Khi ký quyết định bác đơn xin giảm án tử hình của Trần Dụ Châu, Hồ Chí Minh đã thể hiện đức tính cốt lõi nào của người cầm quyền?",
+                options: [
+                    "Sự tàn bạo chuyên quyền của chính thể mới",
+                    "Đặt phép nước, kỷ cương pháp luật và công lý lên trên hết, chí công vô tư, bảo vệ tài sản của nhân dân",
+                    "Sự nóng vội thiếu nhân đạo nhất thời",
+                    "Sự phục tùng chỉ thị của các cơ quan an ninh nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Pháp luật phải nghiêm minh, không có vùng cấm cho bất kỳ ai phạm pháp; lòng dạ trong sáng, đau lòng nhưng phải xử đúng luật để giữ phép nước[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Việc tuyên truyền, giáo dục pháp luật trong nhân dân theo tư tưởng Hồ Chí Minh cần được tiến hành song song hữu cơ với khía cạnh nào?",
+                options: [
+                    "Tăng cường thu thuế đất đai nông nghiệp khắt khe",
+                    "Giáo dục đạo đức cách mạng, đạo đức công dân và ý thức làm chủ xã hội",
+                    "Thủ tiêu toàn bộ hoạt động của các tòa án binh",
+                    "Mở rộng các hoạt động liên minh quân sự đối ngoại"
+                ],
+                correctIndex: 1,
+                explanation: "Đạo đức nâng cao tự giác tâm hồn, pháp luật giữ vững kỷ cương xã hội; hai mặt gắn kết hữu cơ tạo nên xã hội lành mạnh, tiến bộ[cite: 1, 1]."
+            },
+            {
+                category: "STREAMING_CHUNK: Formulating questions on judicial integrity and democratic control... -->",
+                category: "Trừu tượng",
+                question: "Khái niệm 'Nhà nước pháp quyền' trong tư tưởng Hồ Chí Minh thực chất được thể hiện rõ nét qua phương châm quản lý nào?",
+                options: [
+                    "Quản lý bằng ý chí độc đoán chủ quan của người đứng đầu",
+                    "Quản lý toàn diện mọi mặt đời sống xã hội bằng Hiến pháp và pháp luật",
+                    "Giao toàn quyền tự trị cho các hội đoàn tự quản tự phát",
+                    "Sử dụng các sắc lệnh quân sự khẩn cấp thay thế luật pháp"
+                ],
+                correctIndex: 1,
+                explanation: "Nhà nước pháp quyền quản lý xã hội bằng luật pháp nghiêm minh, thượng tôn Hiến pháp và đưa luật pháp thấm sâu vào đời sống[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh yêu cầu người cán bộ tư pháp (thẩm phán, kiểm sát) khi xét xử, giải quyết tranh chấp phải giữ thái độ tối cao nào?",
+                options: [
+                    "Thái độ nể nang, ưu ái cho người thân thích",
+                    "Thái độ công bằng, khách quan, trung thực, nghiêm minh, 'thiết diện vô tư'",
+                    "Tính thực dụng cơ hội chính trị thích ứng nhanh",
+                    "Sự phớt lờ các quy định Hiến pháp khi cần thiết"
+                ],
+                correctIndex: 1,
+                explanation: "Cán bộ tư pháp cầm cân nảy mực phải trung thực, công bằng, vô tư, bảo vệ công lý và bảo vệ quyền lợi hợp pháp của dân[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Để xây dựng nhà nước có hiệu lực pháp lý mạnh mẽ, Hiến pháp 1946 đã xác lập thể chế chính trị tối cao nào cho Việt Nam?",
+                options: [
+                    "Thể chế quân chủ lập hiến phong kiến",
+                    "Thể chế dân chủ cộng hòa, quyền lực tối cao thuộc về nhân dân",
+                    "Thể chế nghị viện đa đảng đối lập tư sản",
+                    "Thể chế quân phiệt tập quyền trung ương"
+                ],
+                correctIndex: 1,
+                explanation: "Hiến pháp 1946 xác lập nhà nước dân chủ cộng hòa, đặt cơ sở pháp lý cao nhất cho chủ quyền nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trong Nhà nước dân chủ nhân dân, người công dân có nghĩa vụ cốt tử nào đối với Hiến pháp và pháp luật?",
+                options: [
+                    "Tự do lách luật khi thấy có lợi ích cá nhân chính đáng",
+                    "Tôn trọng, chấp hành nghiêm chỉnh pháp luật và bảo vệ của công",
+                    "Nhờ cậy các quan hệ gia đình để được ưu tiên miễn trừ pháp luật",
+                    "Tự ý lập ra các luật lệ riêng biệt tại địa phương"
+                ],
+                correctIndex: 1,
+                explanation: "Công dân có quyền lợi đi liền với nghĩa vụ tôn trọng, chấp hành kỷ cương phép nước để xây dựng trật tự xã hội[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sự tha hóa quyền lực của cán bộ nhà nước khi có quyền hạn trong tay được Hồ Chí Minh cảnh báo nguy cơ sẽ đẻ ra thói xấu nguy hại nào?",
+                options: [
+                    "Thói quen làm việc cần cù sáng tạo ở cơ sở",
+                    "Bệnh đặc quyền, đặc lợi, biến quyền lực của nhân dân thành đặc quyền cá nhân, coi mình là 'ông tướng, bà tướng'",
+                    "Tinh thần dấn thân vì hạnh phúc đồng bào miền núi",
+                    "Ý thức sâu sắc về phê bình và tự phê bình thường xuyên"
+                ],
+                correctIndex: 1,
+                explanation: "Khi tha hóa, cán bộ lạm quyền, lộng quyền, mưu cầu lợi ích bè phái cá nhân, phá hoại lòng tin của nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "Lịch sử",
+                question: "Điều mấy trong Hiến pháp 1946 quy định quyền trưng cầu dân ý nhằm đảm bảo quyền làm chủ tối cao của dân chúng?",
+                options: [
+                    "Điều 1 Hiến pháp 1946",
+                    "Điều 10 Hiến pháp 1946",
+                    "Điều 32 Hiến pháp 1946",
+                    "Điều 70 Hiến pháp 1946"
+                ],
+                correctIndex: 2,
+                explanation: "Điều 32 Hiến pháp 1946 quy định những việc hệ trọng của vận mệnh quốc gia phải đưa ra nhân dân trưng cầu dân ý[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Tại sao nói Nhà nước ta mang bản chất giai cấp công nhân nhưng lại có tính nhân dân và tính dân tộc sâu sắc?",
+                options: [
+                    "Vì số lượng công nhân nước ta bấy giờ chiếm đa số dân số",
+                    "Vì lợi ích, khát vọng giải phóng dân tộc của giai cấp công nhân hoàn toàn thống nhất với lợi ích cốt tử của nhân dân lao động và toàn dân tộc",
+                    "Vì Nhà nước được thành lập nhờ sự tài trợ kinh tế phong kiến",
+                    "Vì Nhà nước hoạt động theo khuôn khổ luật pháp nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Bản chất giai cấp công nhân không đối lập mà thống nhất hữu cơ, bảo vệ và phát triển lợi ích cao nhất của cả dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo tư tưởng Hồ Chí Minh, ai là người nắm giữ quyền lực và có quyền kiểm soát tối cao đối với bộ máy chính quyền Nhà nước?",
+                options: [
+                    "Các cố vấn quân sự nước ngoài",
+                    "Quần chúng nhân dân, vì dân là chủ và dân làm chủ",
+                    "Chỉ riêng các cán bộ cấp cao của Trung ương",
+                    "Hệ thống công an và mật vụ hành chính"
+                ],
+                correctIndex: 1,
+                explanation: "Quyền lực thuộc về nhân dân thì nhân dân phải là người kiểm soát, giám sát tối cao hoạt động của công chức nhà nước[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Việc cán bộ sử dụng quyền lực nhà nước để ban ơn, kéo cánh, tuyển dụng người nhà bất tài được Bác gọi là bệnh gì?",
+                options: [
+                    "Bệnh nôn nóng duy ý chí sản xuất",
+                    "Tệ tư túng, kéo bè kéo cánh, chia rẽ bè phái cục bộ",
+                    "Ý chí tự lực cánh sinh dựa vào sức mình",
+                    "Bệnh giáo điều máy móc sao chép nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Thói tư túng, kéo bè cánh làm hư hại bộ máy công vụ, phá hoại sự công bằng và tính liêm chính của Nhà nước[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Để xây dựng một đội ngũ cán bộ công chức liêm chính, Hồ Chí Minh yêu cầu họ phải tuyệt đối thực hành phẩm chất nào?",
+                options: [
+                    "Thói quen hưởng thụ vật chất xa hoa trước nhân dân",
+                    "Cần, Kiệm, Liêm, Chính, Chí công vô tư",
+                    "Sự phục tùng giáo điều các hủ tục cổ xưa",
+                    "Ý chí đầu cơ tích lũy bất động sản tư nhân"
+                ],
+                correctIndex: 1,
+                explanation: "Cần Kiệm Liêm Chính, Chí công vô tư là tấm gương sáng nhất thu phục lòng tin yêu, kính phục của nhân dân[cite: 1, 1]."
+            },
+            {
+                category: "STREAMING_CHUNK: Formulating questions on state building values and legacy... -->",
+                category: "Thông hiểu",
+                question: "Cụm từ 'Thiết diện vô tư' trong tác phong công tác tư pháp của Hồ Chí Minh có nghĩa gốc sát nhất là gì?",
+                options: [
+                    "Sự tàn nhẫn, không thèm lắng nghe ý kiến của tội phạm",
+                    "Mặt sắt nghiêm minh, không vị nể lợi ích cá nhân hay riêng tư, công bằng tuyệt đối trước pháp luật",
+                    "Sự giữ bí mật tuyệt đối các hoạt động kinh tế công",
+                    "Sự bế quan tỏa cảng quan hệ đối ngoại"
+                ],
+                correctIndex: 1,
+                explanation: "Pháp luật nghiêm minh, không có vùng cấm, bình đẳng tuyệt đối trước pháp luật chính là nghĩa của thiết diện vô tư[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Quyền bãi miễn đại biểu không xứng đáng của nhân dân thể hiện trực tiếp quyền làm chủ tối cao nào?",
+                options: [
+                    "Quyền tự do tài chính cá nhân",
+                    "Quyền kiểm soát, giám sát tối cao đối với bộ máy chính quyền do mình bầu ra",
+                    "Quyền tự ý phán quyết tòa án không cần luật pháp",
+                    "Quyền đòi hỏi chính sách hỗ trợ kinh tế vô điều kiện"
+                ],
+                correctIndex: 1,
+                explanation: "Dân bầu ra được thì dân bãi miễn được; điều đó giữ cho bộ máy nhà nước luôn trong sạch, phụng sự đúng nghĩa[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo bài giảng, mô hình Nhà nước của dân, do dân, vì dân là sự tiếp nối và phát triển lý luận xuất sắc nào của thế giới?",
+                options: [
+                    "Lý thuyết tam quyền phân lập tư sản phương Tây",
+                    "Học thuyết Nhà nước cách mạng của chủ nghĩa Mác-Lênin kết hợp với thực tiễn cách mạng Việt Nam",
+                    "Triết lý nho giáo tam cương ngũ thường phong kiến cổ",
+                    "Học thuyết quân phiệt tập quyền tập trung"
+                ],
+                correctIndex: 1,
+                explanation: "Bác kế thừa khoa học lý luận Mác-Lênin và bản sắc văn hóa Việt Nam để sáng lập ra nhà nước kiểu mới[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh phê phán căn bệnh 'mệnh lệnh' trong cán bộ công chức vì tác hại nghiêm trọng nào của nó đối với dân?",
+                options: [
+                    "Làm giảm nguồn thu thuế đất đai nông nghiệp",
+                    "Xa rời quần chúng nhân dân, áp đặt ý chí chủ quan độc đoán làm hỏng việc cách mạng, mất lòng tin của dân",
+                    "Khiến cho Liên Xô ngừng viện trợ quân sự",
+                    "Làm chậm tiến trình công nghiệp hóa nặng"
+                ],
+                correctIndex: 1,
+                explanation: "Bệnh mệnh lệnh, quan liêu đứng trên đầu dân làm xói mòn lòng tin và phá vỡ bản chất vì dân phục vụ của Nhà nước[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Sự ra đời của Hiến pháp 1946 có ý nghĩa pháp lý quốc tế đặc biệt to lớn nào đối với Việt Nam?",
+                options: [
+                    "Độc quyền giao lưu kinh tế với các nước châu Âu",
+                    "Khẳng định mạnh mẽ tư cách pháp lý độc lập, chủ quyền dân chủ của nước Việt Nam mới trước toàn thế giới",
+                    "Nhận được quy chế bảo hộ tài chính từ đế quốc",
+                    "Xóa bỏ hoàn toàn quan hệ đối ngoại với các nước lân cận"
+                ],
+                correctIndex: 1,
+                explanation: "Bản Hiến pháp là văn kiện pháp lý tối cao khẳng định chủ quyền độc lập thực sự của nhân dân Việt Nam trước thế giới[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Để ngăn ngừa tệ nạn lãng phí công quỹ nhà nước, Hồ Chí Minh yêu cầu cán bộ công chức phải triệt để thực hiện đức tính gì?",
+                options: [
+                    "Học tập các lối sống xa hoa đô thị lớn",
+                    "Thực hành tiết kiệm thời gian, sức lao động và tiền của công",
+                    "Cắt giảm tối đa các hoạt động giáo dục dân trí",
+                    "Tăng thuế đối với thu nhập của nông dân nghèo"
+                ],
+                correctIndex: 1,
+                explanation: "Tiết kiệm là của cải của dân đóng góp, lãng phí cũng là ăn cắp của dân, do đó cán bộ phải mẫu mực thực hành tiết kiệm[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tại sao Hồ Chí Minh khẳng định đạo đức của người cán bộ Nhà nước cầm quyền là thỏi nam châm mạnh nhất thu hút lòng dân?",
+                options: [
+                    "Vì đạo đức giúp cán bộ tích lũy nhiều tiền tài nhanh chóng",
+                    "Vì sự gương mẫu, liêm chính, chí công vô tư của cán bộ tạo dựng niềm tin tuyệt đối, sự kính phục tự nguyện ở nhân dân",
+                    "Vì đạo đức được pháp luật quy định bắt buộc phải nể phục",
+                    "Để được miễn trừ hoàn toàn các nghĩa vụ pháp luật nhà nước"
+                ],
+                correctIndex: 1,
+                explanation: "Nói đi đôi với làm, gieo tấm gương đạo đức sáng để nhân dân soi vào và tự giác đồng thuận làm theo đắc lực[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Một nhà nước pháp quyền thực thụ theo tư tưởng Hồ Chí Minh phải đạt được sự thống nhất biện chứng giữa những yếu tố nào?",
+                options: [
+                    "Sự áp đặt quân sự và cấm vận đối ngoại",
+                    "Tính Đảng, tính khoa học, tính dân tộc và tính nhân dân sâu sắc",
+                    "Sự bảo trợ tài chính phong kiến và thực dân nghĩa",
+                    "Sự tự phát của dân chúng ngoài đường phố và kỷ luật sắt"
+                ],
+                correctIndex: 1,
+                explanation: "Sự thống nhất này bảo đảm Nhà nước ta vừa khoa học, tiên phong, vừa bám rễ sâu chắc và đại diện cho cả dân tộc[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Sự kiện thành lập Ủy ban dự thảo Hiến pháp đầu tiên ngay sau ngày độc lập phản ánh tầm nhìn chiến lược nào của Bác?",
+                options: [
+                    "Ý định thiết lập chính quyền tập trung độc tài quân sự",
+                    "Tầm nhìn xây dựng nhà nước pháp quyền vững mạnh, quản lý xã hội bằng luật pháp ngay từ ngày đầu cách mạng",
+                    "Sự nóng vội thiếu thực tế chính trị nhất thời",
+                    "Sự phục tùng chỉ thị của các cường quốc lớn"
+                ],
+                correctIndex: 1,
+                explanation: "Có độc lập phải có Hiến pháp, có pháp luật để thiết lập trật tự dân chủ mới, đưa đất nước đi vào kỷ cương khoa học[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trở lực nguy hiểm được Bác Hồ ví như 'giặc nội xâm' tàn phá nhà nước từ bên trong gồm tệ nạn nào?",
+                options: [
+                    "Sự thiếu thốn tài liệu dịch thuật",
+                    "Tham ô, lãng phí và bệnh quan liêu hách dịch xa dân",
+                    "Sự khác biệt về tiếng nói các vùng miền dân tộc",
+                    "Ý chí tự lực tự cường sản xuất nông thôn"
+                ],
+                correctIndex: 1,
+                explanation: "Ba căn bệnh này phá hoại nhà nước, phá hoại lòng tin của dân, do đó phải quét sạch để củng cố bộ máy sạch, liêm chính[cite: 1, 1]."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trong Nhà nước dân chủ mới, việc tuyển dụng, sắp xếp cán bộ công chức phải tuân thủ cơ sở tuyệt đối nào?",
+                options: [
+                    "Sự ưu tiên dòng họ gia đình cán bộ cấp cao",
+                    "Dựa trên tài năng, phẩm chất đạo đức cách mạng, năng lực công vụ thực tế và tính công bằng",
+                    "Mức độ tích lũy ruộng đất phong kiến cũ",
+                    "Sự giới thiệu bằng văn bản của chuyên gia nước ngoài"
+                ],
+                correctIndex: 1,
+                explanation: "Tuyển dụng hiền tài phải công bằng, minh bạch, dựa trên thực tài và đức độ phục vụ nhân dân phụng sự Tổ quốc[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Việc kết hợp hài hòa giữa 'Pháp trị' và 'Đức trị' trong quản lý xã hội của Hồ Chí Minh nhằm mục đích tối cao nào?",
+                options: [
+                    "Để cán bộ có nhiều đặc quyền đặc lợi hơn pháp luật",
+                    "Xây dựng một xã hội có trật tự, kỷ cương phép nước nghiêm minh nhưng thấm đượm tình thương, đạo đức lành mạnh, tự giác nhân văn",
+                    "Để tránh việc phải xây dựng hệ thống tòa án binh hành chính",
+                    "Để giảm bớt gánh nặng chi phí ngân sách quốc gia"
+                ],
+                correctIndex: 1,
+                explanation: "Luật pháp nghiêm trị kẻ xấu, đạo đức nâng đỡ tâm hồn hướng thiện, tạo ra sự đồng thuận tự giác phát triển xã hội[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh nghiêm khắc phê phán thói kiêu ngạo của cán bộ nhà nước cầm quyền khi họ tự nhận mình là gì trước dân?",
+                options: [
+                    "Tự nhận mình là người đầy tớ thật trung thành",
+                    "Tự nhận mình là 'quan cách mạng' đứng trên nhân dân để hách dịch hăm dọa dân",
+                    "Tự nhận mình là công bộc của nhân dân lao động",
+                    "Tự nhận mình là thẩm phán xét xử công bằng"
+                ],
+                correctIndex: 1,
+                explanation: "Hách dịch, coi mình là quan cách mạng để hăm dọa dân là thói bại hoại, phá hỏng bản chất nhà nước dân chủ mới[cite: 1, 1]."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Quyền làm chủ của người dân trong Nhà nước pháp quyền xã hội chủ nghĩa được bảo đảm vững chắc bằng công cụ tối cao nào?",
+                options: [
+                    "Sự hứa hẹn đạo đức chung chung của cán bộ công chức",
+                    "Hiến pháp và hệ thống pháp luật của Nhà nước do nhân dân bầu ra",
+                    "Các khoản tài trợ tài chính của các nước lớn",
+                    "Sự tự trị hoàn toàn của các nhóm dân cư tự phát"
+                ],
+                correctIndex: 1,
+                explanation: "Pháp luật bảo đảm quyền lực của dân được thực thi, trừng trị những kẻ xâm phạm quyền lợi hợp pháp của người dân[cite: 1, 1]."
+            },
+            {
+                category: "Nâng cao",
+                question: "Giá trị lý luận trường tồn nhất của tư tưởng Hồ Chí Minh về xây dựng Nhà nước đối với nước ta hiện nay là gì?",
+                options: [
+                    "Là công cụ để rập khuôn mô hình nhà nước tư sản phương Tây",
+                    "Là cơ sở khoa học, kim chỉ nam đúng đắn để xây dựng Nhà nước pháp quyền xã hội chủ nghĩa trong sạch, vững mạnh, thực sự của dân, do dân, vì dân",
+                    "Là tư liệu lịch sử tham khảo không còn giá trị thực tiễn hành chính",
+                    "Là cơ sở để thiết lập hệ thống nghị viện đa đảng đối lập phong kiến"
+                ],
+                correctIndex: 1,
+                explanation: "Di sản của Người định hướng khoa học, soi đường cho sự nghiệp xây dựng nhà nước pháp quyền liêm chính phục vụ nhân dân ngày nay[cite: 1]."
+            }
+        ];
+
+        
+        
+        // Theme toggler for chapters
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.classList.contains('dark')) {
+                body.classList.remove('dark');
+                document.cookie = "tthcm_theme=light; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-moon text-slate-400";
+            } else {
+                body.classList.add('dark');
+                document.cookie = "tthcm_theme=dark; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-sun text-amber-400";
+            }
+        }
+
+        function initTheme() {
+            const savedTheme = getCookie('tthcm_theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Chapter page default is light mode
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-sun text-amber-400";
+            } else {
+                document.body.classList.remove('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-moon text-slate-400";
+            }
+        }
+        
+        // Cookie helpers for progress saving
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        function saveProgress() {
+            setCookie('tthcm_c6_answers', JSON.stringify(userAnswers), 30);
+            setCookie('tthcm_c6_bookmarks', JSON.stringify(bookmarkedQuestions), 30);
+            setCookie('tthcm_c6_current', currentQuestionIndex.toString(), 30);
+        }
+
+        function loadProgress() {
+            try {
+                const savedAnswers = getCookie('tthcm_c6_answers');
+                const savedBookmarks = getCookie('tthcm_c6_bookmarks');
+                const savedCurrent = getCookie('tthcm_c6_current');
+                
+                if (savedAnswers) {
+                    const parsed = JSON.parse(savedAnswers);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        userAnswers = parsed;
+                    }
+                }
+                if (savedBookmarks) {
+                    const parsed = JSON.parse(savedBookmarks);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        bookmarkedQuestions = parsed;
+                    }
+                }
+                if (savedCurrent) {
+                    const parsed = parseInt(savedCurrent, 10);
+                    if (!isNaN(parsed) && parsed >= 0 && parsed < quizData.length) {
+                        currentQuestionIndex = parsed;
+                    }
+                }
+            } catch (e) {
+                console.error("Lỗi khi tải tiến trình:", e);
+            }
+        }
+
+        let currentQuestionIndex = 0;
+        let userAnswers = new Array(quizData.length).fill(null); // Stores selected option index
+        let bookmarkedQuestions = new Array(quizData.length).fill(false); // Bookmarked state
+
+        // Initialize question buttons in the sidebar
+        function initSidebarGrid() {
+            const gridContainer = document.getElementById('question-grid');
+            gridContainer.innerHTML = '';
+            
+            // Get active filters
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            const categoryFilter = document.getElementById('category-filter').value;
+            const stateFilter = document.getElementById('state-filter').value;
+
+            let visibleCount = 0;
+
+            quizData.forEach((q, index) => {
+                // Apply Search filter
+                const matchesSearch = q.question.toLowerCase().includes(searchQuery);
+                
+                // Apply Category filter
+                const matchesCategory = (categoryFilter === 'all' || q.category === categoryFilter);
+                
+                // Apply State filter
+                let matchesState = true;
+                const isAnswered = userAnswers[index] !== null;
+                const isCorrect = isAnswered && userAnswers[index] === q.correctIndex;
+                const isBookmarked = bookmarkedQuestions[index];
+
+                if (stateFilter === 'unanswered') {
+                    matchesState = !isAnswered;
+                } else if (stateFilter === 'correct') {
+                    matchesState = isCorrect;
+                } else if (stateFilter === 'incorrect') {
+                    matchesState = (isAnswered && !isCorrect);
+                } else if (stateFilter === 'bookmarked') {
+                    matchesState = isBookmarked;
+                }
+
+                if (matchesSearch && matchesCategory && matchesState) {
+                    visibleCount++;
+                    const btn = document.createElement('button');
+                    btn.id = `grid-btn-${index}`;
+                    
+                    // Base classes
+                    btn.className = 'py-2 rounded-xl text-xs font-black transition-all border flex items-center justify-center relative ';
+                    btn.className += getGridBtnClass(index);
+                    btn.innerText = index + 1;
+                    
+                    // Add bookmark star inside if bookmarked
+                    if (isBookmarked) {
+                        const star = document.createElement('span');
+                        star.className = 'absolute top-0 right-0 w-2 h-2 bg-amber-500 rounded-full border border-white';
+                        btn.appendChild(star);
+                    }
+
+                    btn.onclick = () => jumpToQuestion(index);
+                    gridContainer.appendChild(btn);
+                }
+            });
+
+            document.getElementById('visible-count').innerText = `Hiện: ${visibleCount}/${quizData.length}`;
+        }
+
+        function getGridBtnClass(index) {
+            // Active Question
+            if (currentQuestionIndex === index) {
+                return 'bg-red-800 text-white border-red-900 ring-2 ring-red-300';
+            }
+            
+            // Unanswered state
+            if (userAnswers[index] === null) {
+                return 'bg-slate-50 text-slate-600 hover:bg-slate-100 border-slate-200';
+            }
+            
+            // Answered state
+            const isCorrect = userAnswers[index] === quizData[index].correctIndex;
+            return isCorrect 
+                ? 'bg-emerald-100 text-emerald-800 border-emerald-300 hover:bg-emerald-200' 
+                : 'bg-red-100 text-red-800 border-red-300 hover:bg-red-200';
+        }
+
+        // Handle Search and select filters dynamically
+        function filterQuestions() {
+            initSidebarGrid();
+        }
+
+        // Track stats and progress percentage
+        function updateProgress() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            const progressPercent = Math.round((answeredCount / quizData.length) * 100);
+            
+            document.getElementById('progress-percent').innerText = progressPercent + '%';
+            document.getElementById('progress-bar').style.width = progressPercent + '%';
+            document.getElementById('answered-count').innerText = answeredCount;
+
+            // Calculate exact score
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+            
+            document.getElementById('score-display').innerText = `${correctCount}/${answeredCount}`;
+            const accuracy = answeredCount === 0 ? 0 : Math.round((correctCount / answeredCount) * 100);
+            document.getElementById('score-accuracy').innerText = `${accuracy}%`;
+        }
+
+        // Render current selected question in detail
+        function renderQuestion() {
+            const currentQ = quizData[currentQuestionIndex];
+            
+            // Text values
+            document.getElementById('question-category').innerText = currentQ.category;
+            document.getElementById('question-index-label').innerText = `Câu ${currentQuestionIndex + 1} / ${quizData.length}`;
+            document.getElementById('question-text').innerText = currentQ.question;
+
+            // Handle Bookmarked badge and star icon
+            const isBookmarked = bookmarkedQuestions[currentQuestionIndex];
+            const bBadge = document.getElementById('bookmark-badge');
+            const bIcon = document.getElementById('bookmark-icon');
+            
+            if (isBookmarked) {
+                bBadge.classList.remove('hidden');
+                bBadge.classList.add('flex');
+                bIcon.className = "fa-solid fa-star text-amber-500 scale-110";
+            } else {
+                bBadge.classList.add('hidden');
+                bBadge.classList.remove('flex');
+                bIcon.className = "fa-regular fa-star text-slate-400";
+            }
+
+            // Options Renderer
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            const answered = userAnswers[currentQuestionIndex] !== null;
+            const selectedAnswer = userAnswers[currentQuestionIndex];
+
+            currentQ.options.forEach((opt, idx) => {
+                const button = document.createElement('button');
+                button.className = 'w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between group ';
+                
+                let iconHtml = `<span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs text-slate-400 font-bold group-hover:bg-slate-100 transition-all">${String.fromCharCode(65 + idx)}</span>`;
+
+                if (!answered) {
+                    // Not answered yet
+                    button.className += 'bg-white border-slate-200 hover:border-red-700 hover:bg-red-50/20 text-slate-700 active:scale-[0.99]';
+                    button.onclick = () => selectOption(idx);
+                } else {
+                    // Already answered state
+                    button.disabled = true;
+                    if (idx === currentQ.correctIndex) {
+                        // Correct option
+                        button.className += 'bg-emerald-50 border-emerald-500 text-emerald-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>';
+                    } else if (idx === selectedAnswer) {
+                        // User selected wrong choice
+                        button.className += 'bg-red-50 border-red-500 text-red-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-red-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-xmark"></i></span>';
+                    } else {
+                        // Normal unselected wrong option
+                        button.className += 'bg-slate-50 border-slate-200 text-slate-400 opacity-60';
+                    }
+                }
+
+                button.innerHTML = `
+                    <span class="text-xs md:text-sm pr-4 font-semibold leading-relaxed">${opt}</span>
+                    ${iconHtml}
+                `;
+                optionsContainer.appendChild(button);
+            });
+
+            // Handle Navigation Buttons
+            document.getElementById('prev-btn').disabled = currentQuestionIndex === 0;
+            const nextBtn = document.getElementById('next-btn');
+            if (currentQuestionIndex === quizData.length - 1) {
+                nextBtn.innerHTML = 'Nộp bài thi <i class="fa-solid fa-paper-plane"></i>';
+                nextBtn.onclick = () => showFinalReport();
+            } else {
+                nextBtn.innerHTML = 'Câu sau <i class="fa-solid fa-arrow-right"></i>';
+                nextBtn.onclick = () => navigateQuestion(1);
+            }
+
+            // Explanation Section
+            const expBox = document.getElementById('explanation-box');
+            if (answered) {
+                expBox.classList.remove('hidden');
+                const isUserCorrect = selectedAnswer === currentQ.correctIndex;
+                
+                if (isUserCorrect) {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-emerald-50/60 border-emerald-200 text-emerald-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-emerald-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-circle-check text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Chọn cực chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-emerald-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                } else {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-red-50/60 border-red-200 text-red-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-red-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-triangle-exclamation text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Rất tiếc, chưa chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-red-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                }
+                document.getElementById('explanation-text').innerText = currentQ.explanation;
+            } else {
+                expBox.classList.add('hidden');
+            }
+
+            initSidebarGrid();
+            updateProgress();
+            saveProgress();
+        }
+
+        // Toggle bookmarks
+        function toggleBookmarkActive() {
+            bookmarkedQuestions[currentQuestionIndex] = !bookmarkedQuestions[currentQuestionIndex];
+            renderQuestion();
+        }
+
+        // Handle option click
+        function selectOption(index) {
+            userAnswers[currentQuestionIndex] = index;
+            renderQuestion();
+        }
+
+        // Jump direct from sidebar grid
+        function jumpToQuestion(index) {
+            currentQuestionIndex = index;
+            renderQuestion();
+        }
+
+        // Navigate step-by-step
+        function navigateQuestion(direction) {
+            const nextIdx = currentQuestionIndex + direction;
+            if (nextIdx >= 0 && nextIdx < quizData.length) {
+                currentQuestionIndex = nextIdx;
+                renderQuestion();
+            }
+        }
+
+        // Reset confirmation
+        function showResetModal() {
+            document.getElementById('confirm-modal').classList.remove('hidden');
+        }
+
+        function closeResetModal() {
+            document.getElementById('confirm-modal').classList.add('hidden');
+        }
+
+        function executeReset() {
+            currentQuestionIndex = 0;
+            userAnswers = new Array(quizData.length).fill(null);
+            bookmarkedQuestions = new Array(quizData.length).fill(false);
+            eraseCookie('tthcm_c6_answers');
+            eraseCookie('tthcm_c6_bookmarks');
+            eraseCookie('tthcm_c6_current');
+            closeResetModal();
+            renderQuestion();
+        }
+
+        // Show Final Exam Performance report
+        function showFinalReport() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+
+            const incorrectCount = answeredCount - correctCount;
+            const accuracy = quizData.length === 0 ? 0 : Math.round((correctCount / quizData.length) * 100);
+            
+            document.getElementById('modal-answered').innerText = `${answeredCount}/${quizData.length} câu`;
+            document.getElementById('modal-correct').innerText = `${correctCount}/${quizData.length} câu`;
+            document.getElementById('modal-incorrect').innerText = `${incorrectCount} câu`;
+            document.getElementById('modal-accuracy').innerText = `${accuracy}%`;
+
+            const gradeLabel = document.getElementById('modal-grade');
+            if (accuracy >= 90) {
+                gradeLabel.innerText = "XUẤT SẮC (A+)";
+                gradeLabel.className = "font-black text-emerald-600 text-base";
+            } else if (accuracy >= 80) {
+                gradeLabel.innerText = "GIỎI (A)";
+                gradeLabel.className = "font-black text-blue-600 text-base";
+            } else if (accuracy >= 70) {
+                gradeLabel.innerText = "KHÁ (B)";
+                gradeLabel.className = "font-black text-amber-500 text-base";
+            } else if (accuracy >= 50) {
+                gradeLabel.innerText = "ĐẠT (C/D)";
+                gradeLabel.className = "font-black text-slate-500 text-base";
+            } else {
+                gradeLabel.innerText = "CHƯA ĐẠT (F)";
+                gradeLabel.className = "font-black text-red-700 text-base";
+            }
+
+            document.getElementById('report-modal').classList.remove('hidden');
+        }
+
+        function closeReportModal() {
+            document.getElementById('report-modal').classList.add('hidden');
+        }
+
+        // Keyboard triggers for rapid testing
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                navigateQuestion(-1);
+            } else if (e.key === 'ArrowRight') {
+                navigateQuestion(1);
+            }
+        });
+
+        // App Boot on ready
+        window.onload = function () {
+            initTheme();
+            loadProgress();
+            renderQuestion();
+        }
+    
+        // Header thu gọn khi cuộn xuống (chỉ trên di động)
+        (function() {
+            const header = document.querySelector('header');
+            if (!header) return;
+            let ticking = false;
+
+            function updateHeader() {
+                if (window.innerWidth < 1024) {
+                    if (window.scrollY > 60) {
+                        header.classList.add('header-scrolled');
+                    } else {
+                        header.classList.remove('header-scrolled');
+                    }
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateHeader);
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            window.addEventListener('resize', updateHeader);
+        })();
+    </script>
+</body>
+</html>

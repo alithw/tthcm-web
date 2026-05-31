@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Chương 2 (75 Câu Phân Hóa)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        /* Custom scrollbar for sidebar grid */
+        #question-grid::-webkit-scrollbar {
+            width: 5px;
+        }
+        #question-grid::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        #question-grid::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    
+        /* Chế độ Tối (Dark Mode Overrides cho Chương) */
+        body.dark {
+            background-color: #0b0f19 !important;
+            color: #f1f5f9 !important;
+        }
+        body.dark .text-slate-700 {
+            color: #e2e8f0 !important;
+        }
+        body.dark .text-slate-400 {
+            color: #94a3b8 !important;
+        }
+        body.dark .text-red-950 {
+            color: #fca5a5 !important;
+        }
+        body.dark .text-emerald-950 {
+            color: #a7f3d0 !important;
+        }
+        body.dark .border-slate-300 {
+            border-color: #475569 !important;
+        }
+        body.dark .group:hover .group-hover\:bg-slate-100 {
+            background-color: #334155 !important;
+            color: #ffffff !important;
+            border-color: #64748b !important;
+        }
+        body.dark .bg-white {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3) !important;
+        }
+        body.dark .text-slate-900,
+        body.dark .text-slate-800,
+        body.dark .text-slate-950 {
+            color: #f8fafc !important;
+        }
+        body.dark .text-slate-600,
+        body.dark .text-slate-500 {
+            color: #cbd5e1 !important;
+        }
+        body.dark .bg-slate-50 {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-100 {
+            background-color: #0b0f19 !important;
+        }
+        body.dark input, 
+        body.dark select {
+            background-color: #0f172a !important;
+            color: #f8fafc !important;
+            border-color: #475569 !important;
+        }
+        body.dark .border-slate-200,
+        body.dark .border-slate-100 {
+            border-color: #334155 !important;
+        }
+        body.dark .bg-slate-50.border-slate-300 {
+            background-color: #1e293b !important;
+            border-color: #475569 !important;
+        }
+        body.dark .hover\:bg-red-50\/20:hover {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+        }
+        body.dark .hover\:border-red-700:hover {
+            border-color: #b91c1c !important;
+        }
+        body.dark .bg-emerald-50 {
+            background-color: rgba(16, 185, 129, 0.1) !important;
+            color: #34d399 !important;
+            border-color: #10b981 !important;
+        }
+        body.dark .bg-red-50 {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+            color: #f87171 !important;
+            border-color: #ef4444 !important;
+        }
+        body.dark .bg-slate-50.border-slate-200.text-slate-400 {
+            background-color: #1e293b !important;
+            color: #64748b !important;
+            opacity: 0.5;
+        }
+        body.dark #report-modal > div,
+        body.dark #confirm-modal > div {
+            background-color: #1e293b !important;
+            border-color: #334155 !important;
+        }
+        body.dark #report-modal h3,
+        body.dark #report-modal p,
+        body.dark #confirm-modal h3,
+        body.dark #confirm-modal p {
+            color: #f8fafc !important;
+        }
+            header.header-scrolled .header-brand {
+                opacity: 0;
+                max-height: 0;
+                margin: 0;
+                pointer-events: none;
+            }
+            header {
+                transition: padding 0.25s ease;
+            }
+            header.header-scrolled {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+    
+        /* Scroll-based Header: Thu gọn khi cuộn xuống trên di động */
+        @media (max-width: 1023px) {
+            header .header-brand {
+                transition: opacity 0.2s ease;
+                opacity: 1;
+            }
+            header.header-scrolled .header-brand {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-red-800 text-white shadow-md py-2.5 px-4 lg:py-4 lg:px-6 sticky top-0 z-50 border-b border-amber-500">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-4">
+            <div class="header-brand flex items-center gap-3">
+                <div class="bg-amber-500 p-2.5 rounded-xl shadow-inner">
+                    <i class="fa-solid fa-graduation-cap text-2xl text-red-900 animate-pulse"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black tracking-tight flex items-center gap-2">
+                        SIÊU NGÂN HÀNG ĐỀ THI TRẮC NGHIỆM <span class="bg-amber-500 text-red-900 text-[10px] px-2 py-0.5 rounded font-extrabold uppercase align-middle">PRO A+</span>
+                    </h1>
+                    <p class="text-xs text-red-100 font-medium">Chương 2: Tư tưởng Hồ Chí Minh về vấn đề dân tộc và cách mạng giải phóng dân tộc (75 Câu hỏi chuyên sâu)</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+                <a href="/" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 transition-all duration-200" title="Quay lại trang chủ">
+                    <i class="fa-solid fa-house"></i> <span class="hidden md:inline">Trang chủ</span>
+                </a>
+                <button id="theme-toggle" onclick="toggleTheme()" class="bg-red-950/60 hover:bg-red-900 border border-red-700/50 text-white p-2.5 rounded-xl text-sm transition-all duration-200 flex items-center justify-center" title="Chuyển chế độ Sáng/Tối">
+                    <i class="fa-solid fa-sun text-amber-400" id="theme-icon"></i>
+                </button>
+                <div class="bg-red-950 px-4 py-2 rounded-xl text-sm font-bold border border-red-700/50 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                    <span>Tỉ lệ: <span id="score-accuracy" class="text-amber-300">0%</span></span>
+                    <span class="text-slate-500">|</span>
+                    <span>Đúng: <span id="score-display" class="text-emerald-400">0/0</span></span>
+                </div>
+                <button onclick="showResetModal()" class="bg-amber-500 hover:bg-amber-600 active:scale-95 transition-all text-slate-950 px-4 py-2 rounded-xl text-sm font-extrabold flex items-center gap-2 shadow-md">
+                    <i class="fa-solid fa-rotate-right"></i> Làm lại toàn bộ
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        
+        <!-- Sidebar: Grid & Advanced Filters -->
+        <aside class="lg:col-span-1 bg-white p-4 rounded-2xl shadow-sm border border-slate-200 h-fit flex flex-col gap-4">
+            
+            <!-- Search & Filters Container -->
+            <div>
+                <h2 class="font-bold text-slate-900 mb-3 flex items-center gap-2 pb-2 border-b border-slate-100 text-sm uppercase tracking-wider">
+                    <i class="fa-solid fa-filter text-red-700"></i> Bộ lọc nâng cao
+                </h2>
+                
+                <!-- Search Input -->
+                <div class="relative mb-2.5">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass text-slate-400 text-xs"></i>
+                    </span>
+                    <input type="text" id="search-input" onkeyup="filterQuestions()" placeholder="Tìm từ khóa trong câu hỏi..." class="w-full pl-9 pr-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:ring-1 focus:ring-red-600 focus:border-red-600 outline-none transition-all">
+                </div>
+
+                <!-- Category Selector -->
+                <div class="mb-2">
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Theo danh mục</label>
+                    <select id="category-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả danh mục (75 câu)</option>
+                        <option value="Nhận biết">Nhận biết</option>
+                        <option value="Thông hiểu">Thông hiểu</option>
+                        <option value="Trích dẫn">Trích dẫn</option>
+                        <option value="Lịch sử">Lịch sử</option>
+                        <option value="Điền từ">Điền vào chỗ trống</option>
+                        <option value="Trừu tượng">Tư duy trừu tượng</option>
+                        <option value="Nâng cao">Nâng cao / Cực khó</option>
+                    </select>
+                </div>
+
+                <!-- State Selector -->
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Trạng thái câu hỏi</label>
+                    <select id="state-filter" onchange="filterQuestions()" class="w-full px-2.5 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg outline-none focus:ring-1 focus:ring-red-600">
+                        <option value="all">Tất cả câu hỏi</option>
+                        <option value="unanswered">Chưa làm</option>
+                        <option value="correct">Làm đúng</option>
+                        <option value="incorrect">Làm sai</option>
+                        <option value="bookmarked">Có đánh dấu (★)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Progress Tracker -->
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                <div class="flex justify-between text-xs text-slate-600 font-bold mb-1.5">
+                    <span>Tiến độ học tập</span>
+                    <span id="progress-percent" class="text-red-700">0%</span>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-2.5">
+                    <div id="progress-bar" class="bg-gradient-to-r from-red-600 to-amber-500 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-semibold">
+                    <span>Đã làm: <span id="answered-count">0</span>/75</span>
+                    <span>Cần đạt: 80% trở lên</span>
+                </div>
+            </div>
+
+            <!-- Question Selection Grid -->
+            <div>
+                <h3 class="font-bold text-slate-950 text-xs uppercase tracking-wider mb-2 flex justify-between items-center">
+                    <span>Bản đồ câu hỏi</span>
+                    <span class="text-[10px] text-slate-400 normal-case font-medium" id="visible-count">Hiện: 75/75</span>
+                </h3>
+                <div class="grid grid-cols-5 gap-1.5 max-h-[340px] overflow-y-auto pr-1" id="question-grid">
+                    <!-- Dynamically populated buttons -->
+                </div>
+            </div>
+
+            <!-- Legend Info -->
+            <div class="pt-3 border-t border-slate-200 grid grid-cols-2 gap-2 text-[10px] text-slate-500 font-bold">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-slate-50 border border-slate-300 inline-block"></span>
+                    <span>Chưa làm</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-emerald-100 border border-emerald-300 inline-block"></span>
+                    <span>Làm đúng</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-red-100 border border-red-300 inline-block"></span>
+                    <span>Làm sai</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded bg-amber-100 border border-amber-400 inline-block"></span>
+                    <span>Đánh dấu (★)</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Active Question Viewport -->
+        <section class="lg:col-span-3 flex flex-col gap-5">
+            
+            <!-- Active Question Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 relative overflow-hidden flex flex-col gap-4">
+                
+                <!-- Tag & Info Header bar -->
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <span id="question-category" class="bg-red-50 text-red-800 text-[10px] font-black px-2.5 py-1 rounded-full border border-red-100 uppercase tracking-wider">
+                            DANH MỤC
+                        </span>
+                        <span id="bookmark-badge" class="hidden bg-amber-50 text-amber-700 text-[10px] font-black px-2.5 py-1 rounded-full border border-amber-200 uppercase tracking-wider items-center gap-1">
+                            <i class="fa-solid fa-star text-amber-500"></i> Đã đánh dấu
+                        </span>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <button onclick="toggleBookmarkActive()" class="text-slate-400 hover:text-amber-500 text-lg transition-all focus:outline-none" title="Đánh dấu câu hỏi này">
+                            <i class="fa-regular fa-star" id="bookmark-icon"></i>
+                        </button>
+                        <span class="text-xs text-slate-400 font-bold bg-slate-100 px-2.5 py-1 rounded-lg" id="question-index-label">
+                            Câu hỏi -- / --
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Question Text -->
+                <h3 class="text-base md:text-lg font-black text-slate-900 leading-snug" id="question-text">
+                    Nội dung câu hỏi đang được khởi tạo...
+                </h3>
+
+                <!-- Options -->
+                <div class="space-y-2.5" id="options-container">
+                    <!-- Dynamic option buttons -->
+                </div>
+
+                <!-- Explanation Box (Initially Hidden) -->
+                <div id="explanation-box" class="hidden mt-2 p-5 rounded-2xl border transition-all duration-300">
+                    <div class="flex items-start gap-3">
+                        <div id="explanation-icon-container" class="p-2.5 rounded-xl text-white shadow-sm flex items-center justify-center">
+                            <!-- Icon -->
+                        </div>
+                        <div class="flex-1">
+                            <h4 id="explanation-title" class="font-extrabold text-slate-900 text-sm mb-1 uppercase tracking-wider">Kết quả</h4>
+                            <p id="explanation-text" class="text-xs md:text-sm text-slate-600 leading-relaxed font-medium">
+                                Giải thích học thuyết chi tiết...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <button onclick="navigateQuestion(-1)" id="prev-btn" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 active:scale-95 font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all disabled:opacity-40 disabled:cursor-not-allowed">
+                    <i class="fa-solid fa-circle-arrow-left"></i> Câu trước
+                </button>
+                
+                <div class="text-xs text-slate-400 font-bold hidden md:block">
+                    Mẹo: Dùng phím mũi tên <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">←</kbd> và <kbd class="px-1.5 py-0.5 bg-slate-100 border border-slate-300 rounded text-[10px]">→</kbd> để chuyển câu nhanh
+                </div>
+
+                <button onclick="navigateQuestion(1)" id="next-btn" class="flex items-center gap-2 bg-red-700 hover:bg-red-800 active:scale-95 text-white font-bold px-4 py-2 rounded-xl text-xs md:text-sm transition-all shadow-sm">
+                    Câu kế tiếp <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Complete Submission Bar -->
+            <div class="bg-gradient-to-r from-red-900 to-amber-700 text-white rounded-2xl p-5 shadow-md border border-amber-500/30 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <h4 class="font-black text-sm uppercase tracking-wider text-amber-300">Hoàn tất kiểm tra</h4>
+                    <p class="text-xs text-red-100 mt-1">Nộp bài để hệ thống phân tích chi tiết học lực và chấm điểm A+ theo chuẩn Đại học[cite: 1].</p>
+                </div>
+                <button onclick="showFinalReport()" class="bg-white hover:bg-amber-400 active:scale-95 text-red-950 font-black px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition-all shadow-md">
+                    <i class="fa-solid fa-paper-plane mr-1"></i> Nộp bài & xem báo cáo
+                </button>
+            </div>
+
+
+            <!-- Chapter Navigation Bar -->
+            <div class="flex justify-between items-center bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+                <a href="/chuong1.html" class="flex items-center gap-2 bg-slate-50 border border-slate-300 text-slate-700 hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-700 active:scale-95 font-bold px-4 py-2.5 rounded-xl text-xs md:text-sm transition-all shadow-sm"><i class="fa-solid fa-circle-chevron-left text-amber-500"></i> Chương 1</a>
+                <a href="/chuong3.html" class="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 active:scale-95 text-slate-950 font-extrabold px-4 py-2.5 rounded-xl text-xs md:text-sm transition-all shadow-md ml-auto"><i class="fa-solid fa-circle-chevron-right text-red-800"></i> Chương 3</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 border-t border-slate-800 text-xs">
+        <p class="font-bold text-slate-200">Ứng dụng Siêu Ôn Tập Trắc Nghiệm Tư Tưởng Hồ Chí Minh - Phiên Bản Cao Cấp</p>
+        <p class="mt-1 text-slate-500">Nội dung học thuật được thiết kế chuẩn xác dựa theo Bài giảng 2016 PTIT, NEU, HUST[cite: 1]</p>
+    </footer>
+
+    <!-- Confirm Reset Modal -->
+    <div id="confirm-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-amber-500 text-5xl text-center mb-4">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <h3 class="text-lg font-black text-slate-900 text-center mb-2 uppercase tracking-wide">Làm lại từ đầu?</h3>
+            <p class="text-xs md:text-sm text-slate-500 text-center mb-6 leading-relaxed">
+                Hành động này sẽ xóa toàn bộ tiến trình trả lời và thống kê điểm hiện tại của bạn. Bạn đã sẵn sàng reset?
+            </p>
+            <div class="flex gap-3">
+                <button onclick="closeResetModal()" class="flex-1 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 font-bold text-xs transition-all">
+                    Quay lại
+                </button>
+                <button onclick="executeReset()" class="flex-1 py-2.5 rounded-xl bg-red-700 text-white hover:bg-red-800 font-bold text-xs transition-all shadow-md">
+                    Xác nhận xóa
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Score Report Modal -->
+    <div id="report-modal" class="fixed inset-0 bg-slate-950/70 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 mx-4 shadow-2xl border border-red-100 transform transition-all duration-300">
+            <div class="text-red-700 text-5xl text-center mb-4">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="text-xl font-black text-slate-900 text-center mb-1 uppercase tracking-wide">Báo Cáo Học Lực</h3>
+            <p class="text-xs text-slate-400 text-center mb-5">Học phần Tư tưởng Hồ Chí Minh - Chương 2[cite: 1]</p>
+            
+            <div class="bg-slate-50 rounded-2xl p-4 mb-6 space-y-3.5 border border-slate-100">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu hỏi đã làm:</span>
+                    <span id="modal-answered" class="font-extrabold text-slate-800 text-sm">0/75 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm đúng:</span>
+                    <span id="modal-correct" class="font-extrabold text-emerald-600 text-sm">0/80 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Số câu làm sai:</span>
+                    <span id="modal-incorrect" class="font-extrabold text-red-600 text-sm">0 câu</span>
+                </div>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-500 font-bold">Tỷ lệ chính xác:</span>
+                    <span id="modal-accuracy" class="font-black text-amber-500 text-base">0%</span>
+                </div>
+                <div class="flex justify-between items-center text-xs pt-2.5 border-t border-slate-200">
+                    <span class="text-slate-500 font-bold">Xếp loại học phần:</span>
+                    <span id="modal-grade" class="font-black text-red-700 text-base">F</span>
+                </div>
+            </div>
+
+            <button onclick="closeReportModal()" class="w-full py-3 rounded-xl bg-red-800 hover:bg-red-900 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md">
+                Tiếp tục xem chi tiết đáp án câu hỏi
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Siêu cơ sở dữ liệu: 80 câu hỏi phân hóa tinh vi của Chương 2
+        const quizData = [
+            {
+                category: "Nhận biết",
+                question: "Hồ Chí Minh không bàn đến vấn đề dân tộc nói chung mà dành sự quan tâm đặc biệt vào đối tượng nào?",
+                options: [
+                    "Các dân tộc thuộc địa và ách thống trị của chủ nghĩa thực dân",
+                    "Các nước tư bản phát triển hàng đầu ở phương Tây",
+                    "Các liên minh quân sự xuyên quốc gia",
+                    "Vấn đề giai cấp ở các quốc gia phong kiến suy tàn"
+                ],
+                correctIndex: 0,
+                explanation: "Hồ Chí Minh dành sự quan tâm cốt yếu cho các dân tộc thuộc địa. Thực chất vấn đề dân tộc thuộc địa ở đây là đấu tranh chống chủ nghĩa thực dân, giải phóng dân tộc và thành lập Nhà nước độc lập."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo Hồ Chí Minh, thực chất của vấn đề dân tộc ở thuộc địa là gì?",
+                options: [
+                    "Đấu tranh giải quyết mâu thuẫn giai cấp công nhân và tư sản bản địa",
+                    "Đấu tranh chống chủ nghĩa thực dân, giải phóng dân tộc, thực hiện quyền tự quyết",
+                    "Kêu gọi các nước đồng minh giúp đỡ cải cách xã hội phong kiến",
+                    "Thiết lập nền quân chủ lập hiến cho nhân dân thuộc địa"
+                ],
+                correctIndex: 1,
+                explanation: "Thực chất vấn đề dân tộc ở thuộc địa chính là cuộc đấu tranh lật đổ ách áp bức của chủ nghĩa thực dân, giành độc lập dân tộc, thực hiện quyền dân tộc tự quyết và xây dựng quốc gia độc lập."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Câu nói: \"Tự do cho đồng bào tôi, độc lập cho Tổ quốc tôi, đấy là tất cả những điều tôi muốn, đấy là tất cả những điều tôi hiểu\" thể hiện khát vọng của ai?",
+                options: [
+                    "Cụ Phan Bội Châu khi sang Nhật",
+                    "Nguyễn Ái Quốc khi trả lời một nhà báo Pháp năm 1920",
+                    "Cụ Phan Chu Trinh khi viết thư gửi Toàn quyền Pháp",
+                    "Nguyễn Tất Thành khi đang làm việc trên tàu Latouche-Tréville"
+                ],
+                correctIndex: 1,
+                explanation: "Đây là câu phát biểu bất hủ của Nguyễn Ái Quốc khi ở Pháp năm 1920 trả lời nhà báo Pháp, thể hiện chân lý lý tưởng, lẽ sống cao cả nhất của Người dành trọn đời cho nền độc lập dân tộc."
+            },
+            {
+                category: "Lịch sử",
+                question: "Vào năm 1919, Nguyễn Ái Quốc đã gửi bản văn kiện nào tới hội nghị Vecxây đòi các quyền tự do, dân chủ cho nhân dân Việt Nam?",
+                options: [
+                    "Bản án chế độ thực dân Pháp",
+                    "Đường kách mệnh",
+                    "Bản Yêu sách của nhân dân An Nam gồm 8 điểm",
+                    "Chánh cương vắn tắt của Đảng"
+                ],
+                correctIndex: 2,
+                explanation: "Năm 1919, vận dụng nguyên tắc tự quyết dân tộc của các nước đồng minh, Người gửi tới hội nghị Vecxây bản Yêu sách của nhân dân An Nam gồm 8 điểm đòi các quyền tự do, dân chủ."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong Tuyên ngôn độc lập ngày 2-9-1945, Hồ Chí Minh đã nâng quyền tự nhiên của con người (quyền sống, quyền tự do, quyền mưu cầu hạnh phúc) thành điều gì?",
+                options: [
+                    "Quyền thống trị của giai cấp công nhân toàn cầu",
+                    "Quyền tự quyết thiêng liêng và bất khả xâm phạm của mọi dân tộc",
+                    "Quyền tự do tham gia các tổ chức phi chính phủ quốc tế",
+                    "Quyền can thiệp quân sự của các nước cộng hòa tiến bộ"
+                ],
+                correctIndex: 1,
+                explanation: "Từ quyền con người, Hồ Chí Minh đã khái quát và nâng cao thành quyền dân tộc: \"Tất cả các dân tộc trên thế giới đều sinh ra bình đẳng, dân tộc nào cũng có quyền sống, quyền sung sướng và quyền tự do\"."
+            },
+            {
+                category: "Lịch sử",
+                question: "Hội nghị nào của Ban Chấp hành Trung ương Đảng (do Hồ Chí Minh chủ trì) đã quyết định đặt nhiệm vụ giải phóng dân tộc lên hàng đầu và thành lập Mặt trận Việt Minh?",
+                options: [
+                    "Hội nghị hợp nhất thành lập Đảng (tháng 2-1930)",
+                    "Hội nghị Trung ương lần thứ nhất (tháng 10-1930)",
+                    "Hội nghị Ban Chấp hành Trung ương lần thứ 8 (tháng 5-1941)",
+                    "Đại hội đại biểu toàn quốc lần thứ II (tháng 2-1951)"
+                ],
+                correctIndex: 2,
+                explanation: "Hội nghị Trung ương 8 (tháng 5-1941) họp tại Pác Bó do Hồ Chí Minh chủ trì đã đưa ra chủ trương đặt quyền lợi dân tộc giải phóng lên cao hơn hết thảy và sáng lập Mặt trận Việt Minh."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Văn kiện nào chứa đựng lời kêu gọi đanh thép: \"Không! Chúng ta thà hi sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ\"?",
+                options: [
+                    "Thư kính cáo đồng bào (1941)",
+                    "Tuyên ngôn Độc lập (1945)",
+                    "Lời kêu gọi Toàn quốc kháng chiến (1946)",
+                    "Lời kêu gọi chống Mỹ, cứu nước (1966)"
+                ],
+                correctIndex: 2,
+                explanation: "Lời kêu gọi Toàn quốc kháng chiến đêm 19-12-1946 chính là văn kiện vang vọng núi sông khẳng định ý chí quyết tử cho Tổ quốc quyết sinh của dân tộc chống thực dân Pháp quay lại xâm lược."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Hồ Chí Minh đưa ra chân lý bất hủ: \"Không có gì quý hơn độc lập, tự do\" vào mốc thời gian và bối cảnh nào?",
+                options: [
+                    "Năm 1945; khi đọc Tuyên ngôn Độc lập",
+                    "Năm 1946; khi bắt đầu cuộc kháng chiến chống Pháp",
+                    "Năm 1966; trong cuộc kháng chiến chống đế quốc Mỹ xâm lược",
+                    "Năm 1969; trong bản Di chúc thiêng liêng"
+                ],
+                correctIndex: 2,
+                explanation: "Ngày 17-7-1966, trước hành động điên cuồng bắn phá miền Bắc của đế quốc Mỹ, Chủ tịch Hồ Chí Minh đã ra lời kêu gọi đồng bào chiến sỹ cả nước, tuyên bố chân lý lịch sử: \"Không có gì quý hơn độc lập, tự do\"."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Vì sao cuộc đấu tranh giai cấp ở các nước thuộc địa phương Đông không diễn ra hoàn toàn giống như ở các nước tư bản phương Tây?",
+                options: [
+                    "Vì xã hội chưa có sự phân hóa giai cấp sâu sắc, tất cả các giai cấp đều chịu chung số phận là người nô lệ mất nước",
+                    "Vì giai cấp công nhân phương Đông chiếm đại đa số dân số so với nông dân",
+                    "Vì không có bất kỳ mâu thuẫn nào giữa địa chủ và nông dân bản xứ",
+                    "Vì nền kinh tế thuộc địa đạt trình độ tư bản độc quyền sớm hơn phương Tây"
+                ],
+                correctIndex: 0,
+                explanation: "Do cơ cấu kinh tế lạc hậu, sự phân hóa giai cấp ở thuộc địa chưa triệt để. Dù là địa chủ hay nông dân, họ đều chung số phận nô lệ mất nước nên cuộc đấu tranh giai cấp không giống hệt phương Tây."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo Hồ Chí Minh, chủ nghĩa dân tộc yêu nước chân chính có vai trò gì trong sự nghiệp đấu tranh của các dân tộc thuộc địa?",
+                options: [
+                    "Là một trở lực kìm hãm cuộc đấu tranh giai cấp",
+                    "Là một động lực lớn, nguồn sức mạnh vô địch của đất nước để chống ngoại xâm",
+                    "Là một công cụ tạm thời để liên minh với tư bản chính quốc",
+                    "Là một xu hướng lỗi thời cần bị thay thế ngay bởi triết lý vô sản thuần túy"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh đánh giá cao sức mạnh của chủ nghĩa dân tộc bản xứ. Khi được những người cộng sản nắm lấy và kết hợp với chủ nghĩa yêu nước, nó sẽ trở thành một động lực vô cùng to lớn giúp đánh bại kẻ thù xâm lược."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Mối quan hệ biện chứng giữa độc lập dân tộc và chủ nghĩa xã hội được Hồ Chí Minh làm sáng tỏ như thế nào?",
+                options: [
+                    "Độc lập dân tộc là điều kiện tiên quyết để tiến lên chủ nghĩa xã hội; chủ nghĩa xã hội là cơ sở bảo đảm vững chắc cho độc lập dân tộc",
+                    "Độc lập dân tộc và chủ nghĩa xã hội hoàn toàn độc lập và không phụ thuộc lẫn nhau",
+                    "Chủ nghĩa xã hội phải được hoàn thành trước rồi mới đấu tranh giành độc lập dân tộc",
+                    "Độc lập dân tộc là mục tiêu duy nhất, không cần hướng tới xây dựng chủ nghĩa xã hội"
+                ],
+                correctIndex: 0,
+                explanation: "Độc lập dân tộc tạo tiền đề để đi lên xây dựng CNXH. Ngược lại, chỉ có CNXH mới giải phóng triệt để nhân dân lao động, bảo đảm vững chắc độc lập lâu dài và hạnh phúc thực sự cho nhân dân."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Hồ Chí Minh khẳng định: \"Nước được độc lập mà dân không được hưởng hạnh phúc tự do, thì độc lập cũng chẳng có ý nghĩa gì\". Trích dẫn này thuộc văn bản nào?",
+                options: [
+                    "Lời kêu gọi Toàn quốc kháng chiến (1946)",
+                    "Chính cương vắn tắt của Đảng (1930)",
+                    "Thư gửi ủy ban nhân dân các kỳ, tỉnh, huyện và làng (tháng 10-1945)",
+                    "Tác phẩm Bản án chế độ thực dân Pháp (1925)"
+                ],
+                correctIndex: 2,
+                explanation: "Trong bức thư gửi các Ủy ban nhân dân vào tháng 10-1945, Người nhấn mạnh mục đích cuối cùng của độc lập là đem lại tự do, hạnh phúc thực tế cho mỗi người dân."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Trong mối quan hệ quốc tế, Hồ Chí Minh thể hiện thái độ nhân văn như thế nào đối với cuộc đấu tranh của các dân tộc khác?",
+                options: [
+                    "Chỉ quan tâm cứu nước mình, không bận tâm đến thế giới",
+                    "Đấu tranh cho tự do, độc lập của các dân tộc khác như là tranh đấu cho dân tộc ta vậy",
+                    "Kêu gọi các dân tộc thuộc địa chờ sự cứu rỗi từ giai cấp vô sản Pháp",
+                    "Ủng hộ phong trào bành trướng lãnh thổ của các cường quốc"
+                ],
+                correctIndex: 1,
+                explanation: "Người chủ trương kết hợp chủ nghĩa yêu nước chân chính với chủ nghĩa quốc tế trong sáng. Ngay từ năm 1914 tại Anh, Người đã quyên góp tiền ủng hộ cuộc chiến đấu của nước khác và coi việc giúp bạn chính là tự giúp mình."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Mâu thuẫn chủ yếu ở xã hội thuộc địa phương Đông cuối thế kỷ XIX đầu thế kỷ XX là gì?",
+                options: [
+                    "Mâu thuẫn giữa giai cấp công nhân bản địa với tư sản dân tộc",
+                    "Mâu thuẫn giữa nông dân nghèo với tầng lớp trí thức tiểu tư sản",
+                    "Mâu thuẫn giữa dân tộc bị áp bức với đế quốc xâm lược và tay sai của chúng",
+                    "Mâu thuẫn nội bộ giữa phong kiến bảo thủ và phong kiến đổi mới"
+                ],
+                correctIndex: 2,
+                explanation: "Mâu thuẫn bao trùm và gay gắt nhất chính là mâu thuẫn dân tộc: giữa toàn thể quốc dân đồng bào với chủ nghĩa đế quốc xâm lược và tay sai bản xứ."
+            },
+            {
+                category: "Nhận biết",
+                question: "Trong tác phẩm \"Đường kách mệnh\" (1927), Nguyễn Ái Quốc đã phân biệt ba loại cách mạng nào?",
+                options: [
+                    "Cách mạng phong kiến, cách mạng tư sản, cách mạng kỹ thuật",
+                    "Cách mạng tư sản, cách mạng vô sản, cách mạng giải phóng dân tộc",
+                    "Cách mạng văn hóa, cách mạng tôn giáo, cách mạng công nghiệp",
+                    "Cách mạng nông dân, cách mạng công nhân, cách mạng quân sự"
+                ],
+                correctIndex: 1,
+                explanation: "Nguyễn Ái Quốc phân biệt rõ ba loại cách mạng, đồng thời nhấn mạnh cách mạng giải phóng dân tộc ở Việt Nam phải đi theo quỹ đạo của cách mạng vô sản để giành thắng lợi triệt để."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tại sao Hồ Chí Minh nhận định cách mạng Mỹ (1776) và cách mạng Pháp (1789) là những cuộc cách mạng \"chưa đến nơi\"?",
+                options: [
+                    "Vì các cuộc cách mạng đó không lật đổ được chế độ quân chủ chuyên chế",
+                    "Vì trong thì tước lục công nông, ngoài thì áp bức thuộc địa, không mang lại tự do thực sự cho đa số nhân dân",
+                    "Vì các cuộc cách mạng đó không xây dựng được hiến pháp bằng văn bản",
+                    "Vì chính phủ tư sản không thiết lập quan hệ thương mại với phương Đông"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh phân tích thấy cách mạng tư sản tuy tiến bộ nhưng chỉ thay thế hình thức bóc lột này bằng hình thức bóc lột khác, trong nước vẫn bóc lột công nông, ngoài nước vẫn áp bức thuộc địa."
+            },
+            {
+                category: "Nhận biết",
+                question: "Con đường cứu nước duy nhất mà Nguyễn Ái Quốc tìm thấy năm 1920 phù hợp với xu thế thời đại là gì?",
+                options: [
+                    "Con đường cách mạng dân chủ tư sản ôn hòa",
+                    "Con đường khởi nghĩa phong kiến phò vua (Cần Vương)",
+                    "Con đường cách mạng vô sản",
+                    "Con đường cải cách kinh tế phụ thuộc bảo hộ"
+                ],
+                correctIndex: 2,
+                explanation: "Bản luận cương của Lênin đã giúp Người khẳng định: \"Muốn cứu nước và giải phóng dân tộc không có con đường nào khác con đường cách mạng vô sản\"."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo tư tưởng Hồ Chí Minh, cách mạng giải phóng dân tộc muốn thắng lợi trước hết phải có nhân tố nào dẫn đường và lãnh đạo?",
+                options: [
+                    "Sự chỉ đạo tối cao của triều đình phong kiến lưu vong",
+                    "Đảng cách mệnh (Đảng Cộng sản) được vũ trang bằng chủ nghĩa Mác-Lênin",
+                    "Sự viện trợ vũ khí tối tân từ các nhà tư bản chính quốc",
+                    "Sự nổi dậy tự phát của các hội nhóm ái hữu bí mật"
+                ],
+                correctIndex: 1,
+                explanation: "Trong tác phẩm \"Đường Kách mệnh\", Người chỉ rõ: \"Trước hết phải có đảng cách mệnh... Đảng có vững cách mệnh mới thành công, cũng như người cầm lái vững thì thuyền mới chạy\"."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh định nghĩa như thế nào về Đảng Cộng sản Việt Nam khi bàn về bản chất giai cấp?",
+                options: [
+                    "Đảng chỉ của giai cấp công nhân thuần túy, không liên hệ với tầng lớp khác",
+                    "Đảng của giai cấp công nhân, của nhân dân lao động và của toàn dân tộc Việt Nam",
+                    "Đảng đại diện cho quyền lợi của tư sản dân tộc tiến bộ",
+                    "Đảng của giới trí thức phong kiến yêu nước"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh chỉ rõ ĐCSVN không chỉ là đội tiên phong của giai cấp công nhân mà còn đại diện cho lợi ích của nhân dân lao động và cả dân tộc Việt Nam, có sự gắn bó máu thịt với toàn dân."
+            },
+            {
+                category: "Nhận biết",
+                question: "Ai được Hồ Chí Minh xác định là \"gốc\", là \"chủ\" của cách mệnh trong tác phẩm Đường Kách mệnh?",
+                options: [
+                    "Học sinh, sinh viên, trí thức",
+                    "Thương gia và phú nông",
+                    "Công nhân và nông dân",
+                    "Địa chủ yêu nước tiến bộ"
+                ],
+                correctIndex: 2,
+                explanation: "Trong Đường Kách mệnh, Người viết: \"Công nông là người mất quyền nhiều nhất, bị bóc lột nặng nhất, nên công nông là chủ của cách mệnh, công nông là gốc của cách mệnh\"."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Trong Sách lược vắn tắt (1930), đối với phú nông, trung, tiểu địa chủ và tư bản An Nam chưa rõ mặt phản cách mạng, Hồ Chí Minh chủ trương thế nào?",
+                options: [
+                    "Ngay lập tức tịch thu toàn bộ ruộng đất và tuyên chiến",
+                    "Lợi dụng hoặc ít lâu làm cho họ đứng trung lập, bộ phận nào phản cách mạng mới đánh đổ",
+                    "Mời họ làm thủ lĩnh tối cao của chính quyền cách mạng công nông",
+                    "Giao toàn bộ quyền lực kinh tế cho họ kiểm soát"
+                ],
+                correctIndex: 1,
+                explanation: "Để tập hợp lực lượng tối đa chống kẻ thù chính là đế quốc Pháp, Người chủ trương liên lạc và kéo tiểu tư sản, trí thức về phía vô sản; đồng thời trung lập phú nông, trung, tiểu địa chủ chưa rõ mặt phản cách mạng."
+            },
+            {
+                category: "Nâng cao",
+                question: "Luận điểm sáng tạo lớn nhất của Hồ Chí Minh về mối quan hệ giữa cách mạng thuộc địa và cách mạng vô sản ở chính quốc là gì?",
+                options: [
+                    "Cách mạng thuộc địa hoàn toàn lệ thuộc và chỉ nổ ra sau khi cách mạng chính quốc thắng lợi",
+                    "Cách mạng giải phóng dân tộc ở thuộc địa có thể giành thắng lợi trước cách mạng chính quốc và góp phần thúc đẩy cách mạng chính quốc",
+                    "Cách mạng thuộc địa và chính quốc không có mối quan hệ liên kết nào",
+                    "Cách mạng thuộc địa chỉ đóng vai trò thứ yếu, làm bàn đạp cho cách mạng chính quốc"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh ví chủ nghĩa tư bản như con đỉa hai vòi. Người khẳng định cách mạng thuộc địa có thể chủ động giành thắng lợi trước và giúp đỡ cách mạng vô sản chính quốc tiến tới xóa bỏ hoàn toàn chủ nghĩa đế quốc."
+            },
+            {
+                category: "Nhận biết",
+                question: "Vì sao cách mạng giải phóng dân tộc ở Việt Nam phải tiến hành bằng con đường bạo lực cách mạng?",
+                options: [
+                    "Vì Hồ Chí Minh muốn tiến hành chiến tranh quân sự để phô diễn lực lượng",
+                    "Vì thực dân Pháp sử dụng bạo lực phản cách mạng vô cùng tàn bạo để cai trị và đàn áp phong trào yêu nước",
+                    "Vì nhân dân thuộc địa từ chối mọi hình thức thảo luận kinh tế",
+                    "Vì các đồng minh quốc tế ép buộc sử dụng bạo lực"
+                ],
+                correctIndex: 1,
+                explanation: "Thực dân phong kiến không bao giờ tự ý trả tự do. Chúng dùng bạo lực dã man để thống trị nên con đường duy nhất để giành độc lập là dùng bạo lực cách mạng để đập tan bạo lực phản cách mạng."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Bạo lực cách mạng trong tư tưởng Hồ Chí Minh là sự kết hợp chặt chẽ giữa hai yếu tố nào?",
+                options: [
+                    "Đấu tranh chính trị và đấu tranh vũ trang của quần chúng nhân dân",
+                    "Chiến tranh du kích ngoại bang và ám sát cá nhân",
+                    "Thương lượng hòa hiếu vô điều kiện và kêu gọi cấm vận",
+                    "Cải cách hiến pháp tư sản và đấu tranh nghị trường"
+                ],
+                correctIndex: 0,
+                explanation: "Bạo lực cách mạng là bạo lực của quần chúng, bao gồm hai hình thức cơ bản phối hợp chặt chẽ: đấu tranh chính trị và đấu tranh vũ trang tùy thuộc hoàn cảnh cụ thể."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Mối quan hệ giữa bạo lực cách mạng và tư tưởng nhân đạo, hòa bình trong tư tưởng Hồ Chí Minh được thể hiện như thế nào?",
+                options: [
+                    "Người tuyệt đối bài trừ đàm phán, luôn ưu tiên sử dụng chiến tranh",
+                    "Tận dụng mọi khả năng giải quyết xung đột bằng biện pháp hòa bình, tiến hành chiến tranh chỉ là giải pháp bắt buộc cuối cùng",
+                    "Chiến tranh bạo lực là mục đích cuối cùng của phong trào giải phóng thuộc địa",
+                    "Luôn thỏa hiệp nhượng bộ lãnh thổ để đổi lấy nền hòa bình giả tạo"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh là người yêu hòa bình sâu sắc. Người tìm mọi cách ngoại giao cứu vãn hòa bình, chiến tranh bạo lực chỉ là bước đi cuối cùng khi không còn con đường nào khác."
+            },
+            {
+                category: "Nhận biết",
+                question: "Để đối phó với kẻ thù lớn mạnh hơn nhiều lần về vũ khí kỹ thuật, Hồ Chí Minh đề ra phương châm chiến lược quân sự nào?",
+                options: [
+                    "Tốc chiến tốc thắng bằng tổng lực tấn công",
+                    "Trường kỳ kháng chiến (kháng chiến lâu dài) và tự lực cánh sinh",
+                    "Bế quan tỏa cảng và thủ tiêu lực lượng chờ viện trợ",
+                    "Rút toàn bộ quân đội sang ẩn náu ở nước láng giềng"
+                ],
+                correctIndex: 1,
+                explanation: "Để khắc phục sự chênh lệch lực lượng ban đầu, Người đề ra phương châm chiến lược: \"Địch muốn tốc chiến, tốc thắng. Ta lấy trường kỳ kháng chiến trị nó, thì địch nhất định thua, ta nhất định thắng\"."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Điền vào chỗ trống luận điểm nổi tiếng của Hồ Chí Minh: \"Một dân tộc không ........................ mà cứ ngồi chờ dân tộc khác giúp đỡ thì không xứng đáng được độc lập\"?",
+                options: [
+                    "Cầu viện ngoại bang rộng rãi",
+                    "Tự lực cánh sinh",
+                    "Tổ chức thương mại tự do",
+                    "Thực hiện cải cách tư sản"
+                ],
+                correctIndex: 1,
+                explanation: "Người nhấn mạnh tinh thần tự lực tự cường: \"Tự lực cánh sinh, dựa vào sức mình là chính... Đem sức ta mà giải phóng cho ta\" mới có thể xây dựng nền độc lập thực chất."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong Lời kêu gọi gửi Quốc dân đồng bào năm 1941, Hồ Chí Minh viết: \"Trong lúc này quyền lợi ........................ cao hơn hết thảy\". Điền từ thích hợp vào chỗ trống?",
+                options: [
+                    "Giai cấp công nông",
+                    "Đảng phái chính trị",
+                    "Dân tộc giải phóng",
+                    "Hợp tác xã thuộc địa"
+                ],
+                correctIndex: 2,
+                explanation: "Trong thư gửi đồng bào (1941), Người nêu rõ: \"Trong lúc này quyền lợi dân tộc giải phóng cao hơn hết thảy. Chúng ta phải đoàn kết lại đánh đổ bọn đế quốc Pháp và Nhật\"."
+            },
+            {
+                category: "Nhận biết",
+                question: "Tổ chức cách mạng nào được thành lập tại Quảng Châu tháng 6-1925, đóng vai trò chuẩn bị quyết định về mặt tổ chức cho sự ra đời của Đảng?",
+                options: [
+                    "Hội phản đế đồng minh",
+                    "Hội Việt Nam Cách mạng Thanh niên",
+                    "Đông Dương Cộng sản Đảng",
+                    "Việt Nam Quốc dân Đảng"
+                ],
+                correctIndex: 1,
+                explanation: "Tháng 6-1925, Nguyễn Ái Quốc sáng lập Hội Việt Nam Cách mạng Thanh niên, cơ quan tuyên truyền là báo Thanh niên để truyền bá lý luận và huấn luyện cán bộ cốt cán."
+            },
+            {
+                category: "Nâng cao",
+                question: "Vì sao Nguyễn Ái Quốc quyết định không đi sang hướng Đông (Nhật Bản) như cụ Phan Bội Châu mà lại chọn đi sang phương Tây vào năm 1911?",
+                options: [
+                    "Vì phương Tây có khí hậu ôn đới thuận lợi cho sức khỏe hơn",
+                    "Vì Người muốn đi thẳng vào sào huyệt của kẻ thù (Pháp) để nghiên cứu bản chất thực sự của những khẩu hiệu \"Tự do - Bình đẳng - Bác ái\" và xem họ làm thế nào rồi về giúp dân",
+                    "Vì Người muốn tìm việc làm có thu nhập cao tại các nước tư bản phát triển",
+                    "Vì các nước phương Đông cấm hoàn toàn sự di chuyển của tầng lớp trí thức"
+                ],
+                correctIndex: 1,
+                explanation: "Người nhận thấy con đường cầu viện Nhật Bản khác nào \"đuổi hổ cửa trước rước beo cửa sau\". Người quyết định đi sang phương Tây để tìm hiểu ngọn nguồn khoa học cách mạng và bản chất kẻ thù."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Luận điểm của Hồ Chí Minh về mối quan hệ giữa độc lập dân tộc và hạnh phúc nhân dân thể hiện tinh thần nào?",
+                options: [
+                    "Chỉ cần nước độc lập trên danh nghĩa, đời sống nhân dân tự phát phát triển",
+                    "Độc lập phải gắn liền với tự do, ấm no, hạnh phúc thật sự của nhân dân",
+                    "Nhân dân phải chịu cực khổ vạn năm để xây dựng chính quyền phong kiến hùng mạnh",
+                    "Thủ tiêu toàn bộ các chính sách an sinh xã hội để tập trung mua vũ khí"
+                ],
+                correctIndex: 1,
+                explanation: "Người nhấn mạnh độc lập dân tộc chỉ có ý nghĩa thực sự khi đem lại tự do, hạnh phúc, ấm no cho toàn dân, không để ai bị đói nghèo tụt lại phía sau."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Lực lượng của cách mạng giải phóng dân tộc theo Hồ Chí Minh được xác định như thế nào là đúng nhất?",
+                options: [
+                    "Chỉ bao gồm giai cấp vô sản công nghiệp chính quốc",
+                    "Toàn thể quốc dân đồng bào yêu nước, sĩ nông công thương đều nhất trí chống giặc cứu nước",
+                    "Chỉ có tầng lớp địa chủ và tư bản có nhiều tài sản",
+                    "Các thế lực quân sự thân Pháp chấp nhận cải tổ"
+                ],
+                correctIndex: 1,
+                explanation: "Cách mạng giải phóng dân tộc là sự nghiệp của toàn dân bị áp bức dưới sự lãnh đạo của Đảng, trong đó công nông là gốc, trí thức tiểu tư sản, tư sản dân tộc là đồng minh."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Khi ca ngợi cống hiến lịch sử của Lênin đối với cách mạng thuộc địa, Hồ Chí Minh thường dùng mệnh đề tôn vinh nào?",
+                options: [
+                    "\"Lênin là người đầu tiên đặt nền móng hoàn chỉnh cho nền triết học phong kiến phương Đông\"",
+                    "\"Lênin là người đầu tiên... đặt nền móng cho cách mạng thuộc địa gắn liền với cách mạng vô sản\"",
+                    "\"Lênin là nhà tư bản tiến bộ nhất của thế kỷ XX\"",
+                    "\"Lênin đã giúp thiết lập lại triều đại phong kiến Nga hoàng\""
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh khẳng định Lênin là người đầu tiên chỉ rõ tầm quan trọng của vấn đề dân tộc thuộc địa, hướng phong trào giải phóng thuộc địa đi theo quỹ đạo cách mạng vô sản thế giới."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Chủ nghĩa dân tộc mà Hồ Chí Minh đánh giá cao là gì?",
+                options: [
+                    "Chủ nghĩa sô vanh nước lớn, muốn đồng hóa các dân tộc nhỏ",
+                    "Chủ nghĩa yêu nước và tinh thần tự tôn dân tộc chân chính, không vị kỷ, hẹp hòi",
+                    "Chủ nghĩa dân tộc cực đoan, bài ngoại vô nguyên tắc",
+                    "Xu hướng sáp nhập các nước thuộc địa nhỏ vào các đế quốc lớn"
+                ],
+                correctIndex: 1,
+                explanation: "Chủ nghĩa dân tộc của Hồ Chí Minh chính là chủ nghĩa yêu nước chân chính, gắn với tinh thần tự cường và tôn trọng quyền tự quyết của các quốc gia khác, hoàn toàn khác chủ nghĩa dân tộc cực đoan."
+            },
+            {
+                category: "Nâng cao",
+                question: "Bản chất tư tưởng độc lập dân tộc gắn liền với chủ nghĩa xã hội của Hồ Chí Minh là kết tinh của yếu tố nào?",
+                options: [
+                    "Sự sao chép rập khuôn mô hình hợp tác xã nông nghiệp thời phong kiến",
+                    "Sự kết hợp nhuần nhuyễn giữa chủ nghĩa yêu nước truyền thống và chủ nghĩa xã hội khoa học (chủ nghĩa Mác-Lênin)",
+                    "Sự thỏa hiệp giữa hệ tư tưởng phong kiến và tư bản thực dân Pháp",
+                    "Sự phục hồi hoàn toàn các giá trị tư sản phương Tây thế kỷ XVIII"
+                ],
+                correctIndex: 1,
+                explanation: "Tư tưởng này là đỉnh cao sáng tạo của Bác, đưa chủ nghĩa yêu nước truyền thống tiến hóa thành chủ nghĩa yêu nước hiện đại, gắn giải phóng dân tộc với giải phóng giai cấp và giải phóng con người."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Tác phẩm nào sau đây của Nguyễn Ái Quốc phê phán gay gắt hệ thống chính sách thuế, tô bóc lột của Pháp ở Đông Dương?",
+                options: [
+                    "Đường Kách mệnh (1927)",
+                    "Bản án chế độ thực dân Pháp (1925)",
+                    "Nhật ký trong tù (1942)",
+                    "Sách lược vắn tắt của Đảng (1930)"
+                ],
+                correctIndex: 1,
+                explanation: "Tác phẩm 'Bản án chế độ thực dân Pháp' (1925) vạch trần mọi tội ác, thủ đoạn bóc lột thuế khóa dã man của thực dân Pháp tại An Nam."
+            },
+            {
+                category: "Lịch sử",
+                question: "Sau thắng lợi của phong trào Cách mạng Tháng Mười Nga (1917), Nguyễn Ái Quốc bắt đầu chuyển dịch mạnh mẽ tư tưởng cứu nước từ hướng nào sang hướng nào?",
+                options: [
+                    "Từ khuynh hướng cải cách phong kiến sang khuynh hướng dân chủ tư sản kiểu Mỹ",
+                    "Từ chủ nghĩa yêu nước truyền thống sang việc tiếp cận thế giới quan cách mạng vô sản của chủ nghĩa Mác-Lênin",
+                    "Từ bạo động vũ trang phong kiến sang ngoại giao thỏa hiệp chính trị",
+                    "Từ đấu tranh nghị trường sang bạo động cục bộ tư sản"
+                ],
+                correctIndex: 1,
+                explanation: "Nhờ sức ảnh hưởng của Cách mạng Tháng Mười Nga, Người đã nhận thức được thời đại mới và dứt khoát chuyển biến tư tưởng lên tầm cao vô sản."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Trong quan điểm của Hồ Chí Minh, cách mạng giải phóng dân tộc ở thuộc địa là một bộ phận của cách mạng vô sản thế giới, do đó nó phải ........................ với cách mạng vô sản ở chính quốc.'",
+                options: [
+                    "lệ thuộc hoàn toàn",
+                    "phục tùng vô điều kiện",
+                    "hợp tác chặt chẽ, bình đẳng",
+                    "tách rời độc lập tuyệt đối"
+                ],
+                correctIndex: 2,
+                explanation: "Người chủ trương mối quan hệ bình đẳng, chặt chẽ, cùng phối hợp chống kẻ thù chung là chủ nghĩa đế quốc, chứ không phải quan hệ phụ thuộc."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Thực chất việc Hồ Chí Minh giải quyết hài hòa mâu thuẫn dân tộc và mâu thuẫn giai cấp ở Việt Nam là gì?",
+                options: [
+                    "Tuyệt đối hóa mâu thuẫn giai cấp, phủ nhận sự cần thiết của đoàn kết quốc dân",
+                    "Đặt lợi ích tối cao của dân tộc lên trên hết, trước hết, đồng thời giải quyết từng bước quyền lợi giai cấp phù hợp tình hình thực tế",
+                    "Tập trung thỏa hiệp với địa chủ phong kiến để dồn toàn lực đánh Pháp",
+                    "Thực hiện cải cách ruộng đất ngay lập tức giữa bão chiến tranh"
+                ],
+                correctIndex: 1,
+                explanation: "Ở thuộc địa, mâu thuẫn dân tộc là chủ yếu nhất. Việc đặt lợi ích giải phóng dân tộc lên trên hết là tiền đề để giải phóng giai cấp và nhân dân sau này."
+            },
+            {
+                category: "Lịch sử",
+                question: "Khẩu hiệu nổi tiếng 'Dù hy sinh tới đâu, dù phải đốt cháy cả dãy Trường Sơn cũng phải kiên quyết giành cho được độc lập!' được Hồ Chí Minh nói với ai, vào thời điểm nào?",
+                options: [
+                    "Đồng chí Trường Chinh; tháng 12 năm 1946",
+                    "Đồng chí Võ Nguyên Giáp; tháng 8 năm 1945 tại lán Nà Nưa",
+                    "Đồng chí Phạm Văn Đồng; tháng 5 năm 1941 tại Pác Bó",
+                    "Đồng chí Lê Duẩn; tháng 7 năm 1966 tại Hà Nội"
+                ],
+                correctIndex: 1,
+                explanation: "Trước thềm Cách mạng Tháng Tám, giữa lúc cơn sốt rét rừng hành hạ tại lán Nà Nưa (Tuyên Quang), Bác Hồ đã nói câu nói đanh thép này với đồng chí Võ Nguyên Giáp."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Luận điểm: 'Chủ nghĩa bạo lực cách mạng của Hồ Chí Minh không đồng nghĩa với chủ nghĩa hiếu chiến' được chứng minh rõ nét nhất qua sự kiện ngoại giao nào?",
+                options: [
+                    "Ký Hiệp định Sơ bộ ngày 6-3-1946 và Tạm ước 14-9-1946 với chính phủ Pháp",
+                    "Gửi thư yêu cầu đàm phán với Tổng thống Mỹ Lyndon Johnson năm 1966",
+                    "Ký kết Hiệp định Giơ-ne-vơ năm 1954",
+                    "Tham dự Hội nghị hòa bình Versailles năm 1919"
+                ],
+                correctIndex: 0,
+                explanation: "Việc ký Hiệp định Sơ bộ và Tạm ước năm 1946 thể hiện Người luôn tận dụng tối đa cơ hội hòa bình, chỉ dùng chiến tranh như giải pháp bắt buộc cuối cùng."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Hồ Chí Minh khẳng định: Công nông là gốc của cách mệnh, còn học trò, nhà buôn nhỏ, điền chủ nhỏ là ........................ của công nông.'",
+                options: [
+                    "kẻ thù đối kháng",
+                    "bầu bạn cách mệnh",
+                    "lực lượng lãnh đạo",
+                    "tay sai địa phương"
+                ],
+                correctIndex: 1,
+                explanation: "Trong tác phẩm Đường Kách mệnh, Người xác định học trò, nhà buôn nhỏ, điền chủ nhỏ là bầu bạn cách mệnh (đồng minh), công nông mới là gốc cách mệnh."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Tại sao Hồ Chí Minh cho rằng cách mạng ở các nước thuộc địa phương Đông có thể nổ ra và giành thắng lợi trước cách mạng vô sản ở chính quốc?",
+                options: [
+                    "Vì thuộc địa là nơi tập trung mâu thuẫn gay gắt nhất, là khâu yếu nhất của hệ thống đế quốc và có động lực yêu nước cực kỳ mạnh mẽ",
+                    "Vì giai cấp vô sản ở các nước thuộc địa phương Đông phát triển mạnh hơn phương Tây",
+                    "Vì các nước thuộc địa có tiềm lực kinh tế và công nghiệp quốc phòng vượt trội",
+                    "Vì chính quốc luôn chủ động nhường quyền thống trị trước"
+                ],
+                correctIndex: 0,
+                explanation: "Thuộc địa là nguồn sống của chủ nghĩa đế quốc. Đánh sập thuộc địa chính là chặt đứt nguồn sống của chúng, và tinh thần cách mạng của nhân dân thuộc địa cực kỳ cao."
+            },
+            {
+                category: "Nâng cao",
+                question: "Phát biểu nào sau đây đúng nhất về tư tưởng Hồ Chí Minh về sự kết hợp giữa chủ nghĩa yêu nước và chủ nghĩa quốc tế?",
+                options: [
+                    "Chủ nghĩa yêu nước và chủ nghĩa quốc tế loại trừ lẫn nhau trong thực tiễn vô sản",
+                    "Chủ nghĩa yêu nước chân chính luôn thống nhất với chủ nghĩa quốc tế vô sản trong sáng, chống chủ nghĩa vị kỷ và sô vanh nước lớn",
+                    "Chủ nghĩa quốc tế là mục tiêu duy nhất, chủ nghĩa yêu nước chỉ là công cụ chuyển tiếp",
+                    "Mục tiêu tối thượng là cứu nước mình, phong trào quốc tế chỉ mang tính chất phụ trợ"
+                ],
+                correctIndex: 1,
+                explanation: "Hồ Chí Minh luôn giáo dục tinh thần yêu nước chân chính phải đi đôi với chủ nghĩa quốc tế vô sản trong sáng, cùng đấu tranh vì hòa bình và tự do chung."
+            },
+            {
+                category: "Lịch sử",
+                question: "Văn bản chính trị đầu tiên nào khẳng định nhiệm vụ 'Làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản' ở nước ta?",
+                options: [
+                    "Chánh cương vắn tắt, Sách lược vắn tắt do Nguyễn Ái Quốc soạn thảo năm 1930",
+                    "Luận cương chính trị do Trần Phú soạn thảo tháng 10 năm 1930",
+                    "Bản án chế độ thực dân Pháp năm 1925",
+                    "Nghị quyết Hội nghị Trung ương lần thứ 8 năm 1941"
+                ],
+                correctIndex: 0,
+                explanation: "Chương trình và Cương lĩnh chính trị đầu tiên do Người soạn thảo tại Hội nghị thành lập Đảng (tháng 2/1930) đã xác định rõ phương hướng chiến lược xuất sắc này."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong bài viết 'Con đường dẫn tôi đến với chủ nghĩa Lênin', Nguyễn Ái Quốc chia sẻ Người đã khóc vì xúc động khi đọc Luận cương của Lênin. Sự kiện này diễn ra tại đâu?",
+                options: [
+                    "Quảng Châu, Trung Quốc",
+                    "Paris, Pháp",
+                    "Luân Đôn, Anh",
+                    "Mát-xcơ-va, Liên Xô"
+                ],
+                correctIndex: 1,
+                explanation: "Tháng 7/1920, tại ngôi nhà nhỏ ở Paris (Pháp), Người đã đọc bản Luận cương lịch sử của Lênin đăng trên báo Nhân đạo và reo lên xúc động."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Hồ Chí Minh tiếp thu và phát triển quyền tự quyết của các dân tộc từ văn kiện pháp lý quốc tế nào vào năm 1919?",
+                options: [
+                    "Tuyên ngôn độc lập Hoa Kỳ 1776",
+                    "Nguyên tắc tự quyết 14 điểm của Tổng thống Mỹ Woodrow Wilson",
+                    "Tuyên ngôn nhân quyền Pháp 1791",
+                    "Hiến chương Liên Hợp Quốc"
+                ],
+                correctIndex: 1,
+                explanation: "Năm 1919, nhân dịp các nước thắng trận họp Hội nghị Versailles thông qua chương trình 14 điểm của Woodrow Wilson, Người đã gửi bản Yêu sách đòi quyền tự quyết cho An Nam."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Vũ khí sắc bén nhất mà Hồ Chí Minh trang bị cho nhân dân thuộc địa Đông Dương trong cuộc chiến tranh nhân dân chống Pháp và Mỹ là gì?",
+                options: [
+                    "Súng ống đại bác tối tân do đồng minh viện trợ",
+                    "Chủ nghĩa yêu nước mãnh liệt được thức tỉnh và tổ chức chặt chẽ dưới sự lãnh đạo của Đảng",
+                    "Hệ thống hầm hào, địa đạo phòng thủ vững chắc",
+                    "Chiến thuật ám sát bí mật các sĩ quan thực dân"
+                ],
+                correctIndex: 1,
+                explanation: "Bác khẳng định vũ khí mạnh nhất của nhân dân là lòng yêu nước. Khi được thức tỉnh, giác ngộ và tổ chức, nó sẽ tạo ra sức mạnh dời non lấp bể."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Hồ Chí Minh chỉ rõ, bạo lực cách mạng của nhân dân Việt Nam là bạo lực chính nghĩa, bạo lực tự vệ của ........................ để chống lại bạo lực phi nghĩa của kẻ thù.'",
+                options: [
+                    "giai cấp công nhân đơn độc",
+                    "toàn thể quốc dân đồng bào",
+                    "các lực lượng quân phiệt",
+                    "các tổ chức đặc công bí mật"
+                ],
+                correctIndex: 1,
+                explanation: "Bạo lực cách mạng trong tư tưởng Bác là bạo lực của toàn dân, mang tính chất chính nghĩa, tự vệ nhằm giành lại nền tự do, độc lập."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sự phân hóa giai cấp ở xã hội thuộc địa Việt Nam thời kỳ Pháp thuộc có đặc điểm gì nổi bật ảnh hưởng trực tiếp đến đường lối chiến lược của Bác?",
+                options: [
+                    "Giai cấp tư sản bản địa chiếm ưu thế tuyệt đối về kinh tế và chính trị",
+                    "Sự phân hóa giai cấp chưa triệt để, mâu thuẫn dân tộc bao trùm lên mọi mâu thuẫn giai cấp khác",
+                    "Giai cấp nông dân đã hoàn toàn bị xóa bỏ để nhường chỗ cho công nhân đô thị",
+                    "Địa chủ phong kiến hoàn toàn đứng về phía cách mạng giải phóng"
+                ],
+                correctIndex: 1,
+                explanation: "Vì cơ cấu kinh tế thuộc địa lạc hậu, phân hóa giai cấp chưa sâu sắc. Toàn bộ các giai cấp đều chịu chung số phận mất nước nên có thể tập hợp vào Mặt trận chung."
+            },
+            {
+                category: "Lịch sử",
+                question: "Ngày 28 tháng 1 năm 1941 đánh dấu sự kiện trọng đại nào trong cuộc đời hoạt động cách mạng của Hồ Chí Minh?",
+                options: [
+                    "Người sáng lập Hội Việt Nam Cách mạng Thanh niên",
+                    "Người trở về nước trực tiếp lãnh đạo cách mạng Việt Nam sau 30 năm bôn ba",
+                    "Người đọc Tuyên ngôn Độc lập tại quảng trường Ba Đình",
+                    "Người ra lời kêu gọi kháng chiến chống đế quốc Mỹ"
+                ],
+                correctIndex: 1,
+                explanation: "Ngày 28-1-1941, Bác bước qua cột mốc biên giới 108 tại Hà Quảng, Cao Bằng, trở về Tổ quốc trực tiếp chèo lái con thuyền cách mạng."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Văn kiện nào của Nguyễn Ái Quốc khẳng định: 'Cách mạng thuộc địa không những không phụ thuộc vào cách mạng chính quốc mà có thể giành thắng lợi trước'?",
+                options: [
+                    "Đường Kách mệnh (1927)",
+                    "Bản án chế độ thực dân Pháp (1925) và các bài viết trên báo Le Paria",
+                    "Tuyên ngôn Độc lập (1945)",
+                    "Chính cương vắn tắt (1930)"
+                ],
+                correctIndex: 1,
+                explanation: "Trong Bản án chế độ thực dân Pháp và loạt bài luận thuyết trên tờ Le Paria, Người đã chỉ rõ luận điểm vô cùng sáng tạo và độc lập này."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Mục đích tối thượng của cách mạng giải phóng dân tộc theo tư tưởng Hồ Chí Minh là gì?",
+                options: [
+                    "Giành chính quyền về tay một nhóm nhỏ tinh hoa",
+                    "Đánh đuổi thực dân, giành độc lập dân tộc, tự do và hạnh phúc thực chất cho toàn thể nhân dân",
+                    "Cải cách triều đình phong kiến theo mô hình phương Tây",
+                    "Thực hiện chiến tranh bành trướng ra các nước lân cận"
+                ],
+                correctIndex: 1,
+                explanation: "Mục tiêu tối thượng là độc lập dân tộc gắn liền với tự do, cơm no áo ấm và quyền làm chủ thật sự của nhân dân lao động."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Quan điểm 'Đem sức ta mà giải phóng cho ta' của Hồ Chí Minh thể hiện phương châm chiến lược nào?",
+                options: [
+                    "Trường kỳ kháng chiến",
+                    "Tự lực cánh sinh, dựa vào sức mình là chính",
+                    "Đàm phán hòa bình vô điều kiện",
+                    "Chờ đợi liên minh quốc tế cứu giúp"
+                ],
+                correctIndex: 1,
+                explanation: "Phương châm tự lực cánh sinh khẳng định cách mạng muốn thành công phải dựa vào nội lực của chính quốc dân, không thể ỷ lại vào ngoại lực."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Theo Hồ Chí Minh, thực chất của cuộc đấu tranh ở thuộc địa là cuộc đấu tranh ........................ chứ không phải cuộc đấu tranh giai cấp thuần túy giống như ở phương Tây.'",
+                options: [
+                    "giải phóng dân tộc",
+                    "cải cách tôn giáo",
+                    "thương mại quốc tế",
+                    "tranh giành ngôi vua"
+                ],
+                correctIndex: 0,
+                explanation: "Ở thuộc địa, nhiệm vụ hàng đầu là giải phóng dân tộc, lật đổ ách thống trị ngoại bang để giành lại chủ quyền quốc gia."
+            },
+            {
+                category: "Nâng cao",
+                question: "Sự sáng tạo của Hồ Chí Minh so với học thuyết Mác-Lênin cổ điển về động lực cách mạng giải phóng thuộc địa là gì?",
+                options: [
+                    "Người đánh giá giai cấp nông dân là giai cấp duy nhất lãnh đạo cách mạng",
+                    "Người khẳng định giai cấp tư sản dân tộc là gốc của cách mạng",
+                    "Người nhìn nhận chủ nghĩa yêu nước và khối đại đoàn kết toàn dân tộc (trên nền tảng công nông) là động lực vĩ đại của cách mạng thuộc địa",
+                    "Người cho rằng cách mạng chỉ cần lực lượng công nhân đô thị là đủ thắng lợi"
+                ],
+                correctIndex: 2,
+                explanation: "Trong khi các nhà kinh điển tập trung vào giai cấp công nhân chính quốc, Bác nhận thấy chủ nghĩa yêu nước toàn dân là động lực dời non lấp bể ở thuộc địa."
+            },
+            {
+                category: "Lịch sử",
+                question: "Thời kỳ hoạt động cách mạng nào của Hồ Chí Minh được coi là thời kỳ Người kiên trì giữ vững lập trường, vượt qua thử thách 'tả khuynh' của Quốc tế Cộng sản?",
+                options: [
+                    "Thời kỳ trước năm 1911",
+                    "Thời kỳ 1911 - 1920",
+                    "Thời kỳ 1930 - 1945",
+                    "Thời kỳ 1945 - 1969"
+                ],
+                correctIndex: 2,
+                explanation: "Trong những năm 1930 - 1941, Người bị Quốc tế Cộng sản hiểu lầm là quá nhấn mạnh tinh thần dân tộc dân chủ mà nhẹ mâu thuẫn giai cấp, nhưng thực tiễn lịch sử đã chứng minh Bác đúng."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong tác phẩm Đường Kách mệnh, Hồ Chí Minh viết: 'Đảng muốn vững thì phải có ........................ làm cốt'. Điền từ thích hợp?",
+                options: [
+                    "vũ khí hiện đại",
+                    "chủ nghĩa (lý luận)",
+                    "nguồn tài chính mạnh",
+                    "sự ủng hộ ngoại bang"
+                ],
+                correctIndex: 1,
+                explanation: "Người khẳng định lý luận (chủ nghĩa Mác-Lênin) là cốt của Đảng: 'Đảng không có chủ nghĩa cũng như người không có trí khôn, tàu không có bàn chỉ nam'."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Tư tưởng 'Giúp bạn là tự giúp mình' của Hồ Chí Minh được thể hiện sâu sắc nhất trong mối quan hệ của Việt Nam với các nước nào?",
+                options: [
+                    "Các nước Tây Âu tư bản chủ nghĩa",
+                    "Liên Xô và các nước Đông Âu",
+                    "Lào và Campuchia trên bán đảo Đông Dương",
+                    "Hợp chủng quốc Hoa Kỳ"
+                ],
+                correctIndex: 2,
+                explanation: "Người chủ trương liên minh chiến đấu khăng khít giữa ba dân tộc Đông Dương cùng chung kẻ thù, việc giúp đỡ bạn giành độc lập cũng bảo vệ cách mạng Việt Nam."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Sự lỗi thời của các con đường cứu nước theo ý thức hệ phong kiến ở Việt Nam cuối thế kỷ XIX được chứng minh rõ nhất qua sự thất bại của phong trào nào?",
+                options: [
+                    "Phong trào Đông Du của Phan Bội Châu",
+                    "Phong trào Duy Tân của Phan Châu Trinh",
+                    "Phong trào Cần Vương (tiêu biểu là khởi nghĩa Hương Khê)",
+                    "Cuộc khởi nghĩa Yên Bái của Nguyễn Thái Học"
+                ],
+                correctIndex: 2,
+                explanation: "Sự thất bại của phong trào Cần Vương đánh dấu sự bất lực của hệ tư tưởng phong kiến trước nhiệm vụ giải phóng dân tộc thuộc địa kiểu mới."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Trong Cách mạng Tháng Tám 1945, Hồ Chí Minh đã chỉ rõ phương châm hành động: Chúng ta phải chủ động nổi dậy giành chính quyền trước khi ........................ vào giải giáp quân Nhật.'",
+                options: [
+                    "quân đội thực dân Pháp",
+                    "quân Đồng minh (Tưởng và Anh)",
+                    "quân đội phát xít Đức",
+                    "quân đội Mỹ"
+                ],
+                correctIndex: 1,
+                explanation: "Nhờ tận dụng thời cơ vàng khi Nhật đầu hàng và quân Đồng minh chưa kịp vào, Bác đã lãnh đạo nhân dân giành chính quyền một cách chủ động và hợp pháp."
+            },
+            {
+                category: "Nâng cao",
+                question: "Nhận định nào sau đây là SAI về quan điểm bạo lực cách mạng trong tư tưởng Hồ Chí Minh?",
+                options: [
+                    "Bạo lực cách mạng là giải pháp bắt buộc để đập tan bạo lực phản cách mạng của kẻ thù",
+                    "Bạo lực cách mạng chỉ bao gồm hình thức đấu tranh vũ trang thuần túy trên chiến trường quân sự",
+                    "Bạo lực cách mạng phải là bạo lực của quần chúng nhân dân được tổ chức",
+                    "Bạo lực cách mạng luôn gắn liền và thống nhất hữu cơ với tư tưởng nhân đạo, hòa bình"
+                ],
+                correctIndex: 1,
+                explanation: "Bạo lực cách mạng bao gồm cả đấu tranh chính trị và đấu tranh vũ trang phối hợp chặt chẽ, không chỉ thuần túy là quân sự."
+            },
+            {
+                category: "Lịch sử",
+                question: "Hiệp định sơ bộ ngày 6-3-1946 do Chủ tịch Hồ Chí Minh ký với đại diện chính phủ Pháp thể hiện sách lược gì?",
+                options: [
+                    "Hòa hoãn với quân Tưởng để rảnh tay đối phó với thực dân Pháp",
+                    "Hòa hoãn với Pháp để đuổi nhanh 20 vạn quân Tưởng về nước, bảo toàn thực lực và tranh thủ thời gian chuẩn bị kháng chiến lâu dài",
+                    "Đầu hàng Pháp để nhận quy chế tự trị thuộc địa Đông Dương",
+                    "Liên minh quân sự với Pháp để tiêu diệt các đảng phái đối lập"
+                ],
+                correctIndex: 1,
+                explanation: "Đây là một bước đi ngoại giao xuất sắc của Bác, mượn tay Pháp đuổi quân Tưởng, tranh thủ thời gian hòa hoãn quý báu để chuẩn bị cho cuộc kháng chiến toàn quốc."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong bức thư gửi đồng bào toàn quốc nhân dịp Cách mạng Tháng Tám thành công, Bác Hồ viết: 'Nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã thành một nước tự do độc lập'. Đoạn trích này cũng được Người đưa vào văn kiện nào?",
+                options: [
+                    "Lời kêu gọi Toàn quốc kháng chiến (1946)",
+                    "Tuyên ngôn Độc lập ngày 2-9-1945",
+                    "Bản Di chúc thiêng liêng (1969)",
+                    "Báo cáo chính trị tại Đại hội II (1951)"
+                ],
+                correctIndex: 1,
+                explanation: "Đoạn tuyên bố đanh thép này là phần kết luận thiêng liêng nhất của bản Tuyên ngôn Độc lập đọc tại quảng trường Ba Đình."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Theo Hồ Chí Minh, động lực trực tiếp và mạnh mẽ nhất thúc đẩy tinh thần cách mạng của giai cấp nông dân ở thuộc địa là gì?",
+                options: [
+                    "Khát vọng tự do tôn giáo và tín ngưỡng dân gian",
+                    "Quyền lợi ruộng đất gắn liền với khát vọng độc lập dân tộc để thoát kiếp nô lệ",
+                    "Xu hướng di cư sang các đô thị công nghiệp lớn",
+                    "Khát vọng tham gia vào bộ máy chính quyền phong kiến"
+                ],
+                correctIndex: 1,
+                explanation: "Giai cấp nông dân chiếm hơn 90% dân số thuộc địa, họ khát khao độc lập để thoát ách áp bức và có ruộng đất để cày cấy."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Điểm độc đáo nhất trong việc xây dựng Mặt trận dân tộc thống nhất của Hồ Chí Minh là gì?",
+                options: [
+                    "Mặt trận chỉ kết nạp những người thuộc giai cấp công nhân nghèo khổ",
+                    "Mặt trận quy tụ mọi tầng lớp, tôn giáo, đảng phái trên nền tảng liên minh công - nông - trí thức dưới sự lãnh đạo của Đảng",
+                    "Mặt trận hoạt động bí mật tuyệt đối, không công khai tôn chỉ mục đích",
+                    "Mặt trận do chính quyền thực dân bảo hộ và tài trợ kinh phí"
+                ],
+                correctIndex: 1,
+                explanation: "Mặt trận là tổ chức đại đoàn kết rộng rãi nhất, đặt dưới sự lãnh đạo của Đảng và dựa trên nền tảng liên minh công - nông - trí thức."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Chủ nghĩa dân tộc của Hồ Chí Minh là chủ nghĩa dân tộc chân chính, luôn gắn liền với ........................ trong sáng của giai cấp công nhân.'",
+                options: [
+                    "chủ nghĩa quốc tế",
+                    "chủ nghĩa sô vanh",
+                    "chủ nghĩa đế quốc",
+                    "chủ nghĩa thực dụng"
+                ],
+                correctIndex: 0,
+                explanation: "Chủ nghĩa dân tộc yêu nước chân chính luôn thống nhất biện chứng với chủ nghĩa quốc tế trong sáng, cùng phấn đấu vì sự tiến bộ nhân loại."
+            },
+            {
+                category: "Nâng cao",
+                question: "Hồ Chí Minh phê phán xu hướng cứu nước của cụ Phan Châu Trinh ở điểm nào?",
+                options: [
+                    "Ý định khôi phục triều đại phong kiến chuyên chế lỗi thời",
+                    "Chủ trương cải cách ôn hòa dựa vào thực dân Pháp, khác nào 'xin giặc rủ lòng thương'",
+                    "Hành động cầu viện đế quốc Nhật Bản quân sự",
+                    "Ý tưởng thiết lập một nhà nước quân chủ lập hiến"
+                ],
+                correctIndex: 1,
+                explanation: "Cụ Phan Chu Trinh chủ trương khai dân trí, chấn dân khí, hậu dân sinh nhưng lại nhờ Pháp giúp cải cách, Bác đánh giá việc này rất không thực tế."
+            },
+            {
+                category: "Lịch sử",
+                question: "Sự kiện lịch sử nào vào tháng 12 năm 1920 đánh dấu Nguyễn Ái Quốc trở thành người Cộng sản đầu tiên của Việt Nam?",
+                options: [
+                    "Người đọc bản Luận cương về vấn đề dân tộc của Lênin",
+                    "Người bỏ phiếu tán thành gia nhập Quốc tế Cộng sản tại Đại hội Tua của Đảng Xã hội Pháp",
+                    "Người sáng lập Hội Việt Nam Cách mạng Thanh niên tại Trung Quốc",
+                    "Người chủ trì hội nghị thành lập Đảng tại Hồng Kông"
+                ],
+                correctIndex: 1,
+                explanation: "Tại Đại hội Tua (Tours) tháng 12/1920, Người bỏ phiếu tán thành gia nhập Quốc tế III và tham gia thành lập Đảng Cộng sản Pháp, chính thức trở thành người cộng sản."
+            },
+            {
+                category: "Trích dẫn",
+                question: "Trong Tuyên ngôn độc lập 1945, Hồ Chí Minh viết: 'Pháp chạy, Nhật hàng, vua Bảo Đại thoái vị. Dân ta đã đánh đổ các xiềng xích của thực dân gần 100 năm nay để gây nên nước Việt Nam độc lập'. Đoạn trích phản ánh điều gì?",
+                options: [
+                    "Sự sụp đổ của ba thế lực đè nặng lên dân tộc và sự ra đời chính nghĩa của chế độ mới",
+                    "Sự nhượng bộ tự nguyện của hoàng gia nhà Nguyễn",
+                    "Thắng lợi quân sự của phe Đồng minh ở mặt trận châu Âu",
+                    "Sự hỗ trợ tài chính to lớn của cách mạng Trung Quốc"
+                ],
+                correctIndex: 0,
+                explanation: "Đoạn trích mô tả cô đọng thắng lợi của Cách mạng Tháng Tám, chấm dứt chế độ thuộc địa thực dân và phong kiến chuyên chế tại Việt Nam."
+            },
+            {
+                category: "Thông hiểu",
+                question: "Vì sao nói cách mạng giải phóng dân tộc ở thuộc địa mang tính chất của một cuộc cách mạng tự giải phóng?",
+                options: [
+                    "Vì các dân tộc thuộc địa phải ngồi chờ phong trào công nhân chính quốc thắng lợi giúp đỡ",
+                    "Vì nhân dân thuộc địa phải tự lực cánh sinh, chủ động đem sức ta giải phóng cho ta dưới sự dẫn đường của Đảng cách mệnh",
+                    "Vì thuộc địa tự phát giành độc lập mà không cần lý luận dẫn đường",
+                    "Vì chính phủ thực dân tự ý trao trả độc lập do áp lực quốc tế"
+                ],
+                correctIndex: 1,
+                explanation: "Cách mạng thuộc địa chỉ thắng lợi khi nhân dân tự mình đứng lên hành động chủ động, tự lực giải phóng vận mệnh đất nước."
+            },
+            {
+                category: "Trừu tượng",
+                question: "Bản chất sáng tạo của tư tưởng Hồ Chí Minh về con đường phát triển của dân tộc sau khi giành độc lập là gì?",
+                options: [
+                    "Tiến hành xây dựng ngay chế độ tư bản chủ nghĩa phát triển cao",
+                    "Bỏ qua giai đoạn phát triển tư bản chủ nghĩa, tiến dần lên chủ nghĩa xã hội để bảo đảm vững chắc độc lập tự do cho nhân dân",
+                    "Quay trở lại thiết lập triều đại phong kiến tiến bộ mới",
+                    "Duy trì mô hình kinh tế nông nghiệp tiểu nông tự cung tự cấp lâu dài"
+                ],
+                correctIndex: 1,
+                explanation: "Người khẳng định sau khi giành độc lập phải tiến dần lên chủ nghĩa xã hội, vì chỉ có CNXH mới giải phóng triệt để con người, mang lại ấm no hạnh phúc thật sự."
+            },
+            {
+                category: "Điền từ",
+                question: "Điền vào chỗ trống: 'Theo Hồ Chí Minh, cách mạng giải phóng dân tộc là sự nghiệp của ........................ chứ không phải là việc của một hai người.'",
+                options: [
+                    "một nhóm sĩ phu phong kiến",
+                    "giai cấp tư sản dân tộc yêu nước",
+                    "toàn dân chúng bị áp bức",
+                    "quân đội viễn chinh chính quốc"
+                ],
+                correctIndex: 2,
+                explanation: "Người nhấn mạnh cách mạng phải dựa vào lực lượng của toàn thể dân chúng bị áp bức, trong đó liên minh công nông làm gốc."
+            },
+            {
+                category: "Nâng cao",
+                question: "Đâu là điểm khác biệt cốt lõi trong quan điểm tập hợp lực lượng cách mạng của Hồ Chí Minh so với Luận cương tháng 10-1930 của Trần Phú?",
+                options: [
+                    "Trần Phú chủ trương tập hợp cả tư sản và địa chủ; Hồ Chí Minh chỉ tập hợp công nông",
+                    "Hồ Chí Minh chủ trương đoàn kết rộng rãi mọi tầng lớp yêu nước (sĩ, nông, công, thương) chống đế quốc; Luận cương Trần Phú nặng về đấu tranh giai cấp, cô lập tiểu tư sản, tư sản dân tộc và trung tiểu địa chủ",
+                    "Hồ Chí Minh chỉ chú trọng bạo động quân sự; Trần Phú đề cao cải cách ôn hòa",
+                    "Trần Phú chủ trương liên minh quốc tế; Hồ Chí Minh bài trừ quan hệ quốc tế"
+                ],
+                correctIndex: 1,
+                explanation: "Hội nghị Trung ương 8 do Bác chủ trì (1941) đã khắc phục những hạn chế tả khuynh của Luận cương tháng 10/1930, đưa nhiệm vụ giải phóng dân tộc lên cao nhất và tập hợp mọi lực lượng yêu nước."
+            },
+            {
+                category: "Lịch sử",
+                question: "Sự kiện lịch sử nào đánh dấu sự chấm dứt hoàn toàn của ách thống trị thực dân Pháp và can thiệp Mỹ trên đất nước ta, giải phóng hoàn toàn miền Bắc?",
+                options: [
+                    "Chiến dịch Điện Biên Phủ giành thắng lợi hoàn toàn ngày 7-5-1954",
+                    "Ký kết Hiệp định Giơ-ne-vơ về chấm dứt chiến tranh ở Đông Dương ngày 21-7-1954",
+                    "Cách mạng Tháng Tám năm 1945 thành công",
+                    "Chiến dịch Hồ Chí Minh lịch sử giành thắng lợi ngày 30-4-1975"
+                ],
+                correctIndex: 1,
+                explanation: "Việc ký kết Hiệp định Giơ-ne-vơ ngày 21-7-1954 chính thức kết thúc chiến tranh, buộc Pháp rút quân, miền Bắc hoàn toàn độc lập tiến lên xây dựng CNXH[cite: 1]."
+            }
+        ];
+
+        
+        
+        // Theme toggler for chapters
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.classList.contains('dark')) {
+                body.classList.remove('dark');
+                document.cookie = "tthcm_theme=light; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-moon text-slate-400";
+            } else {
+                body.classList.add('dark');
+                document.cookie = "tthcm_theme=dark; path=/; max-age=" + (30 * 24 * 60 * 60);
+                themeIcon.className = "fa-solid fa-sun text-amber-400";
+            }
+        }
+
+        function initTheme() {
+            const savedTheme = getCookie('tthcm_theme');
+            const themeIcon = document.getElementById('theme-icon');
+            
+            // Chapter page default is light mode
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-sun text-amber-400";
+            } else {
+                document.body.classList.remove('dark');
+                if (themeIcon) themeIcon.className = "fa-solid fa-moon text-slate-400";
+            }
+        }
+        
+        // Cookie helpers for progress saving
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function eraseCookie(name) {
+            document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        function saveProgress() {
+            setCookie('tthcm_c2_answers', JSON.stringify(userAnswers), 30);
+            setCookie('tthcm_c2_bookmarks', JSON.stringify(bookmarkedQuestions), 30);
+            setCookie('tthcm_c2_current', currentQuestionIndex.toString(), 30);
+        }
+
+        function loadProgress() {
+            try {
+                const savedAnswers = getCookie('tthcm_c2_answers');
+                const savedBookmarks = getCookie('tthcm_c2_bookmarks');
+                const savedCurrent = getCookie('tthcm_c2_current');
+                
+                if (savedAnswers) {
+                    const parsed = JSON.parse(savedAnswers);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        userAnswers = parsed;
+                    }
+                }
+                if (savedBookmarks) {
+                    const parsed = JSON.parse(savedBookmarks);
+                    if (Array.isArray(parsed) && parsed.length === quizData.length) {
+                        bookmarkedQuestions = parsed;
+                    }
+                }
+                if (savedCurrent) {
+                    const parsed = parseInt(savedCurrent, 10);
+                    if (!isNaN(parsed) && parsed >= 0 && parsed < quizData.length) {
+                        currentQuestionIndex = parsed;
+                    }
+                }
+            } catch (e) {
+                console.error("Lỗi khi tải tiến trình:", e);
+            }
+        }
+
+        let currentQuestionIndex = 0;
+        let userAnswers = new Array(quizData.length).fill(null); // Stores selected option index
+        let bookmarkedQuestions = new Array(quizData.length).fill(false); // Bookmarked state
+
+        // Initialize question buttons in the sidebar
+        function initSidebarGrid() {
+            const gridContainer = document.getElementById('question-grid');
+            gridContainer.innerHTML = '';
+            
+            // Get active filters
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            const categoryFilter = document.getElementById('category-filter').value;
+            const stateFilter = document.getElementById('state-filter').value;
+
+            let visibleCount = 0;
+
+            quizData.forEach((q, index) => {
+                // Apply Search filter
+                const matchesSearch = q.question.toLowerCase().includes(searchQuery);
+                
+                // Apply Category filter
+                const matchesCategory = (categoryFilter === 'all' || q.category === categoryFilter);
+                
+                // Apply State filter
+                let matchesState = true;
+                const isAnswered = userAnswers[index] !== null;
+                const isCorrect = isAnswered && userAnswers[index] === q.correctIndex;
+                const isBookmarked = bookmarkedQuestions[index];
+
+                if (stateFilter === 'unanswered') {
+                    matchesState = !isAnswered;
+                } else if (stateFilter === 'correct') {
+                    matchesState = isCorrect;
+                } else if (stateFilter === 'incorrect') {
+                    matchesState = (isAnswered && !isCorrect);
+                } else if (stateFilter === 'bookmarked') {
+                    matchesState = isBookmarked;
+                }
+
+                if (matchesSearch && matchesCategory && matchesState) {
+                    visibleCount++;
+                    const btn = document.createElement('button');
+                    btn.id = `grid-btn-${index}`;
+                    
+                    // Base classes
+                    btn.className = 'py-2 rounded-xl text-xs font-black transition-all border flex items-center justify-center relative ';
+                    btn.className += getGridBtnClass(index);
+                    btn.innerText = index + 1;
+                    
+                    // Add bookmark star inside if bookmarked
+                    if (isBookmarked) {
+                        const star = document.createElement('span');
+                        star.className = 'absolute top-0 right-0 w-2 h-2 bg-amber-500 rounded-full border border-white';
+                        btn.appendChild(star);
+                    }
+
+                    btn.onclick = () => jumpToQuestion(index);
+                    gridContainer.appendChild(btn);
+                }
+            });
+
+            document.getElementById('visible-count').innerText = `Hiện: ${visibleCount}/${quizData.length}`;
+        }
+
+        function getGridBtnClass(index) {
+            // Active Question
+            if (currentQuestionIndex === index) {
+                return 'bg-red-800 text-white border-red-900 ring-2 ring-red-300';
+            }
+            
+            // Unanswered state
+            if (userAnswers[index] === null) {
+                return 'bg-slate-50 text-slate-600 hover:bg-slate-100 border-slate-200';
+            }
+            
+            // Answered state
+            const isCorrect = userAnswers[index] === quizData[index].correctIndex;
+            return isCorrect 
+                ? 'bg-emerald-100 text-emerald-800 border-emerald-300 hover:bg-emerald-200' 
+                : 'bg-red-100 text-red-800 border-red-300 hover:bg-red-200';
+        }
+
+        // Handle Search and select filters dynamically
+        function filterQuestions() {
+            initSidebarGrid();
+        }
+
+        // Track stats and progress percentage
+        function updateProgress() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            const progressPercent = Math.round((answeredCount / quizData.length) * 100);
+            
+            document.getElementById('progress-percent').innerText = progressPercent + '%';
+            document.getElementById('progress-bar').style.width = progressPercent + '%';
+            document.getElementById('answered-count').innerText = answeredCount;
+
+            // Calculate exact score
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+            
+            document.getElementById('score-display').innerText = `${correctCount}/${answeredCount}`;
+            const accuracy = answeredCount === 0 ? 0 : Math.round((correctCount / answeredCount) * 100);
+            document.getElementById('score-accuracy').innerText = `${accuracy}%`;
+        }
+
+        // Render current selected question in detail
+        function renderQuestion() {
+            const currentQ = quizData[currentQuestionIndex];
+            
+            // Text values
+            document.getElementById('question-category').innerText = currentQ.category;
+            document.getElementById('question-index-label').innerText = `Câu ${currentQuestionIndex + 1} / ${quizData.length}`;
+            document.getElementById('question-text').innerText = currentQ.question;
+
+            // Handle Bookmarked badge and star icon
+            const isBookmarked = bookmarkedQuestions[currentQuestionIndex];
+            const bBadge = document.getElementById('bookmark-badge');
+            const bIcon = document.getElementById('bookmark-icon');
+            
+            if (isBookmarked) {
+                bBadge.classList.remove('hidden');
+                bBadge.classList.add('flex');
+                bIcon.className = "fa-solid fa-star text-amber-500 scale-110";
+            } else {
+                bBadge.classList.add('hidden');
+                bBadge.classList.remove('flex');
+                bIcon.className = "fa-regular fa-star text-slate-400";
+            }
+
+            // Options Renderer
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            const answered = userAnswers[currentQuestionIndex] !== null;
+            const selectedAnswer = userAnswers[currentQuestionIndex];
+
+            currentQ.options.forEach((opt, idx) => {
+                const button = document.createElement('button');
+                button.className = 'w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between group ';
+                
+                let iconHtml = `<span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs text-slate-400 font-bold group-hover:bg-slate-100 transition-all">${String.fromCharCode(65 + idx)}</span>`;
+
+                if (!answered) {
+                    // Not answered yet
+                    button.className += 'bg-white border-slate-200 hover:border-red-700 hover:bg-red-50/20 text-slate-700 active:scale-[0.99]';
+                    button.onclick = () => selectOption(idx);
+                } else {
+                    // Already answered state
+                    button.disabled = true;
+                    if (idx === currentQ.correctIndex) {
+                        // Correct option
+                        button.className += 'bg-emerald-50 border-emerald-500 text-emerald-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>';
+                    } else if (idx === selectedAnswer) {
+                        // User selected wrong choice
+                        button.className += 'bg-red-50 border-red-500 text-red-950 font-bold';
+                        iconHtml = '<span class="w-6 h-6 rounded-full bg-red-500 text-white flex items-center justify-center text-xs"><i class="fa-solid fa-xmark"></i></span>';
+                    } else {
+                        // Normal unselected wrong option
+                        button.className += 'bg-slate-50 border-slate-200 text-slate-400 opacity-60';
+                    }
+                }
+
+                button.innerHTML = `
+                    <span class="text-xs md:text-sm pr-4 font-semibold leading-relaxed">${opt}</span>
+                    ${iconHtml}
+                `;
+                optionsContainer.appendChild(button);
+            });
+
+            // Handle Navigation Buttons
+            document.getElementById('prev-btn').disabled = currentQuestionIndex === 0;
+            const nextBtn = document.getElementById('next-btn');
+            if (currentQuestionIndex === quizData.length - 1) {
+                nextBtn.innerHTML = 'Nộp bài thi <i class="fa-solid fa-paper-plane"></i>';
+                nextBtn.onclick = () => showFinalReport();
+            } else {
+                nextBtn.innerHTML = 'Câu sau <i class="fa-solid fa-arrow-right"></i>';
+                nextBtn.onclick = () => navigateQuestion(1);
+            }
+
+            // Explanation Section
+            const expBox = document.getElementById('explanation-box');
+            if (answered) {
+                expBox.classList.remove('hidden');
+                const isUserCorrect = selectedAnswer === currentQ.correctIndex;
+                
+                if (isUserCorrect) {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-emerald-50/60 border-emerald-200 text-emerald-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-emerald-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-circle-check text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Chọn cực chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-emerald-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                } else {
+                    expBox.className = "mt-2 p-5 rounded-2xl border bg-red-50/60 border-red-200 text-red-950 transition-all duration-300";
+                    document.getElementById('explanation-icon-container').className = "p-2.5 rounded-xl bg-red-500 text-white flex items-center justify-center shadow-md";
+                    document.getElementById('explanation-icon-container').innerHTML = '<i class="fa-solid fa-triangle-exclamation text-xl animate-bounce"></i>';
+                    document.getElementById('explanation-title').innerText = "Rất tiếc, chưa chính xác!";
+                    document.getElementById('explanation-title').className = "font-black text-red-800 text-xs md:text-sm mb-1 uppercase tracking-wider";
+                }
+                document.getElementById('explanation-text').innerText = currentQ.explanation;
+            } else {
+                expBox.classList.add('hidden');
+            }
+
+            initSidebarGrid();
+            updateProgress();
+            saveProgress();
+        }
+
+        // Toggle bookmarks
+        function toggleBookmarkActive() {
+            bookmarkedQuestions[currentQuestionIndex] = !bookmarkedQuestions[currentQuestionIndex];
+            renderQuestion();
+        }
+
+        // Handle option click
+        function selectOption(index) {
+            userAnswers[currentQuestionIndex] = index;
+            renderQuestion();
+        }
+
+        // Jump direct from sidebar grid
+        function jumpToQuestion(index) {
+            currentQuestionIndex = index;
+            renderQuestion();
+        }
+
+        // Navigate step-by-step
+        function navigateQuestion(direction) {
+            const nextIdx = currentQuestionIndex + direction;
+            if (nextIdx >= 0 && nextIdx < quizData.length) {
+                currentQuestionIndex = nextIdx;
+                renderQuestion();
+            }
+        }
+
+        // Reset confirmation
+        function showResetModal() {
+            document.getElementById('confirm-modal').classList.remove('hidden');
+        }
+
+        function closeResetModal() {
+            document.getElementById('confirm-modal').classList.add('hidden');
+        }
+
+        function executeReset() {
+            currentQuestionIndex = 0;
+            userAnswers = new Array(quizData.length).fill(null);
+            bookmarkedQuestions = new Array(quizData.length).fill(false);
+            eraseCookie('tthcm_c2_answers');
+            eraseCookie('tthcm_c2_bookmarks');
+            eraseCookie('tthcm_c2_current');
+            closeResetModal();
+            renderQuestion();
+        }
+
+        // Show Final Exam Performance report
+        function showFinalReport() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            let correctCount = 0;
+            userAnswers.forEach((ans, idx) => {
+                if (ans !== null && ans === quizData[idx].correctIndex) {
+                    correctCount++;
+                }
+            });
+
+            const incorrectCount = answeredCount - correctCount;
+            const accuracy = quizData.length === 0 ? 0 : Math.round((correctCount / quizData.length) * 100);
+            
+            document.getElementById('modal-answered').innerText = `${answeredCount}/${quizData.length} câu`;
+            document.getElementById('modal-correct').innerText = `${correctCount}/${quizData.length} câu`;
+            document.getElementById('modal-incorrect').innerText = `${incorrectCount} câu`;
+            document.getElementById('modal-accuracy').innerText = `${accuracy}%`;
+
+            const gradeLabel = document.getElementById('modal-grade');
+            if (accuracy >= 90) {
+                gradeLabel.innerText = "XUẤT SẮC (A+)";
+                gradeLabel.className = "font-black text-emerald-600 text-base";
+            } else if (accuracy >= 80) {
+                gradeLabel.innerText = "GIỎI (A)";
+                gradeLabel.className = "font-black text-blue-600 text-base";
+            } else if (accuracy >= 70) {
+                gradeLabel.innerText = "KHÁ (B)";
+                gradeLabel.className = "font-black text-amber-500 text-base";
+            } else if (accuracy >= 50) {
+                gradeLabel.innerText = "ĐẠT (C/D)";
+                gradeLabel.className = "font-black text-slate-500 text-base";
+            } else {
+                gradeLabel.innerText = "CHƯA ĐẠT (F)";
+                gradeLabel.className = "font-black text-red-700 text-base";
+            }
+
+            document.getElementById('report-modal').classList.remove('hidden');
+        }
+
+        function closeReportModal() {
+            document.getElementById('report-modal').classList.add('hidden');
+        }
+
+        // Keyboard triggers for rapid testing
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                navigateQuestion(-1);
+            } else if (e.key === 'ArrowRight') {
+                navigateQuestion(1);
+            }
+        });
+
+        // App Boot on ready
+        window.onload = function () {
+            initTheme();
+            loadProgress();
+            renderQuestion();
+        }
+    
+        // Header thu gọn khi cuộn xuống (chỉ trên di động)
+        (function() {
+            const header = document.querySelector('header');
+            if (!header) return;
+            let ticking = false;
+
+            function updateHeader() {
+                if (window.innerWidth < 1024) {
+                    if (window.scrollY > 60) {
+                        header.classList.add('header-scrolled');
+                    } else {
+                        header.classList.remove('header-scrolled');
+                    }
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateHeader);
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            window.addEventListener('resize', updateHeader);
+        })();
+    </script>
+</body>
+</html>
